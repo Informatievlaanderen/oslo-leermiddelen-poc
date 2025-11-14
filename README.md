@@ -16,8 +16,8 @@ You only have to do these steps once.
    make sure that "Read and write permissions" is checked.
 3. [Set up GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
    and let it point to the `docs` directory on the `main` branch.
-4. Set the link to the application profile at `env.ap_url` in the file `.github/workflows/workflow.yml`.
-5. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/workflow.yml`.
+4. Set the link to the application profile at `env.ap_url` in the file `.github/workflows/pipeline.yml`.
+5. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/pipeline.yml`.
 6. Read and, if necessary, update [the license](LICENSE).
 7. Commit and push your changes to GitHub.
    This will trigger the workflows, which will also add example data to the [example-data](./example-data) directory.

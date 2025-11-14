@@ -3,8 +3,8 @@ run-name: ${{ github.actor }} is running the pipeline
 on: [push]
 
 env:
-  ap_url:
-  shacl_url:
+  ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
+  shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
 
 jobs:
   Set-Up-Repo:
