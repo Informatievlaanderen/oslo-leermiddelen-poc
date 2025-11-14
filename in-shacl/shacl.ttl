@@ -10,6 +10,7 @@
 @prefix shacl: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/> .
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#AgentShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#LeeractiviteittypeShape>,
@@ -26,9 +27,10 @@
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#FormaattypeShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#DoeltypeShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#LicentietypeShape>,
-    <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OpleidingsniveautypeShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OpleidingsniveauShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#LicentieShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OnderwerptypeShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OnderwerpShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#BrontypeShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#CompetentietypeShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#LeeftijdstypeShape>,
@@ -57,6 +59,8 @@
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#GeldbedragShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#PeriodeShape>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#TemporeleentiteitShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#LeerplanShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#CombinatieLeerdoelOpleidingsniveau>,
     <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#LocatieShape> .
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#AdresvoorstellingShape> a shacl:NodeShape;
@@ -221,7 +225,16 @@
   rdfs:label "Agent"@nl;
   rdfs:comment "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."@nl;
   shacl:closed false;
-  shacl:targetClass dc:Agent .
+  shacl:targetClass dc:Agent ;
+  shacl:property [
+	  a shacl:PropertyShape;
+	  rdfs:label "naam"@nl;
+	  shacl:datatype rdf:langString;
+	  shacl:maxCount "1";
+	  shacl:minCount "1";
+	  shacl:name "naam"@nl;
+	  shacl:path dc:title
+  ].
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#BrontypeShape> a shacl:NodeShape;
   rdfs:label "BronType";
@@ -413,7 +426,6 @@
     shacl:class <http://data.europa.eu/m8g/PeriodOfTime>;
     shacl:description "De periode waarin het Doel als actueel en toepasbaar wordt beschouwd."@nl;
     shacl:maxCount "1";
-    shacl:minCount "1";
     shacl:name "geldigheid"@nl;
     shacl:path dc:valid
   ], [
@@ -465,7 +477,6 @@
     rdfs:seeAlso <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#Doel.Type>;
     shacl:class skos:Concept;
     shacl:description "De categorie waartoe het Doel behoort."@nl;
-    shacl:minCount "1";
     shacl:name "type"@nl;
     shacl:path dc:type
   ], [
@@ -485,7 +496,6 @@
     shacl:class schemas:Audience;
     shacl:description "De groep van individuen waarop het Doel is gericht."@nl;
     shacl:maxCount "1";
-    shacl:minCount "1";
     shacl:name "doelgroep"@nl;
     shacl:path dc:audience
   ], [
@@ -514,7 +524,7 @@
     shacl:class <http://data.europa.eu/snb/model/elm/LearningAchievement>;
     shacl:description "Specifieerd of een Leerdoel een specialisatie is van een ander Leerdoel."@nl;
     shacl:name "isSpecialisatieVan"@nl;
-    shacl:path skos:narrower
+    shacl:path skos:broader
   ], [
     a shacl:PropertyShape;
     rdfs:label "isBrederDan"@nl;
@@ -523,7 +533,7 @@
     shacl:class <http://data.europa.eu/snb/model/elm/LearningAchievement>;
     shacl:description "Specificeerd of een Leerdoel een bredere variant is van een ander Leerdoel."@nl;
     shacl:name "isBrederDan"@nl;
-    shacl:path skos:broader
+    shacl:path skos:narrower
   ], [
     a shacl:PropertyShape;
     rdfs:label "bestaatUit"@nl;
@@ -533,7 +543,19 @@
     shacl:description "Subleerdoelen van een Leerdoel."@nl;
     shacl:name "bestaatUit"@nl;
     shacl:path dc:hasPart
-  ];
+  ], [
+	 	a shacl:PropertyShape;
+	  rdfs:label "hetzelfde"@nl;
+	  shacl:class <http://data.europa.eu/snb/model/elm/LearningAchievement>;
+	  shacl:name "hetzelfde"@nl;
+	  shacl:path skos:closeMatch
+	], [
+		a shacl:PropertyShape;
+		rdfs:label "eigenCombinatieLeerdoelOpleidingsniveau"@nl;
+		shacl:class ex:EigenCombinatieLeerdoelOpleidingsniveau;
+		shacl:name "eigenCombinatieLeerdoelOpleidingsniveau"@nl;
+		shacl:path ex:eigenCombinatieLeerdoelOpleidingsniveau
+	];
   shacl:targetClass <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#DoelgroepShape> a shacl:NodeShape;
@@ -1167,7 +1189,46 @@ Te substitueren door een meer specifiekere klasse van <a href=\"https://schema.o
 <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OnderwerptypeShape> a shacl:NodeShape;
   rdfs:label "OnderwerpType";
   shacl:closed false;
-  shacl:targetClass skos:Concept .
+  shacl:targetClass skos:Concept.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OnderwerpShape> a shacl:NodeShape;
+  rdfs:label "Onderwerp";
+  shacl:closed false;
+  shacl:targetClass ex:Onderwerp ;
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "naam"@nl;
+		shacl:datatype rdf:langString;
+		shacl:maxCount "1";
+		shacl:minCount "1";
+		shacl:name "naam"@nl;
+		shacl:path dc:title
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "korte naam"@nl;
+		shacl:datatype rdf:langString;
+		shacl:maxCount "1";
+		shacl:name "korte naam"@nl;
+		shacl:path ex:shortLabel
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "type"@nl;
+		shacl:class skos:Concept;
+		shacl:maxCount "1";
+		shacl:minCount "1";
+		shacl:name "type"@nl;
+		shacl:path dc:type
+	];
+	shacl:property  [
+	 a shacl:PropertyShape;
+	 rdfs:label "niveau"@nl;
+	 rdfs:comment "Het (Opleidings)niveau waartoe het Onderwerp betrekking heeft."@nl;
+	 shacl:class skos:Opleidingsniveau;
+	 shacl:name "niveau"@nl;
+	 shacl:path dc:educationLevel
+ ].
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OpeningsurenspecificatieShape> a shacl:NodeShape;
   rdfs:label "Openingsurenspecificatie"@nl;
@@ -1231,10 +1292,62 @@ Te substitueren door een meer specifiekere klasse van <a href=\"https://schema.o
   ];
   shacl:targetClass schema:OpeningHoursSpecification .
 
-<https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OpleidingsniveautypeShape> a shacl:NodeShape;
-  rdfs:label "OpleidingsniveauType";
+<https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#OpleidingsniveauShape> a shacl:NodeShape;
+  rdfs:label "Opleidingsniveau";
   shacl:closed false;
-  shacl:targetClass skos:Concept .
+  shacl:targetClass ex:Opleidingsniveau;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "naam"@nl;
+    shacl:datatype rdf:langString;
+    shacl:maxCount "1";
+    shacl:minCount "1";
+    shacl:name "naam"@nl;
+    shacl:path dc:title
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "level 1"@nl;
+		shacl:datatype rdf:langString;
+		shacl:maxCount "1";
+		shacl:minCount "1";
+		shacl:name "level 1"@nl;
+		shacl:path ex:level-1
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "level 2"@nl;
+		shacl:datatype rdf:langString;
+		shacl:maxCount "1";
+		shacl:minCount "1";
+		shacl:name "level 2"@nl;
+		shacl:path ex:level-2
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "level 3"@nl;
+		shacl:datatype rdf:langString;
+		shacl:maxCount "1";
+		shacl:minCount "1";
+		shacl:name "level 3m"@nl;
+		shacl:path ex:level-3
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "level 4"@nl;
+		shacl:datatype rdf:langString;
+		shacl:maxCount "1";
+		shacl:minCount "1";
+		shacl:name "level 4"@nl;
+		shacl:path ex:level-4
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "isSpecialisatieVan"@nl;
+		shacl:name "isSpecialisatieVan"@nl;
+		shacl:path skos:narrower;
+		shacl:class ex:Opleidingsniveau
+  ].
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#PeriodeShape> a shacl:NodeShape;
   rdfs:label "Periode"@nl;
@@ -1319,3 +1432,101 @@ Te substitueren door een meer specifiekere klasse van <a href=\"https://schema.o
   rdfs:comment "Een verzameling van resources."@nl;
   shacl:closed false;
   shacl:targetClass dcmitype:Collection .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#LeerplanShape> a shacl:NodeShape;
+  rdfs:label "Leerplan";
+  shacl:closed false;
+  shacl:targetClass ex:Leerplan;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "naam"@nl;
+    shacl:datatype rdf:langString;
+    shacl:maxCount "1";
+    shacl:minCount "1";
+    shacl:name "naam"@nl;
+    shacl:path dc:title
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "ingericht door"@nl;
+		rdfs:comment "De organisatie, of een deel van een organisatie zoals een afdeling of faculteit, die het leerplan heeft geleid."@nl;
+		shacl:class dc:Agent;
+		shacl:description "De organisatie, of een deel van een organisatie zoals een afdeling of faculteit, die het leerplan heeft geleid."@nl;
+		shacl:name "ingericht door"@nl;
+		shacl:path <http://data.europa.eu/snb/model/elm/directedBy>
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "niveau"@nl;
+		shacl:name "niveau"@nl;
+		shacl:path ex:niveau;
+		shacl:class ex:Opleidingsniveau
+  ];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "eigen combinatie leerdoel opleidingsniveau"@nl;
+		shacl:name "eigen combinatie leerdoel opleidingsniveau"@nl;
+		shacl:path ex:eigenCombinatieLeerdoelOpleidingsniveau;
+		shacl:class ex:EigenCombinatieLeerdoelOpleidingsniveau
+	 ].
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01#CombinatieLeerdoelOpleidingsniveau> a shacl:NodeShape;
+  rdfs:label "CombLeerdoelOpleidingsniveau";
+  shacl:closed false;
+  shacl:targetClass ex:EigenCombinatieLeerdoelOpleidingsniveau;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "naam"@nl;
+    shacl:datatype rdf:langString;
+    shacl:maxCount "1";
+    shacl:minCount "1";
+    shacl:name "naam"@nl;
+    shacl:path dc:title
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "ingericht door"@nl;
+		rdfs:comment "De organisatie, of een deel van een organisatie zoals een afdeling of faculteit, die de combinatie heeft gemaakt."@nl;
+		shacl:class dc:Agent;
+		shacl:description "De organisatie, of een deel van een organisatie zoals een afdeling of faculteit, die de combinatie heeft gemaakt."@nl;
+		shacl:name "ingericht door"@nl;
+		shacl:path <http://data.europa.eu/snb/model/elm/directedBy>
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "niveau"@nl;
+		shacl:name "niveau"@nl;
+		shacl:path ex:niveau;
+		shacl:class ex:Opleidingsniveau
+  ];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "leerplan"@nl;
+		shacl:class ex:Leerplan;
+		shacl:name "leerplan"@nl;
+		shacl:path ex:leerplan
+	];
+	shacl:property [
+	  a shacl:PropertyShape;
+	  rdfs:label "versie datum"@nl;
+	  shacl:datatype rdf:langString;
+	  shacl:maxCount "1";
+	  shacl:name "versie datum"@nl;
+	  shacl:path ex:versieDatum
+  ];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "collectiedoel"@nl;
+		shacl:datatype rdf:langString;
+		shacl:maxCount "1";
+		shacl:name "collectiedoel"@nl;
+		shacl:path ex:collectiedoel
+	];
+	shacl:property [
+		a shacl:PropertyShape;
+		rdfs:label "collectiedoeltype"@nl;
+		shacl:datatype rdf:langString;
+		shacl:maxCount "1";
+		shacl:name "collectiedoeltype"@nl;
+		shacl:path ex:collectiedoeltype
+	].
