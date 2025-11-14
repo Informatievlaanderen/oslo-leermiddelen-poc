@@ -102,7 +102,9 @@ and the data will have [this license](LICENSE).
 ### Execute queries via the dashboard
 
 1. Browse to the GitHub pages of this repository.
-2. TODO: Add Miravi specific instructions
+2. Click on one of the queries on the left:
+
+   ![List of queries on the left of the dashboard](img/select-query.png)
 
 ## Extras
 
@@ -113,16 +115,17 @@ and the data will have [this license](LICENSE).
   ```
 
 - Delete `in-shacl/shacl.ttl` to download the SHACL again.
+- Delete `template.xlsx` to regenerate the template Excel file and example data.
 - You can reset the whole repo via
 
   ```shell
   ./scripts/reset-repo.sh
   ```
- 
-## Example env values
 
-```yaml
-env:
-  ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
-  shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
-```
+- Some example env values are
+
+   ```yaml
+   env:
+     ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
+     shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
+   ```
