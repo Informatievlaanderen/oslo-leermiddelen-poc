@@ -1,0 +1,6 @@
+# Join Onderwerp → type → Doelgroep
+SELECT DISTINCT ?Onderwerp_url ?Doelgroep_url WHERE {
+  ?Onderwerp_url a <http://example.com/Onderwerp> .
+  ?Doelgroep_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Onderwerp_url <http://purl.org/dc/terms/type> ?Doelgroep_url .
+}

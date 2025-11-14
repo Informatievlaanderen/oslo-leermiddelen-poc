@@ -1,0 +1,6 @@
+# Join Leeractiviteit → specificatie → Leeractiviteitspecificatie
+SELECT DISTINCT ?Leeractiviteit_url ?Leeractiviteitspecificatie_url WHERE {
+  ?Leeractiviteit_url a <http://data.europa.eu/snb/model/elm/LearningActivity> .
+  ?Leeractiviteitspecificatie_url a <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> .
+  ?Leeractiviteit_url <http://data.europa.eu/snb/model/elm/specifiedBy> ?Leeractiviteitspecificatie_url .
+}

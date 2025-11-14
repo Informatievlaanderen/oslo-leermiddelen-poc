@@ -1,0 +1,20 @@
+# Doel 
+SELECT DISTINCT ?Doel_url ?beschrijving ?geldigheid_url ?identificator_url ?niveau_url ?gedefinieerdDoor_url ?onderwerp_url ?type_url ?bron_url ?doelgroep_url ?competentie_url ?gerelateerdAan_url ?isSpecialisatieVan_url ?isBrederDan_url ?bestaatUit_url ?hetzelfde_url ?eigenCombinatieLeerdoelOpleidingsniveau_url WHERE {
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  OPTIONAL { ?Doel_url <http://purl.org/dc/elements/1.1/description> ?beschrijving . }
+  OPTIONAL { ?Doel_url <http://purl.org/dc/terms/valid> ?geldigheid_url . }
+  ?Doel_url <http://www.w3.org/ns/adms#identifier> ?identificator_url . 
+  OPTIONAL { ?Doel_url <http://purl.org/dc/terms/educationLevel> ?niveau_url . }
+  ?Doel_url <http://purl.org/dc/elements/1.1/creator> ?gedefinieerdDoor_url . 
+  OPTIONAL { ?Doel_url <http://purl.org/dc/elements/1.1/subject> ?onderwerp_url . }
+  OPTIONAL { ?Doel_url <http://purl.org/dc/terms/type> ?type_url . }
+  OPTIONAL { ?Doel_url <http://purl.org/dc/elements/1.1/source> ?bron_url . }
+  OPTIONAL { ?Doel_url <http://purl.org/dc/terms/audience> ?doelgroep_url . }
+  OPTIONAL { ?Doel_url <https://schema.org/assesses> ?competentie_url . }
+  OPTIONAL { ?Doel_url <http://www.w3.org/2004/02/skos/core#related> ?gerelateerdAan_url . }
+  OPTIONAL { ?Doel_url <http://www.w3.org/2004/02/skos/core#broader> ?isSpecialisatieVan_url . }
+  OPTIONAL { ?Doel_url <http://www.w3.org/2004/02/skos/core#narrower> ?isBrederDan_url . }
+  OPTIONAL { ?Doel_url <http://purl.org/dc/terms/hasPart> ?bestaatUit_url . }
+  OPTIONAL { ?Doel_url <http://www.w3.org/2004/02/skos/core#closeMatch> ?hetzelfde_url . }
+  OPTIONAL { ?Doel_url <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> ?eigenCombinatieLeerdoelOpleidingsniveau_url . }
+}

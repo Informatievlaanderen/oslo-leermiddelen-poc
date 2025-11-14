@@ -1,0 +1,6 @@
+# Join Licentie → type → Doelgroep
+SELECT DISTINCT ?Licentie_url ?Doelgroep_url WHERE {
+  ?Licentie_url a <http://purl.org/dc/terms/LicenseDocument> .
+  ?Doelgroep_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Licentie_url <http://purl.org/dc/terms/type> ?Doelgroep_url .
+}

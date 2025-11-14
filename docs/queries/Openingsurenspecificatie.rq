@@ -1,0 +1,9 @@
+# Openingsurenspecificatie 
+SELECT DISTINCT ?Openingsurenspecificatie_url ?open ?gesloten ?dagVanDeWeek ?geldigVan ?geldigTot WHERE {
+  ?Openingsurenspecificatie_url a <http://schema.org/OpeningHoursSpecification> .
+  OPTIONAL { ?Openingsurenspecificatie_url <http://schema.org/opens> ?open . }
+  OPTIONAL { ?Openingsurenspecificatie_url <http://schema.org/closes> ?gesloten . }
+  OPTIONAL { ?Openingsurenspecificatie_url <http://schema.org/dayOfWeek> ?dagVanDeWeek . }
+  OPTIONAL { ?Openingsurenspecificatie_url <http://schema.org/validFrom> ?geldigVan . }
+  OPTIONAL { ?Openingsurenspecificatie_url <http://schema.org/validThrough> ?geldigTot . }
+}

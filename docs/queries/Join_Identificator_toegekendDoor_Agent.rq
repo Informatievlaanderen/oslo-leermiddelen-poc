@@ -1,0 +1,6 @@
+# Join Identificator → toegekendDoor → Agent
+SELECT DISTINCT ?Identificator_url ?Agent_url WHERE {
+  ?Identificator_url a <http://www.w3.org/ns/adms#Identifier> .
+  ?Agent_url a <http://purl.org/dc/terms/Agent> .
+  ?Identificator_url <http://purl.org/dc/terms/creator> ?Agent_url .
+}

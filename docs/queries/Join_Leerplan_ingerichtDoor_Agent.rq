@@ -1,0 +1,6 @@
+# Join Leerplan → ingerichtDoor → Agent
+SELECT DISTINCT ?Leerplan_url ?Agent_url WHERE {
+  ?Leerplan_url a <http://example.com/Leerplan> .
+  ?Agent_url a <http://purl.org/dc/terms/Agent> .
+  ?Leerplan_url <http://data.europa.eu/snb/model/elm/directedBy> ?Agent_url .
+}

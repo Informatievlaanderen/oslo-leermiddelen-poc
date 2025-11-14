@@ -1,0 +1,18 @@
+# Adresvoorstelling 
+SELECT DISTINCT ?Adresvoorstelling_url ?busnummer ?locatienaam ?adresgebied ?postnaam ?gemeentenaam ?administratieveEenheidNiveau2 ?administratieveEenheidNiveau1 ?land ?postcode ?volledigAdres ?postbus ?straatnaam ?locatieaanduiding ?huisnummer WHERE {
+  ?Adresvoorstelling_url a <http://www.w3.org/ns/locn#Address> .
+  OPTIONAL { ?Adresvoorstelling_url <https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber> ?busnummer . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#locatorName> ?locatienaam . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#addressArea> ?adresgebied . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#postName> ?postnaam . }
+  OPTIONAL { ?Adresvoorstelling_url <https://vocab.belgif.be/ns/address#municipalityName> ?gemeentenaam . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#adminUnitL2> ?administratieveEenheidNiveau2 . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#adminUnitL1> ?administratieveEenheidNiveau1 . }
+  OPTIONAL { ?Adresvoorstelling_url <https://vocab.belgif.be/ns/address#country> ?land . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#postCode> ?postcode . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#fullAddress> ?volledigAdres . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#poBox> ?postbus . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#thoroughfare> ?straatnaam . }
+  OPTIONAL { ?Adresvoorstelling_url <http://www.w3.org/ns/locn#locatorDesignator> ?locatieaanduiding . }
+  OPTIONAL { ?Adresvoorstelling_url <https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber> ?huisnummer . }
+}

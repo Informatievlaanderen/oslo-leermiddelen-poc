@@ -1,0 +1,6 @@
+# Join Doelgroep → doelgroep → Doelgroep2
+SELECT DISTINCT ?Doelgroep_url ?Doelgroep2_url WHERE {
+  ?Doelgroep_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Doelgroep2_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Doelgroep_url <http://purl.org/dc/elements/1.1/type> ?Doelgroep2_url .
+}

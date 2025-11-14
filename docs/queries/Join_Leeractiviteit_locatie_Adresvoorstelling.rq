@@ -1,0 +1,6 @@
+# Join Leeractiviteit → locatie → Adresvoorstelling
+SELECT DISTINCT ?Leeractiviteit_url ?Adresvoorstelling_url WHERE {
+  ?Leeractiviteit_url a <http://data.europa.eu/snb/model/elm/LearningActivity> .
+  ?Adresvoorstelling_url a <http://www.w3.org/ns/locn#Address> .
+  ?Leeractiviteit_url <http://data.europa.eu/snb/model/elm/location> ?Adresvoorstelling_url .
+}

@@ -1,0 +1,6 @@
+# Join CombLeerdoelOpleidingsniveau → niveau → Opleidingsniveau
+SELECT DISTINCT ?CombLeerdoelOpleidingsniveau_url ?Opleidingsniveau_url WHERE {
+  ?CombLeerdoelOpleidingsniveau_url a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> .
+  ?Opleidingsniveau_url a <http://example.com/Opleidingsniveau> .
+  ?CombLeerdoelOpleidingsniveau_url <http://example.com/niveau> ?Opleidingsniveau_url .
+}

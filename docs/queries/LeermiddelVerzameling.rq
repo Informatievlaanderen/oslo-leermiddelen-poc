@@ -1,0 +1,5 @@
+# LeermiddelVerzameling 
+SELECT DISTINCT ?LeermiddelVerzameling_url ?heeftLid_url WHERE {
+  ?LeermiddelVerzameling_url a <https://schema.org/CreativeWorkSeries> .
+  OPTIONAL { ?LeermiddelVerzameling_url <https://schema.org/hasPart> ?heeftLid_url . }
+}

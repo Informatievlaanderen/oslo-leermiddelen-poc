@@ -1,0 +1,5 @@
+# Agent 
+SELECT DISTINCT ?Agent_url ?naam WHERE {
+  ?Agent_url a <http://purl.org/dc/terms/Agent> .
+  ?Agent_url <http://purl.org/dc/terms/title> ?naam . 
+}

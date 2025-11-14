@@ -1,0 +1,6 @@
+# Join Leeractiviteit → heeftDeel → Leeractiviteit2
+SELECT DISTINCT ?Leeractiviteit_url ?Leeractiviteit2_url WHERE {
+  ?Leeractiviteit_url a <http://data.europa.eu/snb/model/elm/LearningActivity> .
+  ?Leeractiviteit2_url a <http://data.europa.eu/snb/model/elm/LearningActivity> .
+  ?Leeractiviteit_url <http://data.europa.eu/snb/model/elm/hasPart> ?Leeractiviteit2_url .
+}

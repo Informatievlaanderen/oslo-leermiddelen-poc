@@ -1,0 +1,5 @@
+# LeermiddelElement 
+SELECT DISTINCT ?LeermiddelElement_url ?onderdeelVan_url WHERE {
+  ?LeermiddelElement_url a <https://schema.org/CreativeWork> .
+  OPTIONAL { ?LeermiddelElement_url <https://schema.org/isPartOf> ?onderdeelVan_url . }
+}

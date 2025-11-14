@@ -1,0 +1,6 @@
+# Join Leeractiviteit → draagtBijAanHetBehalenVan → Doel
+SELECT DISTINCT ?Leeractiviteit_url ?Doel_url WHERE {
+  ?Leeractiviteit_url a <http://data.europa.eu/snb/model/elm/LearningActivity> .
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?Leeractiviteit_url <http://purl.org/dc/terms/contributor> ?Doel_url .
+}

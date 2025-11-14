@@ -1,0 +1,6 @@
+# Join CreatiefWerk → taal → Doelgroep
+SELECT DISTINCT ?CreatiefWerk_url ?Doelgroep_url WHERE {
+  ?CreatiefWerk_url a <https://schema.org/CreativeWork> .
+  ?Doelgroep_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?CreatiefWerk_url <https://schema.org/inLanguage> ?Doelgroep_url .
+}

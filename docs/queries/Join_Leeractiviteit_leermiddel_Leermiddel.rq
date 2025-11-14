@@ -1,0 +1,6 @@
+# Join Leeractiviteit → leermiddel → Leermiddel
+SELECT DISTINCT ?Leeractiviteit_url ?Leermiddel_url WHERE {
+  ?Leeractiviteit_url a <http://data.europa.eu/snb/model/elm/LearningActivity> .
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?Leeractiviteit_url <http://purl.org/dc/terms/references> ?Leermiddel_url .
+}

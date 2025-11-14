@@ -1,0 +1,6 @@
+# Join Leeractiviteit → ingerichtDoor → Agent
+SELECT DISTINCT ?Leeractiviteit_url ?Agent_url WHERE {
+  ?Leeractiviteit_url a <http://data.europa.eu/snb/model/elm/LearningActivity> .
+  ?Agent_url a <http://purl.org/dc/terms/Agent> .
+  ?Leeractiviteit_url <http://data.europa.eu/snb/model/elm/directedBy> ?Agent_url .
+}

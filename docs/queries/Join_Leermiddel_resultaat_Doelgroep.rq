@@ -1,0 +1,6 @@
+# Join Leermiddel → resultaat → Doelgroep
+SELECT DISTINCT ?Leermiddel_url ?Doelgroep_url WHERE {
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?Doelgroep_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Leermiddel_url <https://schema.org/result> ?Doelgroep_url .
+}

@@ -1,0 +1,10 @@
+# Opleidingsniveau 
+SELECT DISTINCT ?Opleidingsniveau_url ?naam ?level1 ?level2 ?level3 ?level4 ?isSpecialisatieVan_url WHERE {
+  ?Opleidingsniveau_url a <http://example.com/Opleidingsniveau> .
+  ?Opleidingsniveau_url <http://purl.org/dc/terms/title> ?naam . 
+  ?Opleidingsniveau_url <http://example.com/level-1> ?level1 . 
+  ?Opleidingsniveau_url <http://example.com/level-2> ?level2 . 
+  ?Opleidingsniveau_url <http://example.com/level-3> ?level3 . 
+  ?Opleidingsniveau_url <http://example.com/level-4> ?level4 . 
+  OPTIONAL { ?Opleidingsniveau_url <http://www.w3.org/2004/02/skos/core#narrower> ?isSpecialisatieVan_url . }
+}

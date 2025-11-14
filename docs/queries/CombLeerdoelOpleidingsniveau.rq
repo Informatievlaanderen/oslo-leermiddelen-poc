@@ -1,0 +1,11 @@
+# CombLeerdoelOpleidingsniveau 
+SELECT DISTINCT ?CombLeerdoelOpleidingsniveau_url ?naam ?ingerichtDoor_url ?niveau_url ?leerplan_url ?versieDatum ?collectiedoel ?collectiedoeltype WHERE {
+  ?CombLeerdoelOpleidingsniveau_url a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> .
+  ?CombLeerdoelOpleidingsniveau_url <http://purl.org/dc/terms/title> ?naam . 
+  OPTIONAL { ?CombLeerdoelOpleidingsniveau_url <http://data.europa.eu/snb/model/elm/directedBy> ?ingerichtDoor_url . }
+  OPTIONAL { ?CombLeerdoelOpleidingsniveau_url <http://example.com/niveau> ?niveau_url . }
+  OPTIONAL { ?CombLeerdoelOpleidingsniveau_url <http://example.com/leerplan> ?leerplan_url . }
+  OPTIONAL { ?CombLeerdoelOpleidingsniveau_url <http://example.com/versieDatum> ?versieDatum . }
+  OPTIONAL { ?CombLeerdoelOpleidingsniveau_url <http://example.com/collectiedoel> ?collectiedoel . }
+  OPTIONAL { ?CombLeerdoelOpleidingsniveau_url <http://example.com/collectiedoeltype> ?collectiedoeltype . }
+}

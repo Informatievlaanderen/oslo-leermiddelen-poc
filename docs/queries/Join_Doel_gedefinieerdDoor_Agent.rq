@@ -1,0 +1,6 @@
+# Join Doel → gedefinieerdDoor → Agent
+SELECT DISTINCT ?Doel_url ?Agent_url WHERE {
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?Agent_url a <http://purl.org/dc/terms/Agent> .
+  ?Doel_url <http://purl.org/dc/elements/1.1/creator> ?Agent_url .
+}

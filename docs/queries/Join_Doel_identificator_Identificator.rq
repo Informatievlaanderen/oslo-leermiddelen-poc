@@ -1,0 +1,6 @@
+# Join Doel → identificator → Identificator
+SELECT DISTINCT ?Doel_url ?Identificator_url WHERE {
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?Identificator_url a <http://www.w3.org/ns/adms#Identifier> .
+  ?Doel_url <http://www.w3.org/ns/adms#identifier> ?Identificator_url .
+}

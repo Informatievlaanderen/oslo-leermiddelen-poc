@@ -1,0 +1,39 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ex: <http://example.com/>
+PREFIX dc11: <http://purl.org/dc/elements/1.1/>
+PREFIX schemas: <https://schema.org/>
+PREFIX elm: <http://data.europa.eu/snb/model/elm/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?leermiddel ?doel (SAMPLE(?description) AS ?beschrijving) WHERE {
+    {
+        ?_Leermiddel dc11:subject ?competentie .
+        ?_Leermiddel dcterms:educationLevel ?niveau .
+        ?_Leermiddel a schemas:LearningResource .
+        ?doel a elm:LearningAchievement .
+        ?doel dc11:subject ?competentie .
+        ?doel ex:eigenCombinatieLeerdoelOpleidingsniveau ?_Collectie .
+        ?_Collectie ex:niveau ?niveau .
+        BIND("Leermiddel naar Doel vanwege zelfde Competentie en Niveau" AS ?description)
+    }
+    UNION {
+        ?_Leermiddel a schemas:LearningResource .
+        ?_Leermiddel schemas:educationalUse ?goDoel .
+        ?goDoel a elm:LearningAchievement .
+        ?goDoel skos:broader ?doel .
+        ?doel dc11:creator ex:OV.
+        BIND("Leermiddel naar Doel vanwege specifiekere koepeldoel" AS ?description)
+    }
+    UNION {
+        ?_Leermiddel a schemas:LearningResource .
+        ?_Leermiddel schemas:educationalUse ?goDoel .
+        ?goDoel a elm:LearningAchievement .
+        ?goDoel skos:closeMatch ?doel .
+        ?doel dc11:creator ex:OV.
+        BIND("Leermiddel naar Doel vanwege hetzelfde koepeldoel" AS ?description)
+    }
+    ?_Leermiddel dcterms:title ?leermiddel .
+}
+GROUP BY ?leermiddel ?doel
+# ORDER BY ASC(?doel)

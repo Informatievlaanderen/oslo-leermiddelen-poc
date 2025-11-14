@@ -1,0 +1,6 @@
+# Join Leerplan → niveau → Opleidingsniveau
+SELECT DISTINCT ?Leerplan_url ?Opleidingsniveau_url WHERE {
+  ?Leerplan_url a <http://example.com/Leerplan> .
+  ?Opleidingsniveau_url a <http://example.com/Opleidingsniveau> .
+  ?Leerplan_url <http://example.com/niveau> ?Opleidingsniveau_url .
+}

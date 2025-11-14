@@ -1,0 +1,5 @@
+# Geldbedrag 
+SELECT DISTINCT ?Geldbedrag_url ?valuta_url WHERE {
+  ?Geldbedrag_url a <https://schema.org/MonetaryAmount> .
+  ?Geldbedrag_url <http://www.cidoc-crm.org/cidoc-crm/P180_has_currency> ?valuta_url . 
+}

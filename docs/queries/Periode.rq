@@ -1,0 +1,6 @@
+# Periode 
+SELECT DISTINCT ?Periode_url ?tot_url ?van_url WHERE {
+  ?Periode_url a <http://www.w3.org/2006/time#ProperInterval> .
+  OPTIONAL { ?Periode_url <http://www.w3.org/2006/time#hasEnd> ?tot_url . }
+  OPTIONAL { ?Periode_url <http://www.w3.org/2006/time#hasBeginning> ?van_url . }
+}

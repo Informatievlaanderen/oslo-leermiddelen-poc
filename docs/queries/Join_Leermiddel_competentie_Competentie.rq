@@ -1,0 +1,6 @@
+# Join Leermiddel → competentie → Competentie
+SELECT DISTINCT ?Leermiddel_url ?Competentie_url WHERE {
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?Competentie_url a <https://ec.europa.eu/esco/lod/static/model.html#Skill> .
+  ?Leermiddel_url <https://schema.org/assesses> ?Competentie_url .
+}

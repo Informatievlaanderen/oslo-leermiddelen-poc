@@ -1,0 +1,8 @@
+# Onderwerp 
+SELECT DISTINCT ?Onderwerp_url ?naam ?korteNaam ?type_url ?niveau_url WHERE {
+  ?Onderwerp_url a <http://example.com/Onderwerp> .
+  ?Onderwerp_url <http://purl.org/dc/terms/title> ?naam . 
+  OPTIONAL { ?Onderwerp_url <http://example.com/shortLabel> ?korteNaam . }
+  ?Onderwerp_url <http://purl.org/dc/terms/type> ?type_url . 
+  OPTIONAL { ?Onderwerp_url <http://purl.org/dc/terms/educationLevel> ?niveau_url . }
+}

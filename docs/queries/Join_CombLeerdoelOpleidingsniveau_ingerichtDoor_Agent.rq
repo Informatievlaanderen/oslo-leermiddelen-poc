@@ -1,0 +1,6 @@
+# Join CombLeerdoelOpleidingsniveau → ingerichtDoor → Agent
+SELECT DISTINCT ?CombLeerdoelOpleidingsniveau_url ?Agent_url WHERE {
+  ?CombLeerdoelOpleidingsniveau_url a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> .
+  ?Agent_url a <http://purl.org/dc/terms/Agent> .
+  ?CombLeerdoelOpleidingsniveau_url <http://data.europa.eu/snb/model/elm/directedBy> ?Agent_url .
+}

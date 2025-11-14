@@ -1,0 +1,6 @@
+# Join Doel → gerelateerdAan → Doel2
+SELECT DISTINCT ?Doel_url ?Doel2_url WHERE {
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?Doel2_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?Doel_url <http://www.w3.org/2004/02/skos/core#related> ?Doel2_url .
+}

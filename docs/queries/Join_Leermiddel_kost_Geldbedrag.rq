@@ -1,0 +1,6 @@
+# Join Leermiddel → kost → Geldbedrag
+SELECT DISTINCT ?Leermiddel_url ?Geldbedrag_url WHERE {
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?Geldbedrag_url a <https://schema.org/MonetaryAmount> .
+  ?Leermiddel_url <https://schema.org/estimatedCost> ?Geldbedrag_url .
+}

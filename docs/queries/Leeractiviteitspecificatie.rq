@@ -1,0 +1,13 @@
+# Leeractiviteitspecificatie 
+SELECT DISTINCT ?Leeractiviteitspecificatie_url ?contacturen_url ?generalisatieVan_url ?heeftDeel_url ?instructietaal_url ?isDeelVan_url ?specialisatieVan_url ?type_url ?draagtBijAanHetBehalenVan_url ?schrijftVoor_url WHERE {
+  ?Leeractiviteitspecificatie_url a <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> .
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://data.europa.eu/snb/model/elm/contactHour> ?contacturen_url . }
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://data.europa.eu/snb/model/elm/generalisationOf> ?generalisatieVan_url . }
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://data.europa.eu/snb/model/elm/hasPart> ?heeftDeel_url . }
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://purl.org/dc/terms/language> ?instructietaal_url . }
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://data.europa.eu/snb/model/elm/isPartOf> ?isDeelVan_url . }
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://data.europa.eu/snb/model/elm/specialisationOf> ?specialisatieVan_url . }
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://purl.org/dc/terms/type> ?type_url . }
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://purl.org/dc/terms/contributor> ?draagtBijAanHetBehalenVan_url . }
+  OPTIONAL { ?Leeractiviteitspecificatie_url <http://purl.org/dc/terms/references> ?schrijftVoor_url . }
+}

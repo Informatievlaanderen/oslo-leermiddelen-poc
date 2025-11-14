@@ -1,0 +1,6 @@
+# Join LeermiddelVerzameling → heeftLid → Leermiddel
+SELECT DISTINCT ?LeermiddelVerzameling_url ?Leermiddel_url WHERE {
+  ?LeermiddelVerzameling_url a <https://schema.org/CreativeWorkSeries> .
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?LeermiddelVerzameling_url <https://schema.org/hasPart> ?Leermiddel_url .
+}

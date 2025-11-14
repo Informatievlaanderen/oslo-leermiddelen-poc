@@ -1,0 +1,8 @@
+# Leerplan 
+SELECT DISTINCT ?Leerplan_url ?naam ?ingerichtDoor_url ?niveau_url ?eigenCombinatieLeerdoelOpleidingsniveau_url WHERE {
+  ?Leerplan_url a <http://example.com/Leerplan> .
+  ?Leerplan_url <http://purl.org/dc/terms/title> ?naam . 
+  OPTIONAL { ?Leerplan_url <http://data.europa.eu/snb/model/elm/directedBy> ?ingerichtDoor_url . }
+  OPTIONAL { ?Leerplan_url <http://example.com/niveau> ?niveau_url . }
+  OPTIONAL { ?Leerplan_url <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> ?eigenCombinatieLeerdoelOpleidingsniveau_url . }
+}

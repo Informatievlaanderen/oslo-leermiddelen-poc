@@ -1,0 +1,6 @@
+# Join Leermiddel → bestaatUit → LeermiddelElement
+SELECT DISTINCT ?Leermiddel_url ?LeermiddelElement_url WHERE {
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?LeermiddelElement_url a <https://schema.org/CreativeWork> .
+  ?Leermiddel_url <https://schema.org/hasPart> ?LeermiddelElement_url .
+}

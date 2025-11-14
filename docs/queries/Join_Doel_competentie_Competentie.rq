@@ -1,0 +1,6 @@
+# Join Doel → competentie → Competentie
+SELECT DISTINCT ?Doel_url ?Competentie_url WHERE {
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?Competentie_url a <https://ec.europa.eu/esco/lod/static/model.html#Skill> .
+  ?Doel_url <https://schema.org/assesses> ?Competentie_url .
+}

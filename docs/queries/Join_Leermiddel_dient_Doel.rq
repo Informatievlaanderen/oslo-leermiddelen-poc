@@ -1,0 +1,6 @@
+# Join Leermiddel → dient → Doel
+SELECT DISTINCT ?Leermiddel_url ?Doel_url WHERE {
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?Leermiddel_url <https://schema.org/educationalUse> ?Doel_url .
+}

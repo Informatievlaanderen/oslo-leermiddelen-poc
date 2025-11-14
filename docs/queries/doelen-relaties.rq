@@ -1,0 +1,20 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dc11: <http://purl.org/dc/elements/1.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ex: <http://example.com/>
+
+SELECT ?doelOV ?niveau ?anderDoel ?org
+WHERE {
+  $doelOV dc11:creator ex:OV;
+    ex:eigenCombinatieLeerdoelOpleidingsniveau ?_collectie .
+  ?_collectie dcterms:title ?collectie ;
+              ex:niveau ?_niveau .
+  ?_niveau dcterms:title ?niveau .
+  OPTIONAL {
+    ?anderDoel skos:broader|skos:closeMatch|skos:narrower ?doelOV ;
+                 dc11:creator ?anderDoelOrg;
+                 dc11:description ?anderDoelBeschrijving.
+    ?anderDoelOrg dcterms:title ?org.
+  }
+}

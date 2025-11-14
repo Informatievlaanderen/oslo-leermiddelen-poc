@@ -1,0 +1,5 @@
+# Identificator 
+SELECT DISTINCT ?Identificator_url ?toegekendDoor_url WHERE {
+  ?Identificator_url a <http://www.w3.org/ns/adms#Identifier> .
+  OPTIONAL { ?Identificator_url <http://purl.org/dc/terms/creator> ?toegekendDoor_url . }
+}

@@ -1,0 +1,6 @@
+# Join Opleidingsniveau → isSpecialisatieVan → Opleidingsniveau2
+SELECT DISTINCT ?Opleidingsniveau_url ?Opleidingsniveau2_url WHERE {
+  ?Opleidingsniveau_url a <http://example.com/Opleidingsniveau> .
+  ?Opleidingsniveau2_url a <http://example.com/Opleidingsniveau> .
+  ?Opleidingsniveau_url <http://www.w3.org/2004/02/skos/core#narrower> ?Opleidingsniveau2_url .
+}

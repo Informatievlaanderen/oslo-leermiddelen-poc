@@ -1,0 +1,6 @@
+# Join Leeractiviteit → type → Doelgroep
+SELECT DISTINCT ?Leeractiviteit_url ?Doelgroep_url WHERE {
+  ?Leeractiviteit_url a <http://data.europa.eu/snb/model/elm/LearningActivity> .
+  ?Doelgroep_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Leeractiviteit_url <http://purl.org/dc/terms/type> ?Doelgroep_url .
+}

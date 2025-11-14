@@ -1,0 +1,6 @@
+# KwantitatieveWaarde 
+SELECT DISTINCT ?KwantitatieveWaarde_url ?waarde ?eenheid_url WHERE {
+  ?KwantitatieveWaarde_url a <https://schema.org/QuantitativeValue> .
+  ?KwantitatieveWaarde_url <https://schema.org/value> ?waarde . 
+  OPTIONAL { ?KwantitatieveWaarde_url <https://schema.org/unitCode> ?eenheid_url . }
+}

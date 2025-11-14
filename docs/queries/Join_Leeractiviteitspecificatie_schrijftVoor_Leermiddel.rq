@@ -1,0 +1,6 @@
+# Join Leeractiviteitspecificatie → schrijftVoor → Leermiddel
+SELECT DISTINCT ?Leeractiviteitspecificatie_url ?Leermiddel_url WHERE {
+  ?Leeractiviteitspecificatie_url a <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> .
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?Leeractiviteitspecificatie_url <http://purl.org/dc/terms/references> ?Leermiddel_url .
+}

@@ -1,0 +1,7 @@
+# Competentie 
+SELECT DISTINCT ?Competentie_url ?beschrijving ?naam ?type_url WHERE {
+  ?Competentie_url a <https://ec.europa.eu/esco/lod/static/model.html#Skill> .
+  ?Competentie_url <http://purl.org/dc/terms/description> ?beschrijving . 
+  ?Competentie_url <http://purl.org/dc/terms/title> ?naam . 
+  ?Competentie_url <http://purl.org/dc/terms/type> ?type_url . 
+}

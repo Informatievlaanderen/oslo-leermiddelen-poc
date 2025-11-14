@@ -1,0 +1,24 @@
+# Leermiddel 
+SELECT DISTINCT ?Leermiddel_url ?beschrijving ?instructie ?naam ?vereiste ?benodigdMateriaal ?sleutelwoord ?onderwerp_url ?toegankelijkheid_url ?type_url ?interactieType_url ?instructietaal_url ?resultaat_url ?niveau_url ?kost_url ?formaat_url ?competentie_url ?bron_url ?dient_url ?isLidVan_url ?bestaatUit_url WHERE {
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?Leermiddel_url <http://purl.org/dc/elements/1.1/description> ?beschrijving . 
+  OPTIONAL { ?Leermiddel_url <http://purl.org/dc/terms/instructionalMethod> ?instructie . }
+  ?Leermiddel_url <http://purl.org/dc/terms/title> ?naam . 
+  OPTIONAL { ?Leermiddel_url <http://purl.org/dc/terms/requires> ?vereiste . }
+  OPTIONAL { ?Leermiddel_url <https://schema.org/material> ?benodigdMateriaal . }
+  OPTIONAL { ?Leermiddel_url <https://schema.org/keywords> ?sleutelwoord . }
+  OPTIONAL { ?Leermiddel_url <http://purl.org/dc/elements/1.1/subject> ?onderwerp_url . }
+  OPTIONAL { ?Leermiddel_url <https://schema.org/accessibilityFeature> ?toegankelijkheid_url . }
+  OPTIONAL { ?Leermiddel_url <http://purl.org/dc/terms/type> ?type_url . }
+  OPTIONAL { ?Leermiddel_url <https://schema.org/interactivityType> ?interactieType_url . }
+  ?Leermiddel_url <http://purl.org/dc/terms/language> ?instructietaal_url . 
+  OPTIONAL { ?Leermiddel_url <https://schema.org/result> ?resultaat_url . }
+  ?Leermiddel_url <http://purl.org/dc/terms/educationLevel> ?niveau_url . 
+  OPTIONAL { ?Leermiddel_url <https://schema.org/estimatedCost> ?kost_url . }
+  OPTIONAL { ?Leermiddel_url <http://purl.org/dc/terms/format> ?formaat_url . }
+  OPTIONAL { ?Leermiddel_url <https://schema.org/assesses> ?competentie_url . }
+  OPTIONAL { ?Leermiddel_url <http://purl.org/dc/elements/1.1/source> ?bron_url . }
+  OPTIONAL { ?Leermiddel_url <https://schema.org/educationalUse> ?dient_url . }
+  OPTIONAL { ?Leermiddel_url <https://schema.org/isPartOf> ?isLidVan_url . }
+  OPTIONAL { ?Leermiddel_url <https://schema.org/hasPart> ?bestaatUit_url . }
+}

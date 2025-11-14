@@ -1,0 +1,6 @@
+# Join Competentie → type → Doelgroep
+SELECT DISTINCT ?Competentie_url ?Doelgroep_url WHERE {
+  ?Competentie_url a <https://ec.europa.eu/esco/lod/static/model.html#Skill> .
+  ?Doelgroep_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Competentie_url <http://purl.org/dc/terms/type> ?Doelgroep_url .
+}
