@@ -1,0 +1,135 @@
+name: Implementation process pipeline
+run-name: ${{ github.actor }} is running the pipeline
+on: [push]
+
+env:
+  ap_url:
+  shacl_url:
+
+jobs:
+  Set-Up-Repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - name: Create temp file if AP and SHACL url exist
+        run: ./scripts/create-env-temp-file.sh $ap_url $shacl_url
+      - name: Check if tmp file exists
+        id: check_env_temp
+        uses: andstor/file-existence-action@v3
+        with:
+          files: "env.txt"
+      - name: Download SHACL if needed
+        if: steps.check_env_temp.outputs.files_exists == 'true'
+        run: ./scripts/download-shacl.sh $shacl_url
+      - uses: EndBug/add-and-commit@v9
+        if: steps.check_env_temp.outputs.files_exists == 'true'
+        with:
+          add: in-shacl/shacl.ttl
+          message: "Add SHACL"
+      - name: Add AP and SHACL links to README
+        if: steps.check_env_temp.outputs.files_exists == 'true'
+        run: ./scripts/update-readme.sh $ap_url $shacl_url
+      - uses: EndBug/add-and-commit@v9
+        if: steps.check_env_temp.outputs.files_exists == 'true'
+        with:
+          add: README.md original-README.md
+          message: "Add AP and SHACL links to README"
+      - name: Check if template Excel exists
+        if: steps.check_env_temp.outputs.files_exists == 'true'
+        id: check_template
+        uses: andstor/file-existence-action@v3
+        with:
+          files: "template.xlsx"
+      - name: Clone ap-data-to-dashboard to generate template Excel
+        if: steps.check_template.outputs.files_exists == 'false' && steps.check_env_temp.outputs.files_exists == 'true'
+        uses: actions/checkout@v5
+        with:
+          repository: RMLio/ap-data-to-dashboard
+          path: ap-data-to-dashboard
+      - uses: actions/setup-node@v6
+        if: steps.check_template.outputs.files_exists == 'false' && steps.check_env_temp.outputs.files_exists == 'true'
+        with:
+          node-version: 22
+      - name: "Copy shacl file in-shacl directory"
+        if: steps.check_template.outputs.files_exists == 'false' && steps.check_env_temp.outputs.files_exists == 'true'
+        run: cp in-shacl/* ap-data-to-dashboard/in-shacl
+      - name: "Install ap-data-in-dashboard"
+        if: steps.check_template.outputs.files_exists == 'false' && steps.check_env_temp.outputs.files_exists == 'true'
+        run: ./scripts/install-ap-data-to-dashboard.sh
+      - name: "Generate template Excel, template schema, and example data"
+        if: steps.check_template.outputs.files_exists == 'false' && steps.check_env_temp.outputs.files_exists == 'true'
+        run: | 
+          cd ap-data-to-dashboard && node src/shacl-to-template.js
+          cp in-shacl/template.xlsx ../template.xlsx
+          cp in-shacl/template.schema.json ../in-shacl/template.schema.json
+          rm -rf ../example-data && mkdir ../example-data
+          cp in-shacl/dummy* ../example-data
+      - uses: EndBug/add-and-commit@v9
+        if: steps.check_template.outputs.files_exists == 'false' && steps.check_env_temp.outputs.files_exists == 'true'
+        with:
+          add: template.xlsx in-shacl/template.schema.json example-data
+          message: "Add template Excel, template schema, and example data"
+
+  Generate-RDF-Build-Miravi:
+    runs-on: ubuntu-latest
+    needs: Set-Up-Repo
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - name: Check if there is any data available
+        id: check_data
+        uses: andstor/file-existence-action@v3
+        with:
+          files: data/*.xlsx
+      - name: Clone ap-data-to-dashboard
+        if: steps.check_data.outputs.files_exists == 'true'
+        uses: actions/checkout@v5
+        with:
+          repository: RMLio/ap-data-to-dashboard
+          path: ap-data-to-dashboard
+      - uses: actions/setup-node@v6
+        if: steps.check_data.outputs.files_exists == 'true'
+        with:
+          node-version: 22
+      - name: "Copy input data to in directory"
+        if: steps.check_data.outputs.files_exists == 'true'
+        run: | 
+          rm -rf ap-data-to-dashboard/in
+          mkdir ap-data-to-dashboard/in
+          cp data/* ap-data-to-dashboard/in
+      - name: "Copy in-shacl directory content to ap-data-to-dashboard"
+        if: steps.check_data.outputs.files_exists == 'true'
+        run: cp in-shacl/* ap-data-to-dashboard/in-shacl
+      - name: "Install ap-data-in-dashboard"
+        if: steps.check_data.outputs.files_exists == 'true'
+        run: ./scripts/install-ap-data-to-dashboard.sh
+      - name: Copy dashboard config
+        if: steps.check_data.outputs.files_exists == 'true'
+        run: ./scripts/copy-dashboard-config.sh
+      - name: "Generate RDF and build Miravi"
+        if: steps.check_data.outputs.files_exists == 'true'
+        run: |
+          cd ap-data-to-dashboard
+          ./run.sh -u https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/main/output/
+      - name: Clean docs directory
+        if: steps.check_data.outputs.files_exists == 'true'
+        run: rm -rf docs && mkdir docs
+      - name: Move Miravi dist directory to docs
+        if: steps.check_data.outputs.files_exists == 'true'
+        run: mv ap-data-to-dashboard/node_modules/miravi/main/dist/* docs
+      - name: Move generated RDF to output directory
+        if: steps.check_data.outputs.files_exists == 'true'
+        run: |
+          rm -rf output
+          mkdir output
+          rm -rf mappings
+          mkdir mappings
+          mv ap-data-to-dashboard/out/serve-me/* output/
+          mv ap-data-to-dashboard/out/*.rml.ttl mappings/
+          mv ap-data-to-dashboard/out/*.yml mappings/
+      - uses: EndBug/add-and-commit@v9
+        if: steps.check_data.outputs.files_exists == 'true'
+        with:
+          add: output/* docs mappings
+          message: "Add generated RDF and Miravi build"
