@@ -1,4 +1,18 @@
 {
+  "Agent": {
+    "sheetLabel": "Agent",
+    "sheetClass": "http://purl.org/dc/terms/Agent",
+    "columns": {
+      "naam": {
+        "columnLabel": "naam",
+        "columnProperty": "http://purl.org/dc/terms/title",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      }
+    }
+  },
   "Leeractiviteit": {
     "sheetLabel": "Leeractiviteit",
     "sheetClass": "http://data.europa.eu/snb/model/elm/LearningActivity",
@@ -18,7 +32,8 @@
         "valueClass": "http://purl.org/dc/terms/Agent",
         "valueDatatype": null,
         "valueMinCount": null,
-        "valueMaxCount": null
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Agent"
       },
       "isDeelVan": {
         "columnLabel": "isDeelVan",
@@ -426,7 +441,8 @@
         "valueClass": "http://purl.org/dc/terms/Agent",
         "valueDatatype": null,
         "valueMinCount": null,
-        "valueMaxCount": null
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Agent"
       },
       "auteursrechtHouder": {
         "columnLabel": "auteursrechtHouder",
@@ -434,7 +450,8 @@
         "valueClass": "http://purl.org/dc/terms/Agent",
         "valueDatatype": null,
         "valueMinCount": null,
-        "valueMaxCount": null
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Agent"
       },
       "taal": {
         "columnLabel": "taal",
@@ -468,7 +485,8 @@
         "valueClass": "http://purl.org/dc/terms/Agent",
         "valueDatatype": null,
         "valueMinCount": "1",
-        "valueMaxCount": null
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Agent"
       },
       "uitgever": {
         "columnLabel": "uitgever",
@@ -476,7 +494,8 @@
         "valueClass": "http://purl.org/dc/terms/Agent",
         "valueDatatype": null,
         "valueMinCount": null,
-        "valueMaxCount": null
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Agent"
       }
     }
   },
@@ -497,7 +516,7 @@
         "columnProperty": "http://purl.org/dc/terms/valid",
         "valueClass": "http://data.europa.eu/m8g/PeriodOfTime",
         "valueDatatype": null,
-        "valueMinCount": "1",
+        "valueMinCount": null,
         "valueMaxCount": "1"
       },
       "identificator": {
@@ -524,7 +543,8 @@
         "valueClass": "http://purl.org/dc/terms/Agent",
         "valueDatatype": null,
         "valueMinCount": "1",
-        "valueMaxCount": null
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Agent"
       },
       "onderwerp": {
         "columnLabel": "onderwerp",
@@ -540,7 +560,7 @@
         "columnProperty": "http://purl.org/dc/terms/type",
         "valueClass": "http://www.w3.org/2004/02/skos/core#Concept",
         "valueDatatype": null,
-        "valueMinCount": "1",
+        "valueMinCount": null,
         "valueMaxCount": null,
         "valueForeignKeySheet": "Doelgroep"
       },
@@ -558,7 +578,7 @@
         "columnProperty": "http://purl.org/dc/terms/audience",
         "valueClass": "https://schema.org/Audience",
         "valueDatatype": null,
-        "valueMinCount": "1",
+        "valueMinCount": null,
         "valueMaxCount": "1"
       },
       "competentie": {
@@ -581,7 +601,7 @@
       },
       "isSpecialisatieVan": {
         "columnLabel": "isSpecialisatieVan",
-        "columnProperty": "http://www.w3.org/2004/02/skos/core#narrower",
+        "columnProperty": "http://www.w3.org/2004/02/skos/core#broader",
         "valueClass": "http://data.europa.eu/snb/model/elm/LearningAchievement",
         "valueDatatype": null,
         "valueMinCount": null,
@@ -590,7 +610,7 @@
       },
       "isBrederDan": {
         "columnLabel": "isBrederDan",
-        "columnProperty": "http://www.w3.org/2004/02/skos/core#broader",
+        "columnProperty": "http://www.w3.org/2004/02/skos/core#narrower",
         "valueClass": "http://data.europa.eu/snb/model/elm/LearningAchievement",
         "valueDatatype": null,
         "valueMinCount": null,
@@ -605,6 +625,24 @@
         "valueMinCount": null,
         "valueMaxCount": null,
         "valueForeignKeySheet": "Doel"
+      },
+      "hetzelfde": {
+        "columnLabel": "hetzelfde",
+        "columnProperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+        "valueClass": "http://data.europa.eu/snb/model/elm/LearningAchievement",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Doel"
+      },
+      "eigenCombinatieLeerdoelOpleidingsniveau": {
+        "columnLabel": "eigenCombinatieLeerdoelOpleidingsniveau",
+        "columnProperty": "http://example.com/eigenCombinatieLeerdoelOpleidingsniveau",
+        "valueClass": "http://example.com/EigenCombinatieLeerdoelOpleidingsniveau",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "CombLeerdoelOpleidingsniveau"
       }
     }
   },
@@ -623,6 +661,61 @@
       }
     }
   },
+  "Opleidingsniveau": {
+    "sheetLabel": "Opleidingsniveau",
+    "sheetClass": "http://example.com/Opleidingsniveau",
+    "columns": {
+      "naam": {
+        "columnLabel": "naam",
+        "columnProperty": "http://purl.org/dc/terms/title",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      },
+      "level1": {
+        "columnLabel": "level1",
+        "columnProperty": "http://example.com/level-1",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      },
+      "level2": {
+        "columnLabel": "level2",
+        "columnProperty": "http://example.com/level-2",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      },
+      "level3": {
+        "columnLabel": "level3",
+        "columnProperty": "http://example.com/level-3",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      },
+      "level4": {
+        "columnLabel": "level4",
+        "columnProperty": "http://example.com/level-4",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      },
+      "isSpecialisatieVan": {
+        "columnLabel": "isSpecialisatieVan",
+        "columnProperty": "http://www.w3.org/2004/02/skos/core#narrower",
+        "valueClass": "http://example.com/Opleidingsniveau",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Opleidingsniveau"
+      }
+    }
+  },
   "Licentie": {
     "sheetLabel": "Licentie",
     "sheetClass": "http://purl.org/dc/terms/LicenseDocument",
@@ -635,6 +728,45 @@
         "valueMinCount": "1",
         "valueMaxCount": null,
         "valueForeignKeySheet": "Doelgroep"
+      }
+    }
+  },
+  "Onderwerp": {
+    "sheetLabel": "Onderwerp",
+    "sheetClass": "http://example.com/Onderwerp",
+    "columns": {
+      "naam": {
+        "columnLabel": "naam",
+        "columnProperty": "http://purl.org/dc/terms/title",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      },
+      "korteNaam": {
+        "columnLabel": "korteNaam",
+        "columnProperty": "http://example.com/shortLabel",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": null,
+        "valueMaxCount": "1"
+      },
+      "type": {
+        "columnLabel": "type",
+        "columnProperty": "http://purl.org/dc/terms/type",
+        "valueClass": "http://www.w3.org/2004/02/skos/core#Concept",
+        "valueDatatype": null,
+        "valueMinCount": "1",
+        "valueMaxCount": "1",
+        "valueForeignKeySheet": "Doelgroep"
+      },
+      "niveau": {
+        "columnLabel": "niveau",
+        "columnProperty": "http://purl.org/dc/terms/educationLevel",
+        "valueClass": "http://www.w3.org/2004/02/skos/core#Opleidingsniveau",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null
       }
     }
   },
@@ -880,7 +1012,8 @@
         "valueClass": "http://purl.org/dc/terms/Agent",
         "valueDatatype": null,
         "valueMinCount": null,
-        "valueMaxCount": "1"
+        "valueMaxCount": "1",
+        "valueForeignKeySheet": "Agent"
       }
     }
   },
@@ -915,6 +1048,112 @@
         "columnProperty": "http://www.w3.org/2006/time#hasBeginning",
         "valueClass": "http://www.w3.org/2006/time#Instant",
         "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": "1"
+      }
+    }
+  },
+  "Leerplan": {
+    "sheetLabel": "Leerplan",
+    "sheetClass": "http://example.com/Leerplan",
+    "columns": {
+      "naam": {
+        "columnLabel": "naam",
+        "columnProperty": "http://purl.org/dc/terms/title",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      },
+      "ingerichtDoor": {
+        "columnLabel": "ingerichtDoor",
+        "columnProperty": "http://data.europa.eu/snb/model/elm/directedBy",
+        "valueClass": "http://purl.org/dc/terms/Agent",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Agent"
+      },
+      "niveau": {
+        "columnLabel": "niveau",
+        "columnProperty": "http://example.com/niveau",
+        "valueClass": "http://example.com/Opleidingsniveau",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Opleidingsniveau"
+      },
+      "eigenCombinatieLeerdoelOpleidingsniveau": {
+        "columnLabel": "eigenCombinatieLeerdoelOpleidingsniveau",
+        "columnProperty": "http://example.com/eigenCombinatieLeerdoelOpleidingsniveau",
+        "valueClass": "http://example.com/EigenCombinatieLeerdoelOpleidingsniveau",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "CombLeerdoelOpleidingsniveau"
+      }
+    }
+  },
+  "CombLeerdoelOpleidingsniveau": {
+    "sheetLabel": "CombLeerdoelOpleidingsniveau",
+    "sheetClass": "http://example.com/EigenCombinatieLeerdoelOpleidingsniveau",
+    "columns": {
+      "naam": {
+        "columnLabel": "naam",
+        "columnProperty": "http://purl.org/dc/terms/title",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": "1",
+        "valueMaxCount": "1"
+      },
+      "ingerichtDoor": {
+        "columnLabel": "ingerichtDoor",
+        "columnProperty": "http://data.europa.eu/snb/model/elm/directedBy",
+        "valueClass": "http://purl.org/dc/terms/Agent",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Agent"
+      },
+      "niveau": {
+        "columnLabel": "niveau",
+        "columnProperty": "http://example.com/niveau",
+        "valueClass": "http://example.com/Opleidingsniveau",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Opleidingsniveau"
+      },
+      "leerplan": {
+        "columnLabel": "leerplan",
+        "columnProperty": "http://example.com/leerplan",
+        "valueClass": "http://example.com/Leerplan",
+        "valueDatatype": null,
+        "valueMinCount": null,
+        "valueMaxCount": null,
+        "valueForeignKeySheet": "Leerplan"
+      },
+      "versieDatum": {
+        "columnLabel": "versieDatum",
+        "columnProperty": "http://example.com/versieDatum",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": null,
+        "valueMaxCount": "1"
+      },
+      "collectiedoel": {
+        "columnLabel": "collectiedoel",
+        "columnProperty": "http://example.com/collectiedoel",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "valueMinCount": null,
+        "valueMaxCount": "1"
+      },
+      "collectiedoeltype": {
+        "columnLabel": "collectiedoeltype",
+        "columnProperty": "http://example.com/collectiedoeltype",
+        "valueClass": null,
+        "valueDatatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
         "valueMinCount": null,
         "valueMaxCount": "1"
       }
