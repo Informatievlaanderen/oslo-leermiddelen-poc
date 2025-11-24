@@ -11,9 +11,10 @@ SELECT ?leermiddel ?doel (SAMPLE(?description) AS ?beschrijving) WHERE {
         ?_Leermiddel dc11:subject ?competentie .
         ?_Leermiddel dcterms:educationLevel ?niveau .
         ?_Leermiddel a schemas:LearningResource .
-        ?doel a elm:LearningAchievement .
-        ?doel dc11:subject ?competentie .
-        ?doel ex:eigenCombinatieLeerdoelOpleidingsniveau ?_Collectie .
+        ?_doel a elm:LearningAchievement .
+        ?_doel dc11:subject ?competentie .
+        ?_doel ex:eigenCombinatieLeerdoelOpleidingsniveau ?_Collectie .
+        ?_doel dc11:description ?doel.
         ?_Collectie ex:niveau ?niveau .
         BIND("Leermiddel naar Doel vanwege zelfde Competentie en Niveau" AS ?description)
     }
@@ -21,16 +22,18 @@ SELECT ?leermiddel ?doel (SAMPLE(?description) AS ?beschrijving) WHERE {
         ?_Leermiddel a schemas:LearningResource .
         ?_Leermiddel schemas:educationalUse ?goDoel .
         ?goDoel a elm:LearningAchievement .
-        ?goDoel skos:broader ?doel .
-        ?doel dc11:creator ex:OV.
+        ?goDoel skos:broader ?_doel .
+        ?_doel dc11:creator ex:OV.
+        ?_doel dc11:description ?doel.
         BIND("Leermiddel naar Doel vanwege specifiekere koepeldoel" AS ?description)
     }
     UNION {
         ?_Leermiddel a schemas:LearningResource .
         ?_Leermiddel schemas:educationalUse ?goDoel .
         ?goDoel a elm:LearningAchievement .
-        ?goDoel skos:closeMatch ?doel .
-        ?doel dc11:creator ex:OV.
+        ?goDoel skos:closeMatch ?_doel .
+        ?_doel dc11:creator ex:OV.
+        ?_doel dc11:description ?doel.
         BIND("Leermiddel naar Doel vanwege hetzelfde koepeldoel" AS ?description)
     }
     ?_Leermiddel dcterms:title ?leermiddel .
