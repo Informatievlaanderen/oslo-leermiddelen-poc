@@ -4,17 +4,25 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX ex: <http://example.com/>
 
-SELECT ?doelOV ?onderwerp ?anderDoel ?org
+SELECT ?minimumdoel ?onderwerp ?anderDoel ?organisatie ?collectie ?relatie
 WHERE {
-  ?doelOV dc11:creator ex:OV;
-          ex:eigenCombinatieLeerdoelOpleidingsniveau ?collectie;
-          dc11:subject ex:SC_6 .
+  ?_minimumdoel dc11:creator ex:OV;
+          ex:eigenCombinatieLeerdoelOpleidingsniveau ?_collectie;
+          dc11:subject ex:SC_6 ;
+          dc11:description ?minimumdoel.
   ex:SC_6 ex:shortLabel ?onderwerp .
-  ?collectie dcterms:title ?collectieNaam;
+  ?_collectie dcterms:title ?collectie;
              ex:niveau ex:S-gr2-DoF.
-  ?anderDoel skos:broader|skos:closeMatch|skos:narrower ?doelOV ;
+  ?_anderDoel ?doelLink ?_minimumdoel ;
              dc11:creator ?anderDoelOrg;
-             dc11:description ?anderDoelBeschrijving.
+             dc11:description ?anderDoel.
+  FILTER(STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#broader" || STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#closeMatch" || STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#narrower" )
+	BIND (
+	  IF ( STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#broader", "Breder",
+	  IF ( STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#closeMatch", "Hetzelfde",
+	  IF ( STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#narrower", "Specifieker", ''
+    ) ) ) AS ?relatie
+	)
 
-  ?anderDoelOrg dcterms:title ?org.
+  ?anderDoelOrg dcterms:title ?organisatie.
 }
