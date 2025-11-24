@@ -1,0 +1,105 @@
+@prefix : <http://base.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://example.com/BV2_06.40> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.41> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.42> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.43> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.44> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.45> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.46> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.47> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.48> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.49> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.50> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.51> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.52> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/BV2_06.53> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/Methode> a skos:Concept .
+
+<http://example.com/Pelckmans> a skos:Concept .
+
+<http://example.com/S-gr2-DoF> a skos:Concept .
+
+<http://example.com/S-gr2-DuF> a skos:Concept .
+
+<http://example.com/SC_6> a skos:Concept .
+
+<http://example.com/focus-natuurwetenschappe-8f55> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/source> <http://example.com/Pelckmans>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  dc:educationLevel <http://example.com/S-gr2-DoF>;
+  dc:language <http://example.com/nl>;
+  dc:title "Focus Natuurwetenschappen 3"@nl;
+  dc:type <http://example.com/Methode>;
+  <https://schema.org/educationalUse> <http://example.com/BV2_06.40>, <http://example.com/BV2_06.41>,
+    <http://example.com/BV2_06.42>, <http://example.com/BV2_06.43>, <http://example.com/BV2_06.44>,
+    <http://example.com/BV2_06.45>, <http://example.com/BV2_06.46>, <http://example.com/BV2_06.47>,
+    <http://example.com/BV2_06.48>, <http://example.com/BV2_06.49>, <http://example.com/BV2_06.50>,
+    <http://example.com/BV2_06.51>, <http://example.com/BV2_06.52>, <http://example.com/BV2_06.53> .
+
+<http://example.com/focus-natuurwetenschappe-8f70> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/source> <http://example.com/Pelckmans>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  dc:educationLevel <http://example.com/S-gr2-DoF>;
+  dc:language <http://example.com/nl>;
+  dc:title "Focus Natuurwetenschappen 4"@nl;
+  dc:type <http://example.com/Methode>;
+  <https://schema.org/educationalUse> <http://example.com/BV2_06.40>, <http://example.com/BV2_06.41>,
+    <http://example.com/BV2_06.42>, <http://example.com/BV2_06.43>, <http://example.com/BV2_06.44>,
+    <http://example.com/BV2_06.45>, <http://example.com/BV2_06.46>, <http://example.com/BV2_06.47>,
+    <http://example.com/BV2_06.48>, <http://example.com/BV2_06.49>, <http://example.com/BV2_06.50>,
+    <http://example.com/BV2_06.51>, <http://example.com/BV2_06.52>, <http://example.com/BV2_06.53> .
+
+<http://example.com/focus-natuurwetenschappe-f7a0> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/source> <http://example.com/Pelckmans>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  dc:educationLevel <http://example.com/S-gr2-DuF>;
+  dc:language <http://example.com/nl>;
+  dc:title "Focus Natuurwetenschappen Concreet 3"@nl;
+  dc:type <http://example.com/Methode>;
+  <https://schema.org/educationalUse> <http://example.com/BV2_06.40>, <http://example.com/BV2_06.41>,
+    <http://example.com/BV2_06.42>, <http://example.com/BV2_06.43>, <http://example.com/BV2_06.44>,
+    <http://example.com/BV2_06.45>, <http://example.com/BV2_06.46>, <http://example.com/BV2_06.47>,
+    <http://example.com/BV2_06.48>, <http://example.com/BV2_06.49>, <http://example.com/BV2_06.50>,
+    <http://example.com/BV2_06.51>, <http://example.com/BV2_06.52>, <http://example.com/BV2_06.53> .
+
+<http://example.com/focus-natuurwetenschappe-f7c4> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/source> <http://example.com/Pelckmans>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  dc:educationLevel <http://example.com/S-gr2-DuF>;
+  dc:language <http://example.com/nl>;
+  dc:title "Focus Natuurwetenschappen Concreet 4"@nl;
+  dc:type <http://example.com/Methode>;
+  <https://schema.org/educationalUse> <http://example.com/BV2_06.40>, <http://example.com/BV2_06.41>,
+    <http://example.com/BV2_06.42>, <http://example.com/BV2_06.43>, <http://example.com/BV2_06.44>,
+    <http://example.com/BV2_06.45>, <http://example.com/BV2_06.46>, <http://example.com/BV2_06.47>,
+    <http://example.com/BV2_06.48>, <http://example.com/BV2_06.49>, <http://example.com/BV2_06.50>,
+    <http://example.com/BV2_06.51>, <http://example.com/BV2_06.52>, <http://example.com/BV2_06.53> .
+
+<http://example.com/nl> a skos:Concept .

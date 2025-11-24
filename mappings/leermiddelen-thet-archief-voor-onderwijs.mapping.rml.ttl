@@ -1,0 +1,3886 @@
+@base <http://example.com/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix : <http://base.example.com/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://mapping.example.com/rules_000> rdf:type void:Dataset ;
+	void:exampleResource :map_m_1_000, :map_m_2_000, :map_m_12_000, :map_m_13_000, :map_m_14_000, :map_m_15_000, :map_m_16_000, :map_m_17_000, :map_m_18_000, :map_m_19_000, :map_m_20_000, :map_m_21_000, :map_m_22_000, :map_m_25_000, :map_m_26_000, :map_m_27_000, :map_m_28_000, :map_m_37_000, :map_m_38_000, :map_m_39_000, :map_m_40_000, :map_m_41_000, :map_m_42_000, :map_m_43_000, :map_m_44_000, :map_m_45_000, :map_m_46_000, :map_m_66_000, :map_m_67_000, :map_m_68_000, :map_m_69_000, :map_m_70_000, :map_m_71_000, :map_m_72_000, :map_m_73_000, :map_m_74_000, :map_m_75_000, :map_m_76_000, :map_m_77_000, :map_m_78_000, :map_m_79_000, :map_m_80_000, :map_m_90_000, :map_m_91_000, :map_m_92_000, :map_m_93_000, :map_m_94_000, :map_m_95_000, :map_m_96_000, :map_m_97_000, :map_m_113_000, :map_m_114_000, :map_m_115_000, :map_m_116_000, :map_m_117_000, :map_m_118_000, :map_m_119_000, :map_m_120_000, :map_m_121_000, :map_m_122_000, :map_m_123_000, :map_m_124_000, :map_m_125_000, :map_m_126_000, :map_m_127_000, :map_m_128_000, :map_m_129_000, :map_m_130_000, :map_m_136_000, :map_m_137_000, :map_m_138_000, :map_m_139_000, :map_m_143_000, :map_m_144_000, :map_m_145_000, :map_m_146_000, :map_m_147_000, :map_m_150_000, :map_m_151_000, :map_m_153_000, :map_m_154_000, :map_m_159_000, :map_m_173_000, :map_m_174_000, :map_m_175_000, :map_m_176_000, :map_m_177_000, :map_m_179_000, :map_m_180_000, :map_m_181_000, :map_m_185_000, :map_m_186_000, :map_m_187_000, :map_m_188_000, :map_m_195_000, :map_m_196_000, :map_m_197_000 .
+
+:map_m_1_000 rml:logicalSource :source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_1" ;
+	rr:subjectMap :s_000 ;
+	rr:predicateObjectMap :pom_000, :pom_001 .
+
+:source_000 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Agent[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_000 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_000 ;
+	rr:objectMap :om_000 .
+
+:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_000 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_001 ;
+	rr:objectMap :om_001 .
+
+:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:title .
+
+:om_001 rdf:type rr:ObjectMap ;
+	rml:reference "naam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_000 .
+
+:language_000 rr:constant "nl" .
+
+:map_m_2_000 rml:logicalSource :source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_2" ;
+	rr:subjectMap :s_001 ;
+	rr:predicateObjectMap :pom_002, :pom_003, :pom_004, :pom_005, :pom_006, :pom_007, :pom_008, :pom_009, :pom_010, :pom_011, :pom_012 .
+
+:source_001 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_001 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_002 ;
+	rr:objectMap :om_002 .
+
+:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_002 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivity> ;
+	rr:termType rr:IRI .
+
+:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_003 ;
+	rr:objectMap :om_003 .
+
+:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/hasPart> .
+
+:om_003 rdf:type rr:ObjectMap ;
+	rml:reference "heeftDeel[*]" ;
+	rr:termType rr:IRI .
+
+:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_004 ;
+	rr:objectMap :om_004 .
+
+:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/directedBy> .
+
+:om_004 rdf:type rr:ObjectMap ;
+	rml:reference "ingerichtDoor[*]" ;
+	rr:termType rr:IRI .
+
+:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_005 ;
+	rr:objectMap :om_005 .
+
+:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/isPartOf> .
+
+:om_005 rdf:type rr:ObjectMap ;
+	rml:reference "isDeelVan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_006 ;
+	rr:objectMap :om_006 .
+
+:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/location> .
+
+:om_006 rdf:type rr:ObjectMap ;
+	rml:reference "locatie[*]" ;
+	rr:termType rr:IRI .
+
+:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_007 ;
+	rr:objectMap :om_007 .
+
+:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:temporal .
+
+:om_007 rdf:type rr:ObjectMap ;
+	rml:reference "periode[*]" ;
+	rr:termType rr:IRI .
+
+:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_008 ;
+	rr:objectMap :om_008 .
+
+:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/specifiedBy> .
+
+:om_008 rdf:type rr:ObjectMap ;
+	rml:reference "specificatie[*]" ;
+	rr:termType rr:IRI .
+
+:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_009 ;
+	rr:objectMap :om_009 .
+
+:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/workload> .
+
+:om_009 rdf:type rr:ObjectMap ;
+	rml:reference "werklast[*]" ;
+	rr:termType rr:IRI .
+
+:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_010 ;
+	rr:objectMap :om_010 .
+
+:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:type .
+
+:om_010 rdf:type rr:ObjectMap ;
+	rml:reference "type[*]" ;
+	rr:termType rr:IRI .
+
+:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_011 ;
+	rr:objectMap :om_011 .
+
+:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:references .
+
+:om_011 rdf:type rr:ObjectMap ;
+	rml:reference "leermiddel[*]" ;
+	rr:termType rr:IRI .
+
+:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_012 ;
+	rr:objectMap :om_012 .
+
+:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:contributor .
+
+:om_012 rdf:type rr:ObjectMap ;
+	rml:reference "draagtBijAanHetBehalenVan[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_12_000 rml:logicalSource :source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_12" ;
+	rr:subjectMap :s_002 ;
+	rr:predicateObjectMap :pom_013 .
+
+:source_002 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_002 rdf:type rr:SubjectMap ;
+	rml:reference "heeftDeel[*]" .
+
+:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_013 ;
+	rr:objectMap :om_013 .
+
+:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_013 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivity> ;
+	rr:termType rr:IRI .
+
+:map_m_13_000 rml:logicalSource :source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_13" ;
+	rr:subjectMap :s_003 ;
+	rr:predicateObjectMap :pom_014 .
+
+:source_003 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_003 rdf:type rr:SubjectMap ;
+	rml:reference "ingerichtDoor[*]" .
+
+:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_014 ;
+	rr:objectMap :om_014 .
+
+:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_014 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_14_000 rml:logicalSource :source_004 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_14" ;
+	rr:subjectMap :s_004 ;
+	rr:predicateObjectMap :pom_015 .
+
+:source_004 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_004 rdf:type rr:SubjectMap ;
+	rml:reference "isDeelVan[*]" .
+
+:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_015 ;
+	rr:objectMap :om_015 .
+
+:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_015 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivity> ;
+	rr:termType rr:IRI .
+
+:map_m_15_000 rml:logicalSource :source_005 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_15" ;
+	rr:subjectMap :s_005 ;
+	rr:predicateObjectMap :pom_016 .
+
+:source_005 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_005 rdf:type rr:SubjectMap ;
+	rml:reference "locatie[*]" .
+
+:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_016 ;
+	rr:objectMap :om_016 .
+
+:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_016 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/ns/locn#Address> ;
+	rr:termType rr:IRI .
+
+:map_m_16_000 rml:logicalSource :source_006 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_16" ;
+	rr:subjectMap :s_006 ;
+	rr:predicateObjectMap :pom_017 .
+
+:source_006 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_006 rdf:type rr:SubjectMap ;
+	rml:reference "periode[*]" .
+
+:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_017 ;
+	rr:objectMap :om_017 .
+
+:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_017 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/m8g/PeriodOfTime> ;
+	rr:termType rr:IRI .
+
+:map_m_17_000 rml:logicalSource :source_007 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_17" ;
+	rr:subjectMap :s_007 ;
+	rr:predicateObjectMap :pom_018 .
+
+:source_007 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_007 rdf:type rr:SubjectMap ;
+	rml:reference "specificatie[*]" .
+
+:pom_018 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_018 ;
+	rr:objectMap :om_018 .
+
+:pm_018 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_018 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> ;
+	rr:termType rr:IRI .
+
+:map_m_18_000 rml:logicalSource :source_008 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_18" ;
+	rr:subjectMap :s_008 ;
+	rr:predicateObjectMap :pom_019 .
+
+:source_008 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_008 rdf:type rr:SubjectMap ;
+	rml:reference "werklast[*]" .
+
+:pom_019 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_019 ;
+	rr:objectMap :om_019 .
+
+:pm_019 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_019 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/2006/time#Duration> ;
+	rr:termType rr:IRI .
+
+:map_m_19_000 rml:logicalSource :source_009 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_19" ;
+	rr:subjectMap :s_009 ;
+	rr:predicateObjectMap :pom_020 .
+
+:source_009 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_009 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
+
+:pom_020 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_020 ;
+	rr:objectMap :om_020 .
+
+:pm_020 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_020 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_20_000 rml:logicalSource :source_010 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_20" ;
+	rr:subjectMap :s_010 ;
+	rr:predicateObjectMap :pom_021 .
+
+:source_010 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_010 rdf:type rr:SubjectMap ;
+	rml:reference "leermiddel[*]" .
+
+:pom_021 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_021 ;
+	rr:objectMap :om_021 .
+
+:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_021 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/LearningResource> ;
+	rr:termType rr:IRI .
+
+:map_m_21_000 rml:logicalSource :source_011 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_21" ;
+	rr:subjectMap :s_011 ;
+	rr:predicateObjectMap :pom_022 .
+
+:source_011 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteit[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_011 rdf:type rr:SubjectMap ;
+	rml:reference "draagtBijAanHetBehalenVan[*]" .
+
+:pom_022 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_022 ;
+	rr:objectMap :om_022 .
+
+:pm_022 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_022 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_22_000 rml:logicalSource :source_012 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_22" ;
+	rr:subjectMap :s_012 ;
+	rr:predicateObjectMap :pom_023, :pom_024, :pom_025, :pom_026 .
+
+:source_012 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doelgroep[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_012 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_023 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_023 ;
+	rr:objectMap :om_023 .
+
+:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_023 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:pom_024 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_024 ;
+	rr:objectMap :om_024 .
+
+:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:type .
+
+:om_024 rdf:type rr:ObjectMap ;
+	rml:reference "leeftijdstype[*]" ;
+	rr:termType rr:IRI .
+
+:pom_025 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_025 ;
+	rr:objectMap :om_025 .
+
+:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/type> .
+
+:om_025 rdf:type rr:ObjectMap ;
+	rml:reference "doelgroep[*]" ;
+	rr:termType rr:IRI .
+
+:pom_026 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_026 ;
+	rr:objectMap :om_026 .
+
+:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:educationLevel .
+
+:om_026 rdf:type rr:ObjectMap ;
+	rml:reference "onderwijsniveau[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_25_000 rml:logicalSource :source_013 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_25" ;
+	rr:subjectMap :s_013 ;
+	rr:predicateObjectMap :pom_027 .
+
+:source_013 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doelgroep[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_013 rdf:type rr:SubjectMap ;
+	rml:reference "leeftijdstype[*]" .
+
+:pom_027 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_027 ;
+	rr:objectMap :om_027 .
+
+:pm_027 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_027 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_26_000 rml:logicalSource :source_014 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_26" ;
+	rr:subjectMap :s_014 ;
+	rr:predicateObjectMap :pom_028 .
+
+:source_014 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doelgroep[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_014 rdf:type rr:SubjectMap ;
+	rml:reference "doelgroep[*]" .
+
+:pom_028 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_028 ;
+	rr:objectMap :om_028 .
+
+:pm_028 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_028 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_27_000 rml:logicalSource :source_015 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_27" ;
+	rr:subjectMap :s_015 ;
+	rr:predicateObjectMap :pom_029 .
+
+:source_015 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doelgroep[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_015 rdf:type rr:SubjectMap ;
+	rml:reference "onderwijsniveau[*]" .
+
+:pom_029 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_029 ;
+	rr:objectMap :om_029 .
+
+:pm_029 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_029 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_28_000 rml:logicalSource :source_016 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_28" ;
+	rr:subjectMap :s_016 ;
+	rr:predicateObjectMap :pom_030, :pom_031, :pom_032, :pom_033, :pom_034, :pom_035, :pom_036, :pom_037, :pom_038, :pom_039 .
+
+:source_016 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_016 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_030 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_030 ;
+	rr:objectMap :om_030 .
+
+:pm_030 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_030 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> ;
+	rr:termType rr:IRI .
+
+:pom_031 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_031 ;
+	rr:objectMap :om_031 .
+
+:pm_031 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/contactHour> .
+
+:om_031 rdf:type rr:ObjectMap ;
+	rml:reference "contacturen[*]" ;
+	rr:termType rr:IRI .
+
+:pom_032 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_032 ;
+	rr:objectMap :om_032 .
+
+:pm_032 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/generalisationOf> .
+
+:om_032 rdf:type rr:ObjectMap ;
+	rml:reference "generalisatieVan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_033 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_033 ;
+	rr:objectMap :om_033 .
+
+:pm_033 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/hasPart> .
+
+:om_033 rdf:type rr:ObjectMap ;
+	rml:reference "heeftDeel[*]" ;
+	rr:termType rr:IRI .
+
+:pom_034 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_034 ;
+	rr:objectMap :om_034 .
+
+:pm_034 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:language .
+
+:om_034 rdf:type rr:ObjectMap ;
+	rml:reference "instructietaal[*]" ;
+	rr:termType rr:IRI .
+
+:pom_035 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_035 ;
+	rr:objectMap :om_035 .
+
+:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/isPartOf> .
+
+:om_035 rdf:type rr:ObjectMap ;
+	rml:reference "isDeelVan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_036 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_036 ;
+	rr:objectMap :om_036 .
+
+:pm_036 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/specialisationOf> .
+
+:om_036 rdf:type rr:ObjectMap ;
+	rml:reference "specialisatieVan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_037 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_037 ;
+	rr:objectMap :om_037 .
+
+:pm_037 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:type .
+
+:om_037 rdf:type rr:ObjectMap ;
+	rml:reference "type[*]" ;
+	rr:termType rr:IRI .
+
+:pom_038 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_038 ;
+	rr:objectMap :om_038 .
+
+:pm_038 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:contributor .
+
+:om_038 rdf:type rr:ObjectMap ;
+	rml:reference "draagtBijAanHetBehalenVan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_039 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_039 ;
+	rr:objectMap :om_039 .
+
+:pm_039 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:references .
+
+:om_039 rdf:type rr:ObjectMap ;
+	rml:reference "schrijftVoor[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_37_000 rml:logicalSource :source_017 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_37" ;
+	rr:subjectMap :s_017 ;
+	rr:predicateObjectMap :pom_040 .
+
+:source_017 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_017 rdf:type rr:SubjectMap ;
+	rml:reference "contacturen[*]" .
+
+:pom_040 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_040 ;
+	rr:objectMap :om_040 .
+
+:pm_040 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_040 rdf:type rr:ObjectMap ;
+	rr:constant <http://schema.org/OpeningHoursSpecification> ;
+	rr:termType rr:IRI .
+
+:map_m_38_000 rml:logicalSource :source_018 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_38" ;
+	rr:subjectMap :s_018 ;
+	rr:predicateObjectMap :pom_041 .
+
+:source_018 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_018 rdf:type rr:SubjectMap ;
+	rml:reference "generalisatieVan[*]" .
+
+:pom_041 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_041 ;
+	rr:objectMap :om_041 .
+
+:pm_041 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_041 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> ;
+	rr:termType rr:IRI .
+
+:map_m_39_000 rml:logicalSource :source_019 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_39" ;
+	rr:subjectMap :s_019 ;
+	rr:predicateObjectMap :pom_042 .
+
+:source_019 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_019 rdf:type rr:SubjectMap ;
+	rml:reference "heeftDeel[*]" .
+
+:pom_042 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_042 ;
+	rr:objectMap :om_042 .
+
+:pm_042 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_042 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> ;
+	rr:termType rr:IRI .
+
+:map_m_40_000 rml:logicalSource :source_020 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_40" ;
+	rr:subjectMap :s_020 ;
+	rr:predicateObjectMap :pom_043 .
+
+:source_020 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_020 rdf:type rr:SubjectMap ;
+	rml:reference "instructietaal[*]" .
+
+:pom_043 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_043 ;
+	rr:objectMap :om_043 .
+
+:pm_043 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_043 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_41_000 rml:logicalSource :source_021 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_41" ;
+	rr:subjectMap :s_021 ;
+	rr:predicateObjectMap :pom_044 .
+
+:source_021 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_021 rdf:type rr:SubjectMap ;
+	rml:reference "isDeelVan[*]" .
+
+:pom_044 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_044 ;
+	rr:objectMap :om_044 .
+
+:pm_044 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_044 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> ;
+	rr:termType rr:IRI .
+
+:map_m_42_000 rml:logicalSource :source_022 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_42" ;
+	rr:subjectMap :s_022 ;
+	rr:predicateObjectMap :pom_045 .
+
+:source_022 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_022 rdf:type rr:SubjectMap ;
+	rml:reference "specialisatieVan[*]" .
+
+:pom_045 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_045 ;
+	rr:objectMap :om_045 .
+
+:pm_045 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_045 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> ;
+	rr:termType rr:IRI .
+
+:map_m_43_000 rml:logicalSource :source_023 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_43" ;
+	rr:subjectMap :s_023 ;
+	rr:predicateObjectMap :pom_046 .
+
+:source_023 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_023 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
+
+:pom_046 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_046 ;
+	rr:objectMap :om_046 .
+
+:pm_046 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_046 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_44_000 rml:logicalSource :source_024 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_44" ;
+	rr:subjectMap :s_024 ;
+	rr:predicateObjectMap :pom_047 .
+
+:source_024 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_024 rdf:type rr:SubjectMap ;
+	rml:reference "draagtBijAanHetBehalenVan[*]" .
+
+:pom_047 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_047 ;
+	rr:objectMap :om_047 .
+
+:pm_047 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_047 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_45_000 rml:logicalSource :source_025 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_45" ;
+	rr:subjectMap :s_025 ;
+	rr:predicateObjectMap :pom_048 .
+
+:source_025 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leeractiviteitspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_025 rdf:type rr:SubjectMap ;
+	rml:reference "schrijftVoor[*]" .
+
+:pom_048 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_048 ;
+	rr:objectMap :om_048 .
+
+:pm_048 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_048 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/LearningResource> ;
+	rr:termType rr:IRI .
+
+:map_m_46_000 rml:logicalSource :source_026 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_46" ;
+	rr:subjectMap :s_026 ;
+	rr:predicateObjectMap :pom_049, :pom_050, :pom_051, :pom_052, :pom_053, :pom_054, :pom_055, :pom_056, :pom_057, :pom_058, :pom_059, :pom_060, :pom_061, :pom_062, :pom_063, :pom_064, :pom_065, :pom_066, :pom_067, :pom_068, :pom_069 .
+
+:source_026 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_026 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_049 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_049 ;
+	rr:objectMap :om_049 .
+
+:pm_049 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_049 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/LearningResource> ;
+	rr:termType rr:IRI .
+
+:pom_050 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_050 ;
+	rr:objectMap :om_050 .
+
+:pm_050 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/description> .
+
+:om_050 rdf:type rr:ObjectMap ;
+	rml:reference "beschrijving[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_001 .
+
+:language_001 rr:constant "nl" .
+
+:pom_051 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_051 ;
+	rr:objectMap :om_051 .
+
+:pm_051 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:instructionalMethod .
+
+:om_051 rdf:type rr:ObjectMap ;
+	rml:reference "instructie[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_002 .
+
+:language_002 rr:constant "nl" .
+
+:pom_052 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_052 ;
+	rr:objectMap :om_052 .
+
+:pm_052 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:title .
+
+:om_052 rdf:type rr:ObjectMap ;
+	rml:reference "naam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_003 .
+
+:language_003 rr:constant "nl" .
+
+:pom_053 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_053 ;
+	rr:objectMap :om_053 .
+
+:pm_053 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:requires .
+
+:om_053 rdf:type rr:ObjectMap ;
+	rml:reference "vereiste[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_004 .
+
+:language_004 rr:constant "nl" .
+
+:pom_054 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_054 ;
+	rr:objectMap :om_054 .
+
+:pm_054 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/material> .
+
+:om_054 rdf:type rr:ObjectMap ;
+	rml:reference "benodigdMateriaal[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_005 .
+
+:language_005 rr:constant "nl" .
+
+:pom_055 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_055 ;
+	rr:objectMap :om_055 .
+
+:pm_055 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/keywords> .
+
+:om_055 rdf:type rr:ObjectMap ;
+	rml:reference "sleutelwoord[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_006 .
+
+:language_006 rr:constant "nl" .
+
+:pom_056 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_056 ;
+	rr:objectMap :om_056 .
+
+:pm_056 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/subject> .
+
+:om_056 rdf:type rr:ObjectMap ;
+	rml:reference "onderwerp[*]" ;
+	rr:termType rr:IRI .
+
+:pom_057 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_057 ;
+	rr:objectMap :om_057 .
+
+:pm_057 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/accessibilityFeature> .
+
+:om_057 rdf:type rr:ObjectMap ;
+	rml:reference "toegankelijkheid[*]" ;
+	rr:termType rr:IRI .
+
+:pom_058 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_058 ;
+	rr:objectMap :om_058 .
+
+:pm_058 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:type .
+
+:om_058 rdf:type rr:ObjectMap ;
+	rml:reference "type[*]" ;
+	rr:termType rr:IRI .
+
+:pom_059 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_059 ;
+	rr:objectMap :om_059 .
+
+:pm_059 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/interactivityType> .
+
+:om_059 rdf:type rr:ObjectMap ;
+	rml:reference "interactieType[*]" ;
+	rr:termType rr:IRI .
+
+:pom_060 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_060 ;
+	rr:objectMap :om_060 .
+
+:pm_060 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:language .
+
+:om_060 rdf:type rr:ObjectMap ;
+	rml:reference "instructietaal[*]" ;
+	rr:termType rr:IRI .
+
+:pom_061 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_061 ;
+	rr:objectMap :om_061 .
+
+:pm_061 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/result> .
+
+:om_061 rdf:type rr:ObjectMap ;
+	rml:reference "resultaat[*]" ;
+	rr:termType rr:IRI .
+
+:pom_062 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_062 ;
+	rr:objectMap :om_062 .
+
+:pm_062 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:educationLevel .
+
+:om_062 rdf:type rr:ObjectMap ;
+	rml:reference "niveau[*]" ;
+	rr:termType rr:IRI .
+
+:pom_063 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_063 ;
+	rr:objectMap :om_063 .
+
+:pm_063 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/estimatedCost> .
+
+:om_063 rdf:type rr:ObjectMap ;
+	rml:reference "kost[*]" ;
+	rr:termType rr:IRI .
+
+:pom_064 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_064 ;
+	rr:objectMap :om_064 .
+
+:pm_064 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:format .
+
+:om_064 rdf:type rr:ObjectMap ;
+	rml:reference "formaat[*]" ;
+	rr:termType rr:IRI .
+
+:pom_065 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_065 ;
+	rr:objectMap :om_065 .
+
+:pm_065 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/assesses> .
+
+:om_065 rdf:type rr:ObjectMap ;
+	rml:reference "competentie[*]" ;
+	rr:termType rr:IRI .
+
+:pom_066 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_066 ;
+	rr:objectMap :om_066 .
+
+:pm_066 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/source> .
+
+:om_066 rdf:type rr:ObjectMap ;
+	rml:reference "bron[*]" ;
+	rr:termType rr:IRI .
+
+:pom_067 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_067 ;
+	rr:objectMap :om_067 .
+
+:pm_067 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/educationalUse> .
+
+:om_067 rdf:type rr:ObjectMap ;
+	rml:reference "dient[*]" ;
+	rr:termType rr:IRI .
+
+:pom_068 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_068 ;
+	rr:objectMap :om_068 .
+
+:pm_068 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/isPartOf> .
+
+:om_068 rdf:type rr:ObjectMap ;
+	rml:reference "isLidVan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_069 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_069 ;
+	rr:objectMap :om_069 .
+
+:pm_069 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/hasPart> .
+
+:om_069 rdf:type rr:ObjectMap ;
+	rml:reference "bestaatUit[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_66_000 rml:logicalSource :source_027 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_66" ;
+	rr:subjectMap :s_027 ;
+	rr:predicateObjectMap :pom_070 .
+
+:source_027 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_027 rdf:type rr:SubjectMap ;
+	rml:reference "onderwerp[*]" .
+
+:pom_070 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_070 ;
+	rr:objectMap :om_070 .
+
+:pm_070 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_070 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_67_000 rml:logicalSource :source_028 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_67" ;
+	rr:subjectMap :s_028 ;
+	rr:predicateObjectMap :pom_071 .
+
+:source_028 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_028 rdf:type rr:SubjectMap ;
+	rml:reference "toegankelijkheid[*]" .
+
+:pom_071 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_071 ;
+	rr:objectMap :om_071 .
+
+:pm_071 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_071 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_68_000 rml:logicalSource :source_029 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_68" ;
+	rr:subjectMap :s_029 ;
+	rr:predicateObjectMap :pom_072 .
+
+:source_029 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_029 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
+
+:pom_072 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_072 ;
+	rr:objectMap :om_072 .
+
+:pm_072 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_072 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_69_000 rml:logicalSource :source_030 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_69" ;
+	rr:subjectMap :s_030 ;
+	rr:predicateObjectMap :pom_073 .
+
+:source_030 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_030 rdf:type rr:SubjectMap ;
+	rml:reference "interactieType[*]" .
+
+:pom_073 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_073 ;
+	rr:objectMap :om_073 .
+
+:pm_073 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_073 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_70_000 rml:logicalSource :source_031 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_70" ;
+	rr:subjectMap :s_031 ;
+	rr:predicateObjectMap :pom_074 .
+
+:source_031 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_031 rdf:type rr:SubjectMap ;
+	rml:reference "instructietaal[*]" .
+
+:pom_074 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_074 ;
+	rr:objectMap :om_074 .
+
+:pm_074 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_074 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_71_000 rml:logicalSource :source_032 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_71" ;
+	rr:subjectMap :s_032 ;
+	rr:predicateObjectMap :pom_075 .
+
+:source_032 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_032 rdf:type rr:SubjectMap ;
+	rml:reference "resultaat[*]" .
+
+:pom_075 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_075 ;
+	rr:objectMap :om_075 .
+
+:pm_075 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_075 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_72_000 rml:logicalSource :source_033 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_72" ;
+	rr:subjectMap :s_033 ;
+	rr:predicateObjectMap :pom_076 .
+
+:source_033 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_033 rdf:type rr:SubjectMap ;
+	rml:reference "niveau[*]" .
+
+:pom_076 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_076 ;
+	rr:objectMap :om_076 .
+
+:pm_076 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_076 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_73_000 rml:logicalSource :source_034 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_73" ;
+	rr:subjectMap :s_034 ;
+	rr:predicateObjectMap :pom_077 .
+
+:source_034 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_034 rdf:type rr:SubjectMap ;
+	rml:reference "kost[*]" .
+
+:pom_077 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_077 ;
+	rr:objectMap :om_077 .
+
+:pm_077 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_077 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/MonetaryAmount> ;
+	rr:termType rr:IRI .
+
+:map_m_74_000 rml:logicalSource :source_035 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_74" ;
+	rr:subjectMap :s_035 ;
+	rr:predicateObjectMap :pom_078 .
+
+:source_035 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_035 rdf:type rr:SubjectMap ;
+	rml:reference "formaat[*]" .
+
+:pom_078 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_078 ;
+	rr:objectMap :om_078 .
+
+:pm_078 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_078 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_75_000 rml:logicalSource :source_036 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_75" ;
+	rr:subjectMap :s_036 ;
+	rr:predicateObjectMap :pom_079 .
+
+:source_036 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_036 rdf:type rr:SubjectMap ;
+	rml:reference "competentie[*]" .
+
+:pom_079 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_079 ;
+	rr:objectMap :om_079 .
+
+:pm_079 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_079 rdf:type rr:ObjectMap ;
+	rr:constant <https://ec.europa.eu/esco/lod/static/model.html#Skill> ;
+	rr:termType rr:IRI .
+
+:map_m_76_000 rml:logicalSource :source_037 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_76" ;
+	rr:subjectMap :s_037 ;
+	rr:predicateObjectMap :pom_080 .
+
+:source_037 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_037 rdf:type rr:SubjectMap ;
+	rml:reference "bron[*]" .
+
+:pom_080 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_080 ;
+	rr:objectMap :om_080 .
+
+:pm_080 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_080 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_77_000 rml:logicalSource :source_038 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_77" ;
+	rr:subjectMap :s_038 ;
+	rr:predicateObjectMap :pom_081 .
+
+:source_038 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_038 rdf:type rr:SubjectMap ;
+	rml:reference "dient[*]" .
+
+:pom_081 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_081 ;
+	rr:objectMap :om_081 .
+
+:pm_081 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_081 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_78_000 rml:logicalSource :source_039 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_78" ;
+	rr:subjectMap :s_039 ;
+	rr:predicateObjectMap :pom_082 .
+
+:source_039 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_039 rdf:type rr:SubjectMap ;
+	rml:reference "isLidVan[*]" .
+
+:pom_082 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_082 ;
+	rr:objectMap :om_082 .
+
+:pm_082 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_082 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/CreativeWorkSeries> ;
+	rr:termType rr:IRI .
+
+:map_m_79_000 rml:logicalSource :source_040 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_79" ;
+	rr:subjectMap :s_040 ;
+	rr:predicateObjectMap :pom_083 .
+
+:source_040 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leermiddel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_040 rdf:type rr:SubjectMap ;
+	rml:reference "bestaatUit[*]" .
+
+:pom_083 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_083 ;
+	rr:objectMap :om_083 .
+
+:pm_083 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_083 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/CreativeWork> ;
+	rr:termType rr:IRI .
+
+:map_m_80_000 rml:logicalSource :source_041 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_80" ;
+	rr:subjectMap :s_041 ;
+	rr:predicateObjectMap :pom_084, :pom_085, :pom_086, :pom_087, :pom_088, :pom_089, :pom_090, :pom_091, :pom_092, :pom_093, :pom_094 .
+
+:source_041 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CreatiefWerk[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_041 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_084 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_084 ;
+	rr:objectMap :om_084 .
+
+:pm_084 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_084 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/CreativeWork> ;
+	rr:termType rr:IRI .
+
+:pom_085 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_085 ;
+	rr:objectMap :om_085 .
+
+:pm_085 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/copyrightYear> .
+
+:om_085 rdf:type rr:ObjectMap ;
+	rml:reference "auteursrechtJaar[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#date> .
+
+:pom_086 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_086 ;
+	rr:objectMap :om_086 .
+
+:pm_086 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/version> .
+
+:om_086 rdf:type rr:ObjectMap ;
+	rml:reference "versie[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_007 .
+
+:language_007 rr:constant "nl" .
+
+:pom_087 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_087 ;
+	rr:objectMap :om_087 .
+
+:pm_087 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/datePublished> .
+
+:om_087 rdf:type rr:ObjectMap ;
+	rml:reference "publicatiedatum[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+:pom_088 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_088 ;
+	rr:objectMap :om_088 .
+
+:pm_088 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/author> .
+
+:om_088 rdf:type rr:ObjectMap ;
+	rml:reference "auteur[*]" ;
+	rr:termType rr:IRI .
+
+:pom_089 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_089 ;
+	rr:objectMap :om_089 .
+
+:pm_089 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/copyrightHolder> .
+
+:om_089 rdf:type rr:ObjectMap ;
+	rml:reference "auteursrechtHouder[*]" ;
+	rr:termType rr:IRI .
+
+:pom_090 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_090 ;
+	rr:objectMap :om_090 .
+
+:pm_090 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/inLanguage> .
+
+:om_090 rdf:type rr:ObjectMap ;
+	rml:reference "taal[*]" ;
+	rr:termType rr:IRI .
+
+:pom_091 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_091 ;
+	rr:objectMap :om_091 .
+
+:pm_091 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/timeRequired> .
+
+:om_091 rdf:type rr:ObjectMap ;
+	rml:reference "vereisteTijd[*]" ;
+	rr:termType rr:IRI .
+
+:pom_092 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_092 ;
+	rr:objectMap :om_092 .
+
+:pm_092 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/license> .
+
+:om_092 rdf:type rr:ObjectMap ;
+	rml:reference "licentie[*]" ;
+	rr:termType rr:IRI .
+
+:pom_093 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_093 ;
+	rr:objectMap :om_093 .
+
+:pm_093 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/author> .
+
+:om_093 rdf:type rr:ObjectMap ;
+	rml:reference "producent[*]" ;
+	rr:termType rr:IRI .
+
+:pom_094 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_094 ;
+	rr:objectMap :om_094 .
+
+:pm_094 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/publisher> .
+
+:om_094 rdf:type rr:ObjectMap ;
+	rml:reference "uitgever[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_90_000 rml:logicalSource :source_042 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_90" ;
+	rr:subjectMap :s_042 ;
+	rr:predicateObjectMap :pom_095 .
+
+:source_042 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CreatiefWerk[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_042 rdf:type rr:SubjectMap ;
+	rml:reference "auteur[*]" .
+
+:pom_095 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_095 ;
+	rr:objectMap :om_095 .
+
+:pm_095 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_095 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_91_000 rml:logicalSource :source_043 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_91" ;
+	rr:subjectMap :s_043 ;
+	rr:predicateObjectMap :pom_096 .
+
+:source_043 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CreatiefWerk[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_043 rdf:type rr:SubjectMap ;
+	rml:reference "auteursrechtHouder[*]" .
+
+:pom_096 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_096 ;
+	rr:objectMap :om_096 .
+
+:pm_096 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_096 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_92_000 rml:logicalSource :source_044 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_92" ;
+	rr:subjectMap :s_044 ;
+	rr:predicateObjectMap :pom_097 .
+
+:source_044 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CreatiefWerk[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_044 rdf:type rr:SubjectMap ;
+	rml:reference "taal[*]" .
+
+:pom_097 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_097 ;
+	rr:objectMap :om_097 .
+
+:pm_097 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_097 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_93_000 rml:logicalSource :source_045 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_93" ;
+	rr:subjectMap :s_045 ;
+	rr:predicateObjectMap :pom_098 .
+
+:source_045 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CreatiefWerk[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_045 rdf:type rr:SubjectMap ;
+	rml:reference "vereisteTijd[*]" .
+
+:pom_098 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_098 ;
+	rr:objectMap :om_098 .
+
+:pm_098 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_098 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/2006/time#Duration> ;
+	rr:termType rr:IRI .
+
+:map_m_94_000 rml:logicalSource :source_046 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_94" ;
+	rr:subjectMap :s_046 ;
+	rr:predicateObjectMap :pom_099 .
+
+:source_046 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CreatiefWerk[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_046 rdf:type rr:SubjectMap ;
+	rml:reference "licentie[*]" .
+
+:pom_099 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_099 ;
+	rr:objectMap :om_099 .
+
+:pm_099 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_099 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:LicenseDocument ;
+	rr:termType rr:IRI .
+
+:map_m_95_000 rml:logicalSource :source_047 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_95" ;
+	rr:subjectMap :s_047 ;
+	rr:predicateObjectMap :pom_100 .
+
+:source_047 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CreatiefWerk[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_047 rdf:type rr:SubjectMap ;
+	rml:reference "producent[*]" .
+
+:pom_100 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_100 ;
+	rr:objectMap :om_100 .
+
+:pm_100 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_100 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_96_000 rml:logicalSource :source_048 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_96" ;
+	rr:subjectMap :s_048 ;
+	rr:predicateObjectMap :pom_101 .
+
+:source_048 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CreatiefWerk[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_048 rdf:type rr:SubjectMap ;
+	rml:reference "uitgever[*]" .
+
+:pom_101 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_101 ;
+	rr:objectMap :om_101 .
+
+:pm_101 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_101 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_97_000 rml:logicalSource :source_049 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_97" ;
+	rr:subjectMap :s_049 ;
+	rr:predicateObjectMap :pom_102, :pom_103, :pom_104, :pom_105, :pom_106, :pom_107, :pom_108, :pom_109, :pom_110, :pom_111, :pom_112, :pom_113, :pom_114, :pom_115, :pom_116, :pom_117, :pom_118 .
+
+:source_049 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_049 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_102 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_102 ;
+	rr:objectMap :om_102 .
+
+:pm_102 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_102 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:pom_103 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_103 ;
+	rr:objectMap :om_103 .
+
+:pm_103 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/description> .
+
+:om_103 rdf:type rr:ObjectMap ;
+	rml:reference "beschrijving[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_008 .
+
+:language_008 rr:constant "nl" .
+
+:pom_104 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_104 ;
+	rr:objectMap :om_104 .
+
+:pm_104 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:valid .
+
+:om_104 rdf:type rr:ObjectMap ;
+	rml:reference "geldigheid[*]" ;
+	rr:termType rr:IRI .
+
+:pom_105 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_105 ;
+	rr:objectMap :om_105 .
+
+:pm_105 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/adms#identifier> .
+
+:om_105 rdf:type rr:ObjectMap ;
+	rml:reference "identificator[*]" ;
+	rr:termType rr:IRI .
+
+:pom_106 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_106 ;
+	rr:objectMap :om_106 .
+
+:pm_106 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:educationLevel .
+
+:om_106 rdf:type rr:ObjectMap ;
+	rml:reference "niveau[*]" ;
+	rr:termType rr:IRI .
+
+:pom_107 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_107 ;
+	rr:objectMap :om_107 .
+
+:pm_107 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/creator> .
+
+:om_107 rdf:type rr:ObjectMap ;
+	rml:reference "gedefinieerdDoor[*]" ;
+	rr:termType rr:IRI .
+
+:pom_108 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_108 ;
+	rr:objectMap :om_108 .
+
+:pm_108 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/subject> .
+
+:om_108 rdf:type rr:ObjectMap ;
+	rml:reference "onderwerp[*]" ;
+	rr:termType rr:IRI .
+
+:pom_109 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_109 ;
+	rr:objectMap :om_109 .
+
+:pm_109 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:type .
+
+:om_109 rdf:type rr:ObjectMap ;
+	rml:reference "type[*]" ;
+	rr:termType rr:IRI .
+
+:pom_110 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_110 ;
+	rr:objectMap :om_110 .
+
+:pm_110 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/source> .
+
+:om_110 rdf:type rr:ObjectMap ;
+	rml:reference "bron[*]" ;
+	rr:termType rr:IRI .
+
+:pom_111 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_111 ;
+	rr:objectMap :om_111 .
+
+:pm_111 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:audience .
+
+:om_111 rdf:type rr:ObjectMap ;
+	rml:reference "doelgroep[*]" ;
+	rr:termType rr:IRI .
+
+:pom_112 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_112 ;
+	rr:objectMap :om_112 .
+
+:pm_112 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/assesses> .
+
+:om_112 rdf:type rr:ObjectMap ;
+	rml:reference "competentie[*]" ;
+	rr:termType rr:IRI .
+
+:pom_113 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_113 ;
+	rr:objectMap :om_113 .
+
+:pm_113 rdf:type rr:PredicateMap ;
+	rr:constant skos:related .
+
+:om_113 rdf:type rr:ObjectMap ;
+	rml:reference "gerelateerdAan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_114 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_114 ;
+	rr:objectMap :om_114 .
+
+:pm_114 rdf:type rr:PredicateMap ;
+	rr:constant skos:broader .
+
+:om_114 rdf:type rr:ObjectMap ;
+	rml:reference "isSpecialisatieVan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_115 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_115 ;
+	rr:objectMap :om_115 .
+
+:pm_115 rdf:type rr:PredicateMap ;
+	rr:constant skos:narrower .
+
+:om_115 rdf:type rr:ObjectMap ;
+	rml:reference "isBrederDan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_116 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_116 ;
+	rr:objectMap :om_116 .
+
+:pm_116 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:hasPart .
+
+:om_116 rdf:type rr:ObjectMap ;
+	rml:reference "bestaatUit[*]" ;
+	rr:termType rr:IRI .
+
+:pom_117 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_117 ;
+	rr:objectMap :om_117 .
+
+:pm_117 rdf:type rr:PredicateMap ;
+	rr:constant skos:closeMatch .
+
+:om_117 rdf:type rr:ObjectMap ;
+	rml:reference "hetzelfde[*]" ;
+	rr:termType rr:IRI .
+
+:pom_118 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_118 ;
+	rr:objectMap :om_118 .
+
+:pm_118 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> .
+
+:om_118 rdf:type rr:ObjectMap ;
+	rml:reference "eigenCombinatieLeerdoelOpleidingsniveau[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_113_000 rml:logicalSource :source_050 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_113" ;
+	rr:subjectMap :s_050 ;
+	rr:predicateObjectMap :pom_119 .
+
+:source_050 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_050 rdf:type rr:SubjectMap ;
+	rml:reference "geldigheid[*]" .
+
+:pom_119 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_119 ;
+	rr:objectMap :om_119 .
+
+:pm_119 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_119 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/m8g/PeriodOfTime> ;
+	rr:termType rr:IRI .
+
+:map_m_114_000 rml:logicalSource :source_051 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_114" ;
+	rr:subjectMap :s_051 ;
+	rr:predicateObjectMap :pom_120 .
+
+:source_051 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_051 rdf:type rr:SubjectMap ;
+	rml:reference "identificator[*]" .
+
+:pom_120 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_120 ;
+	rr:objectMap :om_120 .
+
+:pm_120 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_120 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/ns/adms#Identifier> ;
+	rr:termType rr:IRI .
+
+:map_m_115_000 rml:logicalSource :source_052 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_115" ;
+	rr:subjectMap :s_052 ;
+	rr:predicateObjectMap :pom_121 .
+
+:source_052 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_052 rdf:type rr:SubjectMap ;
+	rml:reference "niveau[*]" .
+
+:pom_121 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_121 ;
+	rr:objectMap :om_121 .
+
+:pm_121 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_121 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_116_000 rml:logicalSource :source_053 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_116" ;
+	rr:subjectMap :s_053 ;
+	rr:predicateObjectMap :pom_122 .
+
+:source_053 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_053 rdf:type rr:SubjectMap ;
+	rml:reference "gedefinieerdDoor[*]" .
+
+:pom_122 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_122 ;
+	rr:objectMap :om_122 .
+
+:pm_122 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_122 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_117_000 rml:logicalSource :source_054 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_117" ;
+	rr:subjectMap :s_054 ;
+	rr:predicateObjectMap :pom_123 .
+
+:source_054 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_054 rdf:type rr:SubjectMap ;
+	rml:reference "onderwerp[*]" .
+
+:pom_123 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_123 ;
+	rr:objectMap :om_123 .
+
+:pm_123 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_123 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_118_000 rml:logicalSource :source_055 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_118" ;
+	rr:subjectMap :s_055 ;
+	rr:predicateObjectMap :pom_124 .
+
+:source_055 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_055 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
+
+:pom_124 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_124 ;
+	rr:objectMap :om_124 .
+
+:pm_124 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_124 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_119_000 rml:logicalSource :source_056 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_119" ;
+	rr:subjectMap :s_056 ;
+	rr:predicateObjectMap :pom_125 .
+
+:source_056 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_056 rdf:type rr:SubjectMap ;
+	rml:reference "bron[*]" .
+
+:pom_125 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_125 ;
+	rr:objectMap :om_125 .
+
+:pm_125 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_125 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_120_000 rml:logicalSource :source_057 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_120" ;
+	rr:subjectMap :s_057 ;
+	rr:predicateObjectMap :pom_126 .
+
+:source_057 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_057 rdf:type rr:SubjectMap ;
+	rml:reference "doelgroep[*]" .
+
+:pom_126 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_126 ;
+	rr:objectMap :om_126 .
+
+:pm_126 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_126 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/Audience> ;
+	rr:termType rr:IRI .
+
+:map_m_121_000 rml:logicalSource :source_058 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_121" ;
+	rr:subjectMap :s_058 ;
+	rr:predicateObjectMap :pom_127 .
+
+:source_058 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_058 rdf:type rr:SubjectMap ;
+	rml:reference "competentie[*]" .
+
+:pom_127 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_127 ;
+	rr:objectMap :om_127 .
+
+:pm_127 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_127 rdf:type rr:ObjectMap ;
+	rr:constant <https://ec.europa.eu/esco/lod/static/model.html#Skill> ;
+	rr:termType rr:IRI .
+
+:map_m_122_000 rml:logicalSource :source_059 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_122" ;
+	rr:subjectMap :s_059 ;
+	rr:predicateObjectMap :pom_128 .
+
+:source_059 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_059 rdf:type rr:SubjectMap ;
+	rml:reference "gerelateerdAan[*]" .
+
+:pom_128 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_128 ;
+	rr:objectMap :om_128 .
+
+:pm_128 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_128 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_123_000 rml:logicalSource :source_060 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_123" ;
+	rr:subjectMap :s_060 ;
+	rr:predicateObjectMap :pom_129 .
+
+:source_060 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_060 rdf:type rr:SubjectMap ;
+	rml:reference "isSpecialisatieVan[*]" .
+
+:pom_129 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_129 ;
+	rr:objectMap :om_129 .
+
+:pm_129 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_129 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_124_000 rml:logicalSource :source_061 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_124" ;
+	rr:subjectMap :s_061 ;
+	rr:predicateObjectMap :pom_130 .
+
+:source_061 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_061 rdf:type rr:SubjectMap ;
+	rml:reference "isBrederDan[*]" .
+
+:pom_130 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_130 ;
+	rr:objectMap :om_130 .
+
+:pm_130 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_130 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_125_000 rml:logicalSource :source_062 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_125" ;
+	rr:subjectMap :s_062 ;
+	rr:predicateObjectMap :pom_131 .
+
+:source_062 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_062 rdf:type rr:SubjectMap ;
+	rml:reference "bestaatUit[*]" .
+
+:pom_131 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_131 ;
+	rr:objectMap :om_131 .
+
+:pm_131 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_131 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_126_000 rml:logicalSource :source_063 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_126" ;
+	rr:subjectMap :s_063 ;
+	rr:predicateObjectMap :pom_132 .
+
+:source_063 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_063 rdf:type rr:SubjectMap ;
+	rml:reference "hetzelfde[*]" .
+
+:pom_132 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_132 ;
+	rr:objectMap :om_132 .
+
+:pm_132 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_132 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_127_000 rml:logicalSource :source_064 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_127" ;
+	rr:subjectMap :s_064 ;
+	rr:predicateObjectMap :pom_133 .
+
+:source_064 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_064 rdf:type rr:SubjectMap ;
+	rml:reference "eigenCombinatieLeerdoelOpleidingsniveau[*]" .
+
+:pom_133 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_133 ;
+	rr:objectMap :om_133 .
+
+:pm_133 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_133 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> ;
+	rr:termType rr:IRI .
+
+:map_m_128_000 rml:logicalSource :source_065 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_128" ;
+	rr:subjectMap :s_065 ;
+	rr:predicateObjectMap :pom_134, :pom_135 .
+
+:source_065 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.LeermiddelVerzameling[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_065 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_134 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_134 ;
+	rr:objectMap :om_134 .
+
+:pm_134 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_134 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/CreativeWorkSeries> ;
+	rr:termType rr:IRI .
+
+:pom_135 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_135 ;
+	rr:objectMap :om_135 .
+
+:pm_135 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/hasPart> .
+
+:om_135 rdf:type rr:ObjectMap ;
+	rml:reference "heeftLid[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_129_000 rml:logicalSource :source_066 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_129" ;
+	rr:subjectMap :s_066 ;
+	rr:predicateObjectMap :pom_136 .
+
+:source_066 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.LeermiddelVerzameling[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_066 rdf:type rr:SubjectMap ;
+	rml:reference "heeftLid[*]" .
+
+:pom_136 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_136 ;
+	rr:objectMap :om_136 .
+
+:pm_136 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_136 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/LearningResource> ;
+	rr:termType rr:IRI .
+
+:map_m_130_000 rml:logicalSource :source_067 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_130" ;
+	rr:subjectMap :s_067 ;
+	rr:predicateObjectMap :pom_137, :pom_138, :pom_139, :pom_140, :pom_141, :pom_142, :pom_143 .
+
+:source_067 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Opleidingsniveau[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_067 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_137 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_137 ;
+	rr:objectMap :om_137 .
+
+:pm_137 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_137 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/Opleidingsniveau> ;
+	rr:termType rr:IRI .
+
+:pom_138 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_138 ;
+	rr:objectMap :om_138 .
+
+:pm_138 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:title .
+
+:om_138 rdf:type rr:ObjectMap ;
+	rml:reference "naam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_009 .
+
+:language_009 rr:constant "nl" .
+
+:pom_139 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_139 ;
+	rr:objectMap :om_139 .
+
+:pm_139 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/level-1> .
+
+:om_139 rdf:type rr:ObjectMap ;
+	rml:reference "level1[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_010 .
+
+:language_010 rr:constant "nl" .
+
+:pom_140 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_140 ;
+	rr:objectMap :om_140 .
+
+:pm_140 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/level-2> .
+
+:om_140 rdf:type rr:ObjectMap ;
+	rml:reference "level2[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_011 .
+
+:language_011 rr:constant "nl" .
+
+:pom_141 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_141 ;
+	rr:objectMap :om_141 .
+
+:pm_141 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/level-3> .
+
+:om_141 rdf:type rr:ObjectMap ;
+	rml:reference "level3[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_012 .
+
+:language_012 rr:constant "nl" .
+
+:pom_142 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_142 ;
+	rr:objectMap :om_142 .
+
+:pm_142 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/level-4> .
+
+:om_142 rdf:type rr:ObjectMap ;
+	rml:reference "level4[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_013 .
+
+:language_013 rr:constant "nl" .
+
+:pom_143 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_143 ;
+	rr:objectMap :om_143 .
+
+:pm_143 rdf:type rr:PredicateMap ;
+	rr:constant skos:narrower .
+
+:om_143 rdf:type rr:ObjectMap ;
+	rml:reference "isSpecialisatieVan[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_136_000 rml:logicalSource :source_068 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_136" ;
+	rr:subjectMap :s_068 ;
+	rr:predicateObjectMap :pom_144 .
+
+:source_068 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Opleidingsniveau[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_068 rdf:type rr:SubjectMap ;
+	rml:reference "isSpecialisatieVan[*]" .
+
+:pom_144 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_144 ;
+	rr:objectMap :om_144 .
+
+:pm_144 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_144 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/Opleidingsniveau> ;
+	rr:termType rr:IRI .
+
+:map_m_137_000 rml:logicalSource :source_069 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_137" ;
+	rr:subjectMap :s_069 ;
+	rr:predicateObjectMap :pom_145, :pom_146 .
+
+:source_069 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Licentie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_069 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_145 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_145 ;
+	rr:objectMap :om_145 .
+
+:pm_145 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_145 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:LicenseDocument ;
+	rr:termType rr:IRI .
+
+:pom_146 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_146 ;
+	rr:objectMap :om_146 .
+
+:pm_146 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:type .
+
+:om_146 rdf:type rr:ObjectMap ;
+	rml:reference "type[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_138_000 rml:logicalSource :source_070 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_138" ;
+	rr:subjectMap :s_070 ;
+	rr:predicateObjectMap :pom_147 .
+
+:source_070 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Licentie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_070 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
+
+:pom_147 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_147 ;
+	rr:objectMap :om_147 .
+
+:pm_147 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_147 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_139_000 rml:logicalSource :source_071 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_139" ;
+	rr:subjectMap :s_071 ;
+	rr:predicateObjectMap :pom_148, :pom_149, :pom_150, :pom_151, :pom_152 .
+
+:source_071 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Onderwerp[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_071 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_148 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_148 ;
+	rr:objectMap :om_148 .
+
+:pm_148 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_148 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/Onderwerp> ;
+	rr:termType rr:IRI .
+
+:pom_149 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_149 ;
+	rr:objectMap :om_149 .
+
+:pm_149 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:title .
+
+:om_149 rdf:type rr:ObjectMap ;
+	rml:reference "naam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_014 .
+
+:language_014 rr:constant "nl" .
+
+:pom_150 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_150 ;
+	rr:objectMap :om_150 .
+
+:pm_150 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/shortLabel> .
+
+:om_150 rdf:type rr:ObjectMap ;
+	rml:reference "korteNaam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_015 .
+
+:language_015 rr:constant "nl" .
+
+:pom_151 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_151 ;
+	rr:objectMap :om_151 .
+
+:pm_151 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:type .
+
+:om_151 rdf:type rr:ObjectMap ;
+	rml:reference "type[*]" ;
+	rr:termType rr:IRI .
+
+:pom_152 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_152 ;
+	rr:objectMap :om_152 .
+
+:pm_152 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:educationLevel .
+
+:om_152 rdf:type rr:ObjectMap ;
+	rml:reference "niveau[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_143_000 rml:logicalSource :source_072 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_143" ;
+	rr:subjectMap :s_072 ;
+	rr:predicateObjectMap :pom_153 .
+
+:source_072 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Onderwerp[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_072 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
+
+:pom_153 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_153 ;
+	rr:objectMap :om_153 .
+
+:pm_153 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_153 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_144_000 rml:logicalSource :source_073 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_144" ;
+	rr:subjectMap :s_073 ;
+	rr:predicateObjectMap :pom_154 .
+
+:source_073 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Onderwerp[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_073 rdf:type rr:SubjectMap ;
+	rml:reference "niveau[*]" .
+
+:pom_154 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_154 ;
+	rr:objectMap :om_154 .
+
+:pm_154 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_154 rdf:type rr:ObjectMap ;
+	rr:constant skos:Opleidingsniveau ;
+	rr:termType rr:IRI .
+
+:map_m_145_000 rml:logicalSource :source_074 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_145" ;
+	rr:subjectMap :s_074 ;
+	rr:predicateObjectMap :pom_155, :pom_156 .
+
+:source_074 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.LeermiddelElement[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_074 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_155 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_155 ;
+	rr:objectMap :om_155 .
+
+:pm_155 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_155 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/CreativeWork> ;
+	rr:termType rr:IRI .
+
+:pom_156 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_156 ;
+	rr:objectMap :om_156 .
+
+:pm_156 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/isPartOf> .
+
+:om_156 rdf:type rr:ObjectMap ;
+	rml:reference "onderdeelVan[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_146_000 rml:logicalSource :source_075 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_146" ;
+	rr:subjectMap :s_075 ;
+	rr:predicateObjectMap :pom_157 .
+
+:source_075 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.LeermiddelElement[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_075 rdf:type rr:SubjectMap ;
+	rml:reference "onderdeelVan[*]" .
+
+:pom_157 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_157 ;
+	rr:objectMap :om_157 .
+
+:pm_157 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_157 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/LearningResource> ;
+	rr:termType rr:IRI .
+
+:map_m_147_000 rml:logicalSource :source_076 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_147" ;
+	rr:subjectMap :s_076 ;
+	rr:predicateObjectMap :pom_158, :pom_159, :pom_160, :pom_161 .
+
+:source_076 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Competentie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_076 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_158 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_158 ;
+	rr:objectMap :om_158 .
+
+:pm_158 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_158 rdf:type rr:ObjectMap ;
+	rr:constant <https://ec.europa.eu/esco/lod/static/model.html#Skill> ;
+	rr:termType rr:IRI .
+
+:pom_159 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_159 ;
+	rr:objectMap :om_159 .
+
+:pm_159 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:description .
+
+:om_159 rdf:type rr:ObjectMap ;
+	rml:reference "beschrijving[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_016 .
+
+:language_016 rr:constant "nl" .
+
+:pom_160 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_160 ;
+	rr:objectMap :om_160 .
+
+:pm_160 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:title .
+
+:om_160 rdf:type rr:ObjectMap ;
+	rml:reference "naam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_017 .
+
+:language_017 rr:constant "nl" .
+
+:pom_161 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_161 ;
+	rr:objectMap :om_161 .
+
+:pm_161 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:type .
+
+:om_161 rdf:type rr:ObjectMap ;
+	rml:reference "type[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_150_000 rml:logicalSource :source_077 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_150" ;
+	rr:subjectMap :s_077 ;
+	rr:predicateObjectMap :pom_162 .
+
+:source_077 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Competentie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_077 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
+
+:pom_162 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_162 ;
+	rr:objectMap :om_162 .
+
+:pm_162 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_162 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_151_000 rml:logicalSource :source_078 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_151" ;
+	rr:subjectMap :s_078 ;
+	rr:predicateObjectMap :pom_163, :pom_164, :pom_165 .
+
+:source_078 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.KwantitatieveWaarde[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_078 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_163 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_163 ;
+	rr:objectMap :om_163 .
+
+:pm_163 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_163 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/QuantitativeValue> ;
+	rr:termType rr:IRI .
+
+:pom_164 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_164 ;
+	rr:objectMap :om_164 .
+
+:pm_164 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/value> .
+
+:om_164 rdf:type rr:ObjectMap ;
+	rml:reference "waarde[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype rdfs:Literal .
+
+:pom_165 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_165 ;
+	rr:objectMap :om_165 .
+
+:pm_165 rdf:type rr:PredicateMap ;
+	rr:constant <https://schema.org/unitCode> .
+
+:om_165 rdf:type rr:ObjectMap ;
+	rml:reference "eenheid[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_153_000 rml:logicalSource :source_079 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_153" ;
+	rr:subjectMap :s_079 ;
+	rr:predicateObjectMap :pom_166 .
+
+:source_079 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.KwantitatieveWaarde[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_079 rdf:type rr:SubjectMap ;
+	rml:reference "eenheid[*]" .
+
+:pom_166 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_166 ;
+	rr:objectMap :om_166 .
+
+:pm_166 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_166 rdf:type rr:ObjectMap ;
+	rr:constant <https://qudt.org/schema/qudt/Unit> ;
+	rr:termType rr:IRI .
+
+:map_m_154_000 rml:logicalSource :source_080 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_154" ;
+	rr:subjectMap :s_080 ;
+	rr:predicateObjectMap :pom_167, :pom_168, :pom_169, :pom_170, :pom_171, :pom_172 .
+
+:source_080 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Openingsurenspecificatie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_080 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_167 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_167 ;
+	rr:objectMap :om_167 .
+
+:pm_167 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_167 rdf:type rr:ObjectMap ;
+	rr:constant <http://schema.org/OpeningHoursSpecification> ;
+	rr:termType rr:IRI .
+
+:pom_168 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_168 ;
+	rr:objectMap :om_168 .
+
+:pm_168 rdf:type rr:PredicateMap ;
+	rr:constant <http://schema.org/opens> .
+
+:om_168 rdf:type rr:ObjectMap ;
+	rml:reference "open[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#time> .
+
+:pom_169 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_169 ;
+	rr:objectMap :om_169 .
+
+:pm_169 rdf:type rr:PredicateMap ;
+	rr:constant <http://schema.org/closes> .
+
+:om_169 rdf:type rr:ObjectMap ;
+	rml:reference "gesloten[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#time> .
+
+:pom_170 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_170 ;
+	rr:objectMap :om_170 .
+
+:pm_170 rdf:type rr:PredicateMap ;
+	rr:constant <http://schema.org/dayOfWeek> .
+
+:om_170 rdf:type rr:ObjectMap ;
+	rml:reference "dagVanDeWeek[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#anyURI> .
+
+:pom_171 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_171 ;
+	rr:objectMap :om_171 .
+
+:pm_171 rdf:type rr:PredicateMap ;
+	rr:constant <http://schema.org/validFrom> .
+
+:om_171 rdf:type rr:ObjectMap ;
+	rml:reference "geldigVan[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+:pom_172 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_172 ;
+	rr:objectMap :om_172 .
+
+:pm_172 rdf:type rr:PredicateMap ;
+	rr:constant <http://schema.org/validThrough> .
+
+:om_172 rdf:type rr:ObjectMap ;
+	rml:reference "geldigTot[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+:map_m_159_000 rml:logicalSource :source_081 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_159" ;
+	rr:subjectMap :s_081 ;
+	rr:predicateObjectMap :pom_173, :pom_174, :pom_175, :pom_176, :pom_177, :pom_178, :pom_179, :pom_180, :pom_181, :pom_182, :pom_183, :pom_184, :pom_185, :pom_186, :pom_187 .
+
+:source_081 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Adresvoorstelling[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_081 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_173 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_173 ;
+	rr:objectMap :om_173 .
+
+:pm_173 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_173 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/ns/locn#Address> ;
+	rr:termType rr:IRI .
+
+:pom_174 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_174 ;
+	rr:objectMap :om_174 .
+
+:pm_174 rdf:type rr:PredicateMap ;
+	rr:constant <https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber> .
+
+:om_174 rdf:type rr:ObjectMap ;
+	rml:reference "busnummer[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
+
+:pom_175 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_175 ;
+	rr:objectMap :om_175 .
+
+:pm_175 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#locatorName> .
+
+:om_175 rdf:type rr:ObjectMap ;
+	rml:reference "locatienaam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_018 .
+
+:language_018 rr:constant "nl" .
+
+:pom_176 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_176 ;
+	rr:objectMap :om_176 .
+
+:pm_176 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#addressArea> .
+
+:om_176 rdf:type rr:ObjectMap ;
+	rml:reference "adresgebied[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_019 .
+
+:language_019 rr:constant "nl" .
+
+:pom_177 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_177 ;
+	rr:objectMap :om_177 .
+
+:pm_177 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#postName> .
+
+:om_177 rdf:type rr:ObjectMap ;
+	rml:reference "postnaam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_020 .
+
+:language_020 rr:constant "nl" .
+
+:pom_178 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_178 ;
+	rr:objectMap :om_178 .
+
+:pm_178 rdf:type rr:PredicateMap ;
+	rr:constant <https://vocab.belgif.be/ns/address#municipalityName> .
+
+:om_178 rdf:type rr:ObjectMap ;
+	rml:reference "gemeentenaam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_021 .
+
+:language_021 rr:constant "nl" .
+
+:pom_179 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_179 ;
+	rr:objectMap :om_179 .
+
+:pm_179 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#adminUnitL2> .
+
+:om_179 rdf:type rr:ObjectMap ;
+	rml:reference "administratieveEenheidNiveau2[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_022 .
+
+:language_022 rr:constant "nl" .
+
+:pom_180 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_180 ;
+	rr:objectMap :om_180 .
+
+:pm_180 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#adminUnitL1> .
+
+:om_180 rdf:type rr:ObjectMap ;
+	rml:reference "administratieveEenheidNiveau1[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_023 .
+
+:language_023 rr:constant "nl" .
+
+:pom_181 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_181 ;
+	rr:objectMap :om_181 .
+
+:pm_181 rdf:type rr:PredicateMap ;
+	rr:constant <https://vocab.belgif.be/ns/address#country> .
+
+:om_181 rdf:type rr:ObjectMap ;
+	rml:reference "land[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_024 .
+
+:language_024 rr:constant "nl" .
+
+:pom_182 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_182 ;
+	rr:objectMap :om_182 .
+
+:pm_182 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#postCode> .
+
+:om_182 rdf:type rr:ObjectMap ;
+	rml:reference "postcode[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
+
+:pom_183 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_183 ;
+	rr:objectMap :om_183 .
+
+:pm_183 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#fullAddress> .
+
+:om_183 rdf:type rr:ObjectMap ;
+	rml:reference "volledigAdres[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_025 .
+
+:language_025 rr:constant "nl" .
+
+:pom_184 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_184 ;
+	rr:objectMap :om_184 .
+
+:pm_184 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#poBox> .
+
+:om_184 rdf:type rr:ObjectMap ;
+	rml:reference "postbus[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
+
+:pom_185 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_185 ;
+	rr:objectMap :om_185 .
+
+:pm_185 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#thoroughfare> .
+
+:om_185 rdf:type rr:ObjectMap ;
+	rml:reference "straatnaam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_026 .
+
+:language_026 rr:constant "nl" .
+
+:pom_186 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_186 ;
+	rr:objectMap :om_186 .
+
+:pm_186 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#locatorDesignator> .
+
+:om_186 rdf:type rr:ObjectMap ;
+	rml:reference "locatieaanduiding[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
+
+:pom_187 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_187 ;
+	rr:objectMap :om_187 .
+
+:pm_187 rdf:type rr:PredicateMap ;
+	rr:constant <https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber> .
+
+:om_187 rdf:type rr:ObjectMap ;
+	rml:reference "huisnummer[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
+
+:map_m_173_000 rml:logicalSource :source_082 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_173" ;
+	rr:subjectMap :s_082 ;
+	rr:predicateObjectMap :pom_188, :pom_189 .
+
+:source_082 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Identificator[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_082 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_188 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_188 ;
+	rr:objectMap :om_188 .
+
+:pm_188 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_188 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/ns/adms#Identifier> ;
+	rr:termType rr:IRI .
+
+:pom_189 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_189 ;
+	rr:objectMap :om_189 .
+
+:pm_189 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:creator .
+
+:om_189 rdf:type rr:ObjectMap ;
+	rml:reference "toegekendDoor[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_174_000 rml:logicalSource :source_083 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_174" ;
+	rr:subjectMap :s_083 ;
+	rr:predicateObjectMap :pom_190 .
+
+:source_083 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Identificator[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_083 rdf:type rr:SubjectMap ;
+	rml:reference "toegekendDoor[*]" .
+
+:pom_190 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_190 ;
+	rr:objectMap :om_190 .
+
+:pm_190 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_190 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_175_000 rml:logicalSource :source_084 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_175" ;
+	rr:subjectMap :s_084 ;
+	rr:predicateObjectMap :pom_191, :pom_192 .
+
+:source_084 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Geldbedrag[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_084 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_191 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_191 ;
+	rr:objectMap :om_191 .
+
+:pm_191 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_191 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/MonetaryAmount> ;
+	rr:termType rr:IRI .
+
+:pom_192 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_192 ;
+	rr:objectMap :om_192 .
+
+:pm_192 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.cidoc-crm.org/cidoc-crm/P180_has_currency> .
+
+:om_192 rdf:type rr:ObjectMap ;
+	rml:reference "valuta[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_176_000 rml:logicalSource :source_085 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_176" ;
+	rr:subjectMap :s_085 ;
+	rr:predicateObjectMap :pom_193 .
+
+:source_085 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Geldbedrag[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_085 rdf:type rr:SubjectMap ;
+	rml:reference "valuta[*]" .
+
+:pom_193 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_193 ;
+	rr:objectMap :om_193 .
+
+:pm_193 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_193 rdf:type rr:ObjectMap ;
+	rr:constant <http://qudt.org/schema/qudt/CurrencyUnit> ;
+	rr:termType rr:IRI .
+
+:map_m_177_000 rml:logicalSource :source_086 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_177" ;
+	rr:subjectMap :s_086 ;
+	rr:predicateObjectMap :pom_194, :pom_195, :pom_196 .
+
+:source_086 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Periode[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_086 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_194 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_194 ;
+	rr:objectMap :om_194 .
+
+:pm_194 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_194 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/2006/time#ProperInterval> ;
+	rr:termType rr:IRI .
+
+:pom_195 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_195 ;
+	rr:objectMap :om_195 .
+
+:pm_195 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/2006/time#hasEnd> .
+
+:om_195 rdf:type rr:ObjectMap ;
+	rml:reference "tot[*]" ;
+	rr:termType rr:IRI .
+
+:pom_196 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_196 ;
+	rr:objectMap :om_196 .
+
+:pm_196 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/2006/time#hasBeginning> .
+
+:om_196 rdf:type rr:ObjectMap ;
+	rml:reference "van[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_179_000 rml:logicalSource :source_087 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_179" ;
+	rr:subjectMap :s_087 ;
+	rr:predicateObjectMap :pom_197 .
+
+:source_087 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Periode[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_087 rdf:type rr:SubjectMap ;
+	rml:reference "tot[*]" .
+
+:pom_197 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_197 ;
+	rr:objectMap :om_197 .
+
+:pm_197 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_197 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/2006/time#Instant> ;
+	rr:termType rr:IRI .
+
+:map_m_180_000 rml:logicalSource :source_088 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_180" ;
+	rr:subjectMap :s_088 ;
+	rr:predicateObjectMap :pom_198 .
+
+:source_088 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Periode[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_088 rdf:type rr:SubjectMap ;
+	rml:reference "van[*]" .
+
+:pom_198 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_198 ;
+	rr:objectMap :om_198 .
+
+:pm_198 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_198 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/2006/time#Instant> ;
+	rr:termType rr:IRI .
+
+:map_m_181_000 rml:logicalSource :source_089 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_181" ;
+	rr:subjectMap :s_089 ;
+	rr:predicateObjectMap :pom_199, :pom_200, :pom_201, :pom_202, :pom_203 .
+
+:source_089 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leerplan[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_089 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_199 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_199 ;
+	rr:objectMap :om_199 .
+
+:pm_199 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_199 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/Leerplan> ;
+	rr:termType rr:IRI .
+
+:pom_200 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_200 ;
+	rr:objectMap :om_200 .
+
+:pm_200 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:title .
+
+:om_200 rdf:type rr:ObjectMap ;
+	rml:reference "naam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_027 .
+
+:language_027 rr:constant "nl" .
+
+:pom_201 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_201 ;
+	rr:objectMap :om_201 .
+
+:pm_201 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/directedBy> .
+
+:om_201 rdf:type rr:ObjectMap ;
+	rml:reference "ingerichtDoor[*]" ;
+	rr:termType rr:IRI .
+
+:pom_202 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_202 ;
+	rr:objectMap :om_202 .
+
+:pm_202 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/niveau> .
+
+:om_202 rdf:type rr:ObjectMap ;
+	rml:reference "niveau[*]" ;
+	rr:termType rr:IRI .
+
+:pom_203 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_203 ;
+	rr:objectMap :om_203 .
+
+:pm_203 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> .
+
+:om_203 rdf:type rr:ObjectMap ;
+	rml:reference "eigenCombinatieLeerdoelOpleidingsniveau[*]" ;
+	rr:termType rr:IRI .
+
+:map_m_185_000 rml:logicalSource :source_090 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_185" ;
+	rr:subjectMap :s_090 ;
+	rr:predicateObjectMap :pom_204 .
+
+:source_090 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leerplan[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_090 rdf:type rr:SubjectMap ;
+	rml:reference "ingerichtDoor[*]" .
+
+:pom_204 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_204 ;
+	rr:objectMap :om_204 .
+
+:pm_204 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_204 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_186_000 rml:logicalSource :source_091 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_186" ;
+	rr:subjectMap :s_091 ;
+	rr:predicateObjectMap :pom_205 .
+
+:source_091 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leerplan[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_091 rdf:type rr:SubjectMap ;
+	rml:reference "niveau[*]" .
+
+:pom_205 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_205 ;
+	rr:objectMap :om_205 .
+
+:pm_205 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_205 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/Opleidingsniveau> ;
+	rr:termType rr:IRI .
+
+:map_m_187_000 rml:logicalSource :source_092 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_187" ;
+	rr:subjectMap :s_092 ;
+	rr:predicateObjectMap :pom_206 .
+
+:source_092 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.Leerplan[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_092 rdf:type rr:SubjectMap ;
+	rml:reference "eigenCombinatieLeerdoelOpleidingsniveau[*]" .
+
+:pom_206 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_206 ;
+	rr:objectMap :om_206 .
+
+:pm_206 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_206 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> ;
+	rr:termType rr:IRI .
+
+:map_m_188_000 rml:logicalSource :source_093 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_188" ;
+	rr:subjectMap :s_093 ;
+	rr:predicateObjectMap :pom_207, :pom_208, :pom_209, :pom_210, :pom_211, :pom_212, :pom_213, :pom_214 .
+
+:source_093 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CombLeerdoelOpleidingsniveau[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_093 rdf:type rr:SubjectMap ;
+	rml:reference "CODE[*]" .
+
+:pom_207 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_207 ;
+	rr:objectMap :om_207 .
+
+:pm_207 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_207 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> ;
+	rr:termType rr:IRI .
+
+:pom_208 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_208 ;
+	rr:objectMap :om_208 .
+
+:pm_208 rdf:type rr:PredicateMap ;
+	rr:constant dcterms:title .
+
+:om_208 rdf:type rr:ObjectMap ;
+	rml:reference "naam[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_028 .
+
+:language_028 rr:constant "nl" .
+
+:pom_209 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_209 ;
+	rr:objectMap :om_209 .
+
+:pm_209 rdf:type rr:PredicateMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/directedBy> .
+
+:om_209 rdf:type rr:ObjectMap ;
+	rml:reference "ingerichtDoor[*]" ;
+	rr:termType rr:IRI .
+
+:pom_210 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_210 ;
+	rr:objectMap :om_210 .
+
+:pm_210 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/niveau> .
+
+:om_210 rdf:type rr:ObjectMap ;
+	rml:reference "niveau[*]" ;
+	rr:termType rr:IRI .
+
+:pom_211 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_211 ;
+	rr:objectMap :om_211 .
+
+:pm_211 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/leerplan> .
+
+:om_211 rdf:type rr:ObjectMap ;
+	rml:reference "leerplan[*]" ;
+	rr:termType rr:IRI .
+
+:pom_212 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_212 ;
+	rr:objectMap :om_212 .
+
+:pm_212 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/versieDatum> .
+
+:om_212 rdf:type rr:ObjectMap ;
+	rml:reference "versieDatum[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_029 .
+
+:language_029 rr:constant "nl" .
+
+:pom_213 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_213 ;
+	rr:objectMap :om_213 .
+
+:pm_213 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/collectiedoel> .
+
+:om_213 rdf:type rr:ObjectMap ;
+	rml:reference "collectiedoel[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_030 .
+
+:language_030 rr:constant "nl" .
+
+:pom_214 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_214 ;
+	rr:objectMap :om_214 .
+
+:pm_214 rdf:type rr:PredicateMap ;
+	rr:constant <http://example.com/collectiedoeltype> .
+
+:om_214 rdf:type rr:ObjectMap ;
+	rml:reference "collectiedoeltype[*]" ;
+	rr:termType rr:Literal ;
+	rml:languageMap :language_031 .
+
+:language_031 rr:constant "nl" .
+
+:map_m_195_000 rml:logicalSource :source_094 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_195" ;
+	rr:subjectMap :s_094 ;
+	rr:predicateObjectMap :pom_215 .
+
+:source_094 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CombLeerdoelOpleidingsniveau[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_094 rdf:type rr:SubjectMap ;
+	rml:reference "ingerichtDoor[*]" .
+
+:pom_215 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_215 ;
+	rr:objectMap :om_215 .
+
+:pm_215 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_215 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:Agent ;
+	rr:termType rr:IRI .
+
+:map_m_196_000 rml:logicalSource :source_095 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_196" ;
+	rr:subjectMap :s_095 ;
+	rr:predicateObjectMap :pom_216 .
+
+:source_095 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CombLeerdoelOpleidingsniveau[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_095 rdf:type rr:SubjectMap ;
+	rml:reference "niveau[*]" .
+
+:pom_216 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_216 ;
+	rr:objectMap :om_216 .
+
+:pm_216 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_216 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/Opleidingsniveau> ;
+	rr:termType rr:IRI .
+
+:map_m_197_000 rml:logicalSource :source_096 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_197" ;
+	rr:subjectMap :s_096 ;
+	rr:predicateObjectMap :pom_217 .
+
+:source_096 rdf:type rml:LogicalSource ;
+	rml:source "out/leermiddelen-thet-archief-voor-onderwijs.json" ;
+	rml:iterator "$.CombLeerdoelOpleidingsniveau[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_096 rdf:type rr:SubjectMap ;
+	rml:reference "leerplan[*]" .
+
+:pom_217 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_217 ;
+	rr:objectMap :om_217 .
+
+:pm_217 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_217 rdf:type rr:ObjectMap ;
+	rr:constant <http://example.com/Leerplan> ;
+	rr:termType rr:IRI .
+

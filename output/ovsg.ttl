@@ -1,0 +1,95 @@
+@prefix : <http://base.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://example.com/DKO> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/K> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/L> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/OVSG> a dc:Agent;
+  dc:title "OVSG"@nl .
+
+<http://example.com/OVSG_DKO> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/DKO>;
+  dc:title "Leerplannen van het deeltijds kunstonderwijs"@nl .
+
+<http://example.com/OVSG_K&L> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/K>, <http://example.com/L>;
+  dc:title "Leerplan van het basisonderwijs"@nl .
+
+<http://example.com/OVSG_S-gr1-A-lj1> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/S-gr1-A-lj1>;
+  dc:title "Leerplannen van het secundair onderwijs - eerste graad - A-stroom - Basisvorming"@nl .
+
+<http://example.com/OVSG_S-gr1-A-lj2> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/S-gr1-A-lj2>;
+  dc:title "Leerplannen van het secundair onderwijs - eerste graad - A-stroom - Basisopties"@nl .
+
+<http://example.com/OVSG_S-gr1-B-lj1> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/S-gr1-B-lj1>;
+  dc:title "Leerplannen van het secundair onderwijs - eerste graad - B-stroom - Basisvorming"@nl .
+
+<http://example.com/OVSG_S-gr1-B-lj2> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/S-gr1-B-lj2>;
+  dc:title "Leerplannen van het secundair onderwijs - eerste graad - B-stroom - Basisopties"@nl .
+
+<http://example.com/OVSG_S-gr2-AF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/S-gr2-AF>;
+  dc:title "Leerplannen van het secundair onderwijs - tweede graad - arbeidsmarktfinaliteit"@nl .
+
+<http://example.com/OVSG_S-gr2-DoF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/S-gr2-DoF>;
+  dc:title "Leerplannen van het secundair onderwijs - tweede graad - doorstroomfinaliteit"@nl .
+
+<http://example.com/OVSG_S-gr2-DuF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/S-gr2-DuF>;
+  dc:title "Leerplannen van het secundair onderwijs - tweede graad - dubbele finaliteit"@nl .
+
+<http://example.com/OVSG_S-gr3> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/S-gr3>;
+  dc:title "Leerplannen van het secundair onderwijs - 3de graad"@nl .
+
+<http://example.com/S-gr1-A-lj1> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr1-A-lj2> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr1-B-lj1> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr1-B-lj2> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr2-AF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr2-DoF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr2-DuF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr3> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/SV> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/VOV_SV> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OVSG>;
+  <http://example.com/niveau> <http://example.com/SV>;
+  dc:title "Leerplannen van het secundair volwassenenonderwijs"@nl .

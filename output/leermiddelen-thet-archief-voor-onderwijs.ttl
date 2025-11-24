@@ -1,0 +1,60 @@
+@prefix : <http://base.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://example.com/S-gr2> a skos:Concept .
+
+<http://example.com/S-gr3> a skos:Concept .
+
+<http://example.com/S-lj7> a skos:Concept .
+
+<http://example.com/SC_8> a skos:Concept .
+
+<http://example.com/Videocollectie> a skos:Concept .
+
+<http://example.com/andere-culturen-(700-170-5b04> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_8>;
+  dc:educationLevel <http://example.com/S-gr2>;
+  dc:language <http://example.com/nl>;
+  dc:title "Andere culturen (700-1700)"@nl;
+  dc:type <http://example.com/Videocollectie> .
+
+<http://example.com/de-middeleeuwen-30ff> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_8>;
+  dc:educationLevel <http://example.com/S-gr2>;
+  dc:language <http://example.com/nl>;
+  dc:title "De middeleeuwen"@nl;
+  dc:type <http://example.com/Videocollectie> .
+
+<http://example.com/de-vroegmoderne-tijd-51c5> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_8>;
+  dc:educationLevel <http://example.com/S-gr2>;
+  dc:language <http://example.com/nl>;
+  dc:title "De vroegmoderne tijd"@nl;
+  dc:type <http://example.com/Videocollectie> .
+
+<http://example.com/de-wereldorde-kantelt-5ba1> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_8>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:language <http://example.com/nl>;
+  dc:title "De wereldorde kantelt"@nl;
+  dc:type <http://example.com/Videocollectie> .
+
+<http://example.com/muziek-voor-de-twintigst-b4e3> a <https://schema.org/LearningResource>;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_8>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:language <http://example.com/nl>;
+  dc:title "Muziek voor de twintigste eeuw"@nl;
+  dc:type <http://example.com/Videocollectie> .
+
+<http://example.com/nl> a skos:Concept .

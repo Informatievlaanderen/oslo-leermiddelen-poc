@@ -1,0 +1,23 @@
+@prefix : <http://base.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://example.com/V-B> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/VOV> a dc:Agent;
+  dc:title "VOV"@nl .
+
+<http://example.com/VOV_V-B> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/VOV>;
+  <http://example.com/niveau> <http://example.com/V-B>;
+  dc:title "Leerplannen van de basiseducatie"@nl .

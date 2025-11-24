@@ -1,0 +1,468 @@
+@prefix : <http://base.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://example.com/06.24> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.25> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.26> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.27> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.28> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.29> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.30> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.31> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.32> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.33> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.34> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.35> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.36> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.37> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.38> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.39> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.40> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.41> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.42> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.43> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.44> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.45> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.46> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.47> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.48> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.49> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.50> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.51> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.52> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.53> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/10B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband tussen eigenschappen van virussen, bacteriën en schimmels en hun positieve en negatieve rol in de natuur."@nl;
+  skos:closeMatch <http://example.com/06.29>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/10B> .
+
+<http://example.com/10F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken de grootheid vermogen en het Joule-effect om fenomenen in elektrische systemen te verklaren."@nl;
+  skos:closeMatch <http://example.com/06.49>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/10F> .
+
+<http://example.com/10 > a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren naam en formule van alkanen."@nl;
+  skos:broader <http://example.com/06.35>, <http://example.com/06.36>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/10 > .
+
+<http://example.com/11B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen illustreren interacties tussen organismen van dezelfde soort en van verschillende soorten."@nl;
+  skos:closeMatch <http://example.com/06.30>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/11B> .
+
+<http://example.com/11C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband uit tussen bindingstype en oplosbaarheid in water."@nl;
+  skos:broader <http://example.com/06.36>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/11C> .
+
+<http://example.com/12B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband tussen materie- en energiestromen in een ecosysteem."@nl;
+  skos:closeMatch <http://example.com/06.31>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/12B> .
+
+<http://example.com/12C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband uit tussen het bindingstype en het geleidingsvermogen."@nl;
+  skos:broader <http://example.com/06.36>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/12C> .
+
+<http://example.com/13C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen brengen pH in verband met het zuur, basisch of neutraal karakter van een waterige oplossing en lichten de functie van een zuur-base indicator toe."@nl;
+  skos:closeMatch <http://example.com/06.38>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/13C> .
+
+<http://example.com/14C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren massaconcentratie en molaire concentratie."@nl;
+  skos:closeMatch <http://example.com/06.39>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/14C> .
+
+<http://example.com/1B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen tonen aan dat plantaardige en dierlijke organismen als systeem functioneren."@nl;
+  skos:broader <http://example.com/06.24>, <http://example.com/06.25>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/1B> .
+
+<http://example.com/1C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen onderzoeken zuivere stoffen en soorten mengsels in het dagelijkse leven aan de hand van eigenschappen en scheidingstechnieken."@nl;
+  skos:closeMatch <http://example.com/06.32>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/1C> .
+
+<http://example.com/1F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren rechtlijnige bewegingen grafisch en eenparig rechtlijnige bewegingen kwantitatief."@nl;
+  skos:closeMatch <http://example.com/06.41>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/1F> .
+
+<http://example.com/1S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen voeren onderzoek aan de hand van een wetenschappelijke methode om kennis te ontwikkelen en om vragen te beantwoorden."@nl;
+  skos:closeMatch <http://example.com/06.51>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/1S> .
+
+<http://example.com/2B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen illustreren dat plantaardige en dierlijke organismen homeostase hanteren met behulp van feedbacksystemen."@nl;
+  skos:broader <http://example.com/06.25>, <http://example.com/06.27>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/2B> .
+
+<http://example.com/2C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren de symbolische schrijfwijze van enkelvoudige en samengestelde stoffen."@nl;
+  skos:broader <http://example.com/06.35>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/2C> .
+
+<http://example.com/2F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen krachten vectorieel voor en leggen het verband tussen de verandering van bewegingstoestand van een lichaam en de resulterende kracht."@nl;
+  skos:closeMatch <http://example.com/06.42>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/2F> .
+
+<http://example.com/2S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen werken op een veilige en duurzame manier met materialen, stoffen, organismen en technische systemen."@nl;
+  skos:closeMatch <http://example.com/06.50>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/2S> .
+
+<http://example.com/3B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen uit hoe plantaardige en dierlijke organismen prikkels ontvangen."@nl;
+  skos:broader <http://example.com/06.24>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/3B> .
+
+<http://example.com/3C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren naam en formule van enkelvoudige stoffen."@nl;
+  skos:broader <http://example.com/06.35>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/3C> .
+
+<http://example.com/3F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen verklaren fenomenen of toepassingen uit het dagelijks leven aan de hand van het concept druk bij vaste stoffen, vloeistoffen en gassen."@nl;
+  skos:closeMatch <http://example.com/06.43>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/3F> .
+
+<http://example.com/3S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen ontwerpen een oplossing voor een probleem door wetenschappen, technologie of wiskunde geïntegreerd aan te wenden."@nl;
+  skos:closeMatch <http://example.com/06.52>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/3S> .
+
+<http://example.com/4B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen lichten de overdracht van informatie via impulsgeleiding en impulsoverdracht in zenuwen toe."@nl;
+  skos:broader <http://example.com/06.25>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/4B> .
+
+<http://example.com/4C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen balanceren gegeven eenvoudige anorganische chemische reacties door gebruik te maken van de wet van behoud van massa. "@nl;
+  skos:broader <http://example.com/06.37>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/4C> .
+
+<http://example.com/4F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen de energiebalans van energieomzettingen op aan de hand van de wet van behoud van energie."@nl;
+  skos:closeMatch <http://example.com/06.44>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/4F> .
+
+<http://example.com/4S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren de wisselwerking tussen wetenschappen, technologie, wiskunde en de maatschappij aan de hand van maatschappelijke uitdagingen."@nl;
+  skos:closeMatch <http://example.com/06.53>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/4S> .
+
+<http://example.com/5B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen illustreren het verschil in aansturing tussen gladde en dwarsgestreepte spieren."@nl;
+  skos:broader <http://example.com/06.26>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/5B> .
+
+<http://example.com/5C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren bij een chemische reactie de energie-uitwisseling met de omgeving."@nl;
+  skos:broader <http://example.com/06.37>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/5C> .
+
+<http://example.com/5F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen kwantitatief de energiebalans op van energieomzettingen tussen kinetische, gravitationele of elastische energie in eenvoudige situaties."@nl;
+  skos:closeMatch <http://example.com/06.45>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/5F> .
+
+<http://example.com/5S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen fysische problemen met en zonder formularium op."@nl;
+  skos:closeMatch <http://example.com/06.40>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/5S> .
+
+<http://example.com/6B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen vergelijken de bouw en werking van exocriene en endocriene klieren."@nl;
+  skos:broader <http://example.com/06.25>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/6B> .
+
+<http://example.com/6C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken een atoommodel om de structuur van atomen en ionen te beschrijven."@nl;
+  skos:closeMatch <http://example.com/06.33>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/6C> .
+
+<http://example.com/6F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen voeren berekeningen uit in verband met vermogen en rendement bij energieomzettingen in systemen."@nl;
+  skos:closeMatch <http://example.com/06.46>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/6F> .
+
+<http://example.com/7B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen aan de hand van een voorbeeld uit hoe de coördinerende rol van het endocriene stelsel bij een reactie op een prikkel bijdraagt tot het functioneren van een dierlijk organisme."@nl;
+  skos:broader <http://example.com/06.25>, <http://example.com/06.26>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/7B> .
+
+<http://example.com/7C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen beschrijven het PSE als een rangschikking volgens toenemend atoomnummer voor elementen uit de a-groepen en de edelgassen."@nl;
+  skos:broader <http://example.com/06.34>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/7C> .
+
+<http://example.com/7F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen verklaren het energietransport bij temperatuursveranderingen van stoffen aan de hand van het deeltjesmodel."@nl;
+  skos:broader <http://example.com/06.47>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/7F> .
+
+<http://example.com/8B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen aan de hand van een voorbeeld uit hoe de coördinerende rol van plantenhormonen bij een reactie op een prikkel bijdraagt tot het functioneren van de plant."@nl;
+  skos:broader <http://example.com/06.25>, <http://example.com/06.26>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/8B> .
+
+<http://example.com/8C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leiden eigenschappen van atomen af vanuit het PSE."@nl;
+  skos:broader <http://example.com/06.34>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/8C> .
+
+<http://example.com/8F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen verklaren het energietransport bij faseovergangen van stoffen aan de hand van het deeltjesmodel."@nl;
+  skos:broader <http://example.com/06.47>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/8F> .
+
+<http://example.com/9B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen de hormonale regeling van het voortplantingssysteem bij de mens uit."@nl;
+  skos:closeMatch <http://example.com/06.28>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/9B> .
+
+<http://example.com/9C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren naam en formule van anorganische zuren, basen, zouten of en oxiden."@nl;
+  skos:broader <http://example.com/06.35>, <http://example.com/06.36>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/9C> .
+
+<http://example.com/9F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren verbanden tussen stroomsterkte, spanning en weerstand in een gelijkstroomkring."@nl;
+  skos:closeMatch <http://example.com/06.48>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/9F> .
+
+<http://example.com/DT-BK_S-gr2> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> .
+
+<http://example.com/DT-CD_S-gr2> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> .
+
+<http://example.com/DT-ET_S-gr2-DoF> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau> .
+
+<http://example.com/GO_S-gr2-DoF> a <http://example.com/Leerplan> .
+
+<http://example.com/K> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/KaO> a dc:Agent;
+  dc:title "Katholiek Onderwijs Vlaanderen"@nl .
+
+<http://example.com/KaO_K&L> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/K>, <http://example.com/L>;
+  dc:title "Leerplan van het basisonderwijs"@nl .
+
+<http://example.com/KaO_S-gr1-A> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-gr1-A>;
+  dc:title "Leerplannen van de eerste graad secundair onderwijs - A-stroom"@nl .
+
+<http://example.com/KaO_S-gr1-B> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-gr1-B>;
+  dc:title "Leerplannen van de eerste graad secundair onderwijs - B-stroom"@nl .
+
+<http://example.com/KaO_S-gr2-AF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-gr2-AF>;
+  dc:title "Leerplannen van de tweede graad secundair onderwijs - Arbeidsfinaliteit"@nl .
+
+<http://example.com/KaO_S-gr2-DoF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-gr2-DoF>;
+  dc:title "Leerplannen van de tweede graad secundair onderwijs - Doorstroomfinaliteit"@nl .
+
+<http://example.com/KaO_S-gr2-DuF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-gr2-DuF>;
+  dc:title "Leerplannen van de tweede graad secundair onderwijs - Dubbele finaliteit"@nl .
+
+<http://example.com/KaO_S-gr3-AF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-gr3-AF>;
+  dc:title "Leerplannen van de derde graad secundair onderwijs - Arbeidsfinaliteit"@nl .
+
+<http://example.com/KaO_S-gr3-DoF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-gr3-DoF>;
+  dc:title "Leerplannen van de derde graad secundair onderwijs - Doorstroomfinaliteit"@nl .
+
+<http://example.com/KaO_S-gr3-DuF> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-gr3-DuF>;
+  dc:title "Leerplannen van de derde graad secundair onderwijs - Dubbele finaliteit"@nl .
+
+<http://example.com/KaO_S-lj7> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/S-lj7>;
+  dc:title "Leerplannen van het 7de leerjaar secundair onderwijs"@nl .
+
+<http://example.com/L> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr1-A> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr1-B> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr2-AF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr2-DoF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr2-DuF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr3-AF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr3-DoF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr3-DuF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-lj7> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/SR-Nat_S-gr2-DoF> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/collectiedoel> "Studierichting"@nl;
+  <http://example.com/collectiedoeltype> "Natuurwetenschappen"@nl;
+  <http://example.com/leerplan> <http://example.com/GO_S-gr2-DoF>;
+  <http://example.com/niveau> <http://example.com/S-gr2-DoF>;
+  <http://example.com/versieDatum> "3.0.0"@nl;
+  dc:title "II-Nat-d"@nl .
+
+<http://example.com/SV> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/V-B> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/VOV_SV> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-BK_S-gr2>,
+    <http://example.com/DT-CD_S-gr2>, <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://example.com/niveau> <http://example.com/SV>;
+  dc:title "Leerplannen van het secundair volwassenenonderwijs"@nl .
+
+<http://example.com/VOV_V-B> a <http://example.com/Leerplan>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/KaO>;
+  <http://example.com/niveau> <http://example.com/V-B>;
+  dc:title "Leerplannen van de basiseducatie"@nl .

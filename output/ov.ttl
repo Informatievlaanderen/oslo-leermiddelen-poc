@@ -1,0 +1,1133 @@
+@prefix : <http://base.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://example.com/06.01> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen de invoering van de reële getallen uit als de vervollediging van de reële getallenas."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.01> .
+
+<http://example.com/06.02> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen ordenen reële getallen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.02> .
+
+<http://example.com/06.03> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen rekenen met reële getallen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.03> .
+
+<http://example.com/06.04> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen bepalen de onderlinge ligging van twee rechten, twee vlakken en een rechte en een vlak in ruimtelijke situaties."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.04> .
+
+<http://example.com/06.05> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen bepalen het effect van schaalverandering op vorm, lengte, oppervlakte en inhoud of volume."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.05> .
+
+<http://example.com/06.06> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen passen de stelling van Pythagoras toe om meetkundige problemen op te lossen in het vlak en in de ruimte."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.06> .
+
+<http://example.com/06.07> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken de goniometrische getallen sinus, cosinus en tangens in rechthoekige driehoeken om meetkundige problemen op te lossen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.07> .
+
+<http://example.com/06.08> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen passen gelijkvormigheidskenmerken van driehoeken toe om meetkundige problemen op te lossen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.08> .
+
+<http://example.com/06.09> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen tekenen in het vlak de som van vectoren en de vermenigvuldiging van een vector met een getal."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.09> .
+
+<http://example.com/06.10> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen eerstegraadsvergelijkingen en -ongelijkheden in één onbekende algebraïsch en grafisch op."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.10> .
+
+<http://example.com/06.11> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen drukken bij een formule één variabele uit in functie van een andere."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.11> .
+
+<http://example.com/06.12> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen uit wat een functie is en leggen het verband tussen verschillende representaties van een functie: verwoording, tabel, grafiek en voorschrift."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.12> .
+
+<http://example.com/06.13> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen bepalen het voorschrift, de grafiek, de tabel en de verwoording van een eerstegraadsfunctie als één van de andere representaties gegeven is."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.13> .
+
+<http://example.com/06.14> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren kenmerken van eerstegraadsfuncties: domein, bereik, nulwaarden, tekenverloop en stijgen/dalen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.14> .
+
+<http://example.com/06.15> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren kenmerken van tweedegraadsfuncties van de vorm f(x)=ax²: domein, bereik, nulwaarden, tekenverloop, stijgen/dalen, extremum, toenemende/afnemende stijging/daling en symmetrie ten opzichte van een verticale rechte."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.15> .
+
+<http://example.com/06.16> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen stelsels van twee eerstegraadsvergelijkingen in twee onbekenden algebraïsch en grafisch op."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.16> .
+
+<http://example.com/06.17> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen telproblemen op met behulp van boomdiagrammen en venndiagrammen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.17> .
+
+<http://example.com/06.18> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren statistische gegevens aan de hand van voorstellingswijzen en centrum- en spreidingsmaten."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.18> .
+
+<http://example.com/06.19> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen bepalen de waarheidswaarde van logische uitspraken met behulp van waarheidstabellen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.19> .
+
+<http://example.com/06.20> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen beargumenteren wiskundige redeneringen en maken daarbij ook gebruik van eigenschappen of van een tegenvoorbeeld."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.20> .
+
+<http://example.com/06.21> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen beschrijven fenomenen uit de realiteit aan de hand van wiskundige concepten uit de tweede graad."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.21> .
+
+<http://example.com/06.22> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen vraagstukken en problemen op door te mathematiseren en demathematiseren en door gebruik te maken van heuristieken."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.22> .
+
+<http://example.com/06.23> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken ICT om berekeningen uit te voeren en grafische voorstellingen te maken."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.23> .
+
+<http://example.com/06.24> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen uit hoe plantaardige en dierlijke organismen prikkels ontvangen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.24> .
+
+<http://example.com/06.25> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen uit hoe bij plantaardige en dierlijke organismen een prikkel verwerkt wordt."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.25> .
+
+<http://example.com/06.26> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen lichten het onderscheid toe tussen reacties op een prikkel bij plantaardige en dierlijke organismen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.26> .
+
+<http://example.com/06.27> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen uit dat plantaardige en dierlijke organismen zich kunnen handhaven dankzij homeostase."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.27> .
+
+<http://example.com/06.28> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen de hormonale regeling van het voortplantingssysteem bij de mens uit."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.28> .
+
+<http://example.com/06.29> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband tussen eigenschappen van virussen, bacteriën en schimmels en hun positieve en negatieve rol in de natuur."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.29> .
+
+<http://example.com/06.30> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen illustreren interacties tussen organismen van dezelfde soort en van verschillende soorten."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.30> .
+
+<http://example.com/06.31> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband tussen materie- en energiestromen in een ecosysteem."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.31> .
+
+<http://example.com/06.32> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen onderzoeken zuivere stoffen en soorten mengsels in het dagelijkse leven aan de hand van eigenschappen en scheidingstechnieken."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.32> .
+
+<http://example.com/06.33> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken een atoommodel om de structuur van atomen en ionen te beschrijven."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.33> .
+
+<http://example.com/06.34> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband tussen de plaats en de eigenschappen van atomen in het PSE."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.34> .
+
+<http://example.com/06.35> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren de naam en symbolische schrijfwijze van enkelvoudige en samengestelde stoffen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.35> .
+
+<http://example.com/06.36> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband tussen de chemische binding en de eigenschappen van een stof."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.36> .
+
+<http://example.com/06.37> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen balanceren gegeven eenvoudige chemische reacties en interpreteren ze in termen van materie- en energie-uitwisseling."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.37> .
+
+<http://example.com/06.38> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen brengen pH in verband met het zuur, basisch of neutraal karakter van een waterige oplossing en lichten de functie van een zuur-base indicator toe."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.38> .
+
+<http://example.com/06.39> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren massaconcentratie en molaire concentratie."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.39> .
+
+<http://example.com/06.40> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen fysische problemen met en zonder formularium op."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.40> .
+
+<http://example.com/06.41> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren rechtlijnige bewegingen grafisch en eenparig rechtlijnige bewegingen kwantitatief."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.41> .
+
+<http://example.com/06.42> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen krachten vectorieel voor en leggen het verband tussen de verandering van bewegingstoestand van een lichaam en de resulterende kracht."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.42> .
+
+<http://example.com/06.43> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen verklaren fenomenen of toepassingen uit het dagelijkse leven aan de hand van het concept druk bij vaste stoffen, gassen en vloeistoffen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.43> .
+
+<http://example.com/06.44> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen de energiebalans van energieomzettingen op aan de hand van de wet van behoud van energie."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.44> .
+
+<http://example.com/06.45> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen kwantitatief de energiebalans op van energieomzettingen tussen kinetische, gravitationele of elastische energie in eenvoudige situaties."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.45> .
+
+<http://example.com/06.46> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen voeren berekeningen uit in verband met vermogen en rendement bij energieomzettingen in systemen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.46> .
+
+<http://example.com/06.47> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen verklaren het energietransport bij faseovergangen en bij temperatuursveranderingen van stoffen aan de hand van het deeltjesmodel."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.47> .
+
+<http://example.com/06.48> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren verbanden tussen stroomsterkte, spanning en weerstand in een gelijkstroomkring."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.48> .
+
+<http://example.com/06.49> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken de grootheid vermogen en het Joule-effect om fenomenen in elektrische systemen te verklaren."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.49> .
+
+<http://example.com/06.50> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen werken op een veilige en duurzame manier met materialen, stoffen, organismen en technische systemen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.50> .
+
+<http://example.com/06.51> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen voeren onderzoek aan de hand van een wetenschappelijke methode om kennis te ontwikkelen en om vragen te beantwoorden."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.51> .
+
+<http://example.com/06.52> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen ontwerpen een oplossing voor een probleem door wetenschappen, technologie of wiskunde geïntegreerd aan te wenden."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.52> .
+
+<http://example.com/06.53> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
+    <http://www.w3.org/ns/adms#Identifier>;
+  <http://example.com/eigenCombinatieLeerdoelOpleidingsniveau> <http://example.com/DT-ET_S-gr2-DoF>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/OV>;
+  <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren de wisselwerking tussen wetenschappen, technologie, wiskunde en de maatschappij aan de hand van maatschappelijke uitdagingen."@nl;
+  <http://purl.org/dc/elements/1.1/subject> <http://example.com/SC_6>;
+  <http://www.w3.org/ns/adms#identifier> <http://example.com/06.53> .
+
+<http://example.com/BK> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/BS-OV1> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/BS-OV3> a <http://example.com/Opleidingsniveau>, skos:Opleidingsniveau .
+
+<http://example.com/BS-OV4> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/CD_ADC> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Algemene doorstroomcompetenties"@nl .
+
+<http://example.com/CD_AW> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Aardwetenschappen"@nl .
+
+<http://example.com/CD_B> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Biologie"@nl .
+
+<http://example.com/CD_BW> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Bewegingswetenschappen"@nl .
+
+<http://example.com/CD_C> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Chemie"@nl .
+
+<http://example.com/CD_E> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Economie"@nl, "Economie en organisatie"@nl .
+
+<http://example.com/CD_F> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Filosofie"@nl .
+
+<http://example.com/CD_Fy> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Fysica"@nl .
+
+<http://example.com/CD_GW> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Gedragswetenscahppen"@nl .
+
+<http://example.com/CD_ICT> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Informaticawetenschappen"@nl .
+
+<http://example.com/CD_KC> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Kunst en cultuur"@nl .
+
+<http://example.com/CD_KT> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Klassieke talen"@nl .
+
+<http://example.com/CD_MT> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Moderne talen"@nl .
+
+<http://example.com/CD_STEM> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "STEM"@nl .
+
+<http://example.com/CD_SW> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Sociale wetenschappen"@nl .
+
+<http://example.com/CD_W> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Wiskunde"@nl .
+
+<http://example.com/DKO-gr1> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/DKO-gr2> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/DKO-gr3> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/DKO-gr4> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/DT-BC_DKO-gr1> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Basiscompetentie"@nl;
+  <http://example.com/niveau> <http://example.com/DKO-gr1>;
+  dc:title "Basiscompetenties in het deeltijds kunstonderwijs - 1ste graad"@nl .
+
+<http://example.com/DT-BC_DKO-gr2> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Basiscompetentie"@nl;
+  <http://example.com/niveau> <http://example.com/DKO-gr2>;
+  dc:title "Basiscompetenties in het deeltijds kunstonderwijs - 2de graad"@nl .
+
+<http://example.com/DT-BC_DKO-gr3> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Basiscompetentie"@nl;
+  <http://example.com/niveau> <http://example.com/DKO-gr3>;
+  dc:title "Basiscompetenties en specifieke eindtermen in het deeltijds kunstonderwijs - 3de graad"@nl .
+
+<http://example.com/DT-BC_SV> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Basiscompetentie"@nl;
+  <http://example.com/niveau> <http://example.com/SV-AAV>, <http://example.com/SV-AV>,
+    <http://example.com/SV-MG>;
+  dc:title "Basiscompetenties in het secundair volwassenenonderwijs"@nl .
+
+<http://example.com/DT-BK_DKO-gr4> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Beroepskwalificatie"@nl;
+  <http://example.com/niveau> <http://example.com/DKO-gr4>;
+  dc:title "Beroepskwalificaties in het deeltijds kunstonderwijs - 4de graad"@nl .
+
+<http://example.com/DT-BK_S-gr2> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Beroepskwalificatie"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr2-AF>, <http://example.com/S-gr2-DuF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Beroepskwalificaties in het secundair onderwijs - 2de graad"@nl .
+
+<http://example.com/DT-BK_S-gr3> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Beroepskwalificatie"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr3-AF>, <http://example.com/S-gr3-DuF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Beroepskwalificaties in het secundair onderwijs - 3de graad"@nl .
+
+<http://example.com/DT-BK_S-lj7> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Beroepskwalificatie"@nl;
+  <http://example.com/niveau> <http://example.com/S-lj7-AF>, <http://example.com/S-lj7-DuF>;
+  dc:title "Beroepskwalificaties in het secundair onderwijs - 7de leerjaar"@nl .
+
+<http://example.com/DT-BK_SV-BO> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Beroepskwalificatie"@nl;
+  <http://example.com/niveau> <http://example.com/SV-BO>;
+  dc:title "Beroepskwalificaties in het secundair volwassenenonderwijs"@nl .
+
+<http://example.com/DT-CD_S-gr2> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Cesuurdoel"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr2-DoF>, <http://example.com/S-gr2-DuF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Cesuurdoelen in het secundair onderwijs - 2de graad"@nl .
+
+<http://example.com/DT-CD_SV-gr2-AV> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Cesuurdoel"@nl;
+  <http://example.com/niveau> <http://example.com/SV-gr2-AV>;
+  dc:title "Cesuurdoelen in het secundair volwassenenonderwijs - 2de graad - algemene vorming"@nl .
+
+<http://example.com/DT-DSL_H> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Domeinspecifieke leerresultaten "@nl;
+  <http://example.com/niveau> <http://example.com/H>;
+  dc:title "Domeinspecifieke leerresultaten in het hoger onderwijs"@nl .
+
+<http://example.com/DT-ET&BC_V-B> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Basiscompetentie"@nl, "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/V-B>;
+  dc:title "Eindtermen en basiscompetenties in het volwassenenonderwijs - basiseducatie"@nl .
+
+<http://example.com/DT-ETBG_S-gr1> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindtermen basisgeletterdheid"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr1>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Eindtermen basisgeletterdheid in het secundair onderwijs - 1ste graad"@nl .
+
+<http://example.com/DT-ET_S-gr1-A> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr1-A>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Eindtermen in het secundair onderwijs - 1ste graad - A-stroom"@nl .
+
+<http://example.com/DT-ET_S-gr1-B> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr1-B>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Eindtermen in het secundair onderwijs - 1ste graad - B-stroom"@nl .
+
+<http://example.com/DT-ET_S-gr2-AF> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr2-AF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Eindtermen in het secundair onderwijs - 2de graad - arbeidsfinaliteit"@nl,
+    "Eindtermen in het secundair onderwijs - 3de graad - arbeidsfinaliteit"@nl .
+
+<http://example.com/DT-ET_S-gr2-DoF> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr2-DoF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Eindtermen in het secundair onderwijs - 2de graad - doorstroomfinaliteit"@nl .
+
+<http://example.com/DT-ET_S-gr2-DuF> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr2-DuF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Eindtermen in het secundair onderwijs - 2de graad - dubbele finaliteit"@nl .
+
+<http://example.com/DT-ET_S-gr3-DoF> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr3-DoF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Eindtermen in het secundair onderwijs - 3de graad - doorstroomfinaliteit"@nl .
+
+<http://example.com/DT-ET_S-gr3-DuF> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr3-DuF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Eindtermen in het secundair onderwijs - 3de graad - dubbele finaliteit"@nl .
+
+<http://example.com/DT-ET_SV-AAV> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/SV-AAV>;
+  dc:title "Eindtermen in het secundair volwassenenonderwijs - aanvullende algemene vorming"@nl .
+
+<http://example.com/DT-ET_SV-gr2-AV> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/SV-gr2-AV>;
+  dc:title "Eindtermen in het secundair volwassenenonderwijs - 2de graad - algemene vorming"@nl .
+
+<http://example.com/DT-ET_SV-gr3-AV> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/SV-gr3-AV>;
+  dc:title "Eindtermen in het secundair volwassenenonderwijs - 3de graad - algemene vorming"@nl .
+
+<http://example.com/DT-MD_BK> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Minimumdoel"@nl;
+  <http://example.com/niveau> <http://example.com/BK>;
+  dc:title "Minimumdoelen in het buitengewoon kleuteronderwijs"@nl .
+
+<http://example.com/DT-MD_BL> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Minimumdoel"@nl;
+  <http://example.com/niveau> <http://example.com/L>;
+  dc:title "Minimumdoelen in het buitengewoon lager onderwijs"@nl .
+
+<http://example.com/DT-MD_K> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Minimumdoel"@nl;
+  <http://example.com/niveau> <http://example.com/K>;
+  dc:title "Minimumdoelen in het gewoon kleuteronderwijs"@nl .
+
+<http://example.com/DT-MD_L> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Minimumdoel"@nl;
+  <http://example.com/niveau> <http://example.com/L>;
+  dc:title "Minimumdoelen in het gewoon lager onderwijs"@nl .
+
+<http://example.com/DT-MD_S-lj7> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Minimumdoel"@nl;
+  <http://example.com/niveau> <http://example.com/S-lj7-DoF>, <http://example.com/S-lj7-DuF>;
+  dc:title "Minimumdoelen in het secundair onderwijs - 7de leerjaar"@nl .
+
+<http://example.com/DT-OD_BS-OV1> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Ontwikkelingsdoel"@nl;
+  <http://example.com/niveau> <http://example.com/BS-OV1>;
+  dc:title "Ontwikkelingsdoelen in het buitengewoon secundair onderwijs - opleidingsvorm 1"@nl .
+
+<http://example.com/DT-OD_BS-OV3> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Ontwikkelingsdoel"@nl;
+  <http://example.com/niveau> <http://example.com/BS-OV3>;
+  dc:title "Ontwikkelingsdoelen in het buitengewoon secundair onderwijs - opleidingsvorm 3"@nl .
+
+<http://example.com/DT-OD_BS-OV4> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Ontwikkelingsdoel"@nl;
+  <http://example.com/niveau> <http://example.com/BS-OV4>;
+  dc:title "Ontwikkelingsdoelen in het buitengewoon secundair onderwijs - opleidingsvorm 4"@nl .
+
+<http://example.com/DT-OD_OKAN> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Ontwikkelingsdoel"@nl;
+  <http://example.com/niveau> <http://example.com/OKAN>;
+  dc:title "Ontwikkelingsdoelen in de onthaalklas voor anderstalige nieuwkomers"@nl .
+
+<http://example.com/DT-SET_S-gr3> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Specifieke eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr3-DoF>, <http://example.com/S-gr3-DuF>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Specifieke eindtermen in het secundair onderwijs - 3de graad"@nl .
+
+<http://example.com/DT-SET_SV-gr3-AV> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Specifieke eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/SV-gr3-AV>;
+  dc:title "Specifieke eindtermen in het secundair volwassenenonderwijs - 3de graad - algemene vorming"@nl .
+
+<http://example.com/DT-SE_DKO-gr4> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Specifieke eindterm"@nl;
+  <http://example.com/niveau> <http://example.com/DKO-gr4>;
+  dc:title "Specifieke eindtermen in het deeltijds kunstonderwijs - 4de graad"@nl .
+
+<http://example.com/DT-UD_S-gr1> a <http://example.com/EigenCombinatieLeerdoelOpleidingsniveau>;
+  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/OV>;
+  <http://example.com/collectiedoel> "Doeltype"@nl;
+  <http://example.com/collectiedoeltype> "Uitbreidingsdoel"@nl;
+  <http://example.com/niveau> <http://example.com/S-gr1>;
+  <http://example.com/versieDatum> "V2_1"@nl;
+  dc:title "Uitbreidingsdoelen in het secundair onderwijs - 1ste graad"@nl .
+
+<http://example.com/H> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/K> a <http://example.com/Opleidingsniveau>, skos:Opleidingsniveau .
+
+<http://example.com/L> a <http://example.com/Opleidingsniveau>, skos:Opleidingsniveau .
+
+<http://example.com/L-lj5> a skos:Opleidingsniveau .
+
+<http://example.com/L-lj6> a skos:Opleidingsniveau .
+
+<http://example.com/OD_B> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Burgerzin"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_G> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Gezondheidseducatie"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_ICT> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "ICT"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_LL> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Leren leren"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_LO> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Lichamelijke opvoeding"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_ME> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Milieueducatie"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_RV> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Rekenvaardigheden"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_SEE> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Sociaal-emotionele educatie"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_TV> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Taalvaardigheid"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OD_VTV> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Vrijetijdsvaardigheden"@nl;
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
+
+<http://example.com/OKAN> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/OV> a dc:Agent;
+  dc:title "AHOVOKS"@nl .
+
+<http://example.com/Ontwikkelingsdoelen> a skos:Concept .
+
+<http://example.com/S> a skos:Opleidingsniveau .
+
+<http://example.com/S-gr1> a <http://example.com/Opleidingsniveau>, skos:Opleidingsniveau .
+
+<http://example.com/S-gr1-A> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr1-B> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr2> a skos:Opleidingsniveau .
+
+<http://example.com/S-gr2-AF> a <http://example.com/Opleidingsniveau>, skos:Opleidingsniveau .
+
+<http://example.com/S-gr2-DoF> a <http://example.com/Opleidingsniveau>, skos:Opleidingsniveau .
+
+<http://example.com/S-gr2-DuF> a <http://example.com/Opleidingsniveau>, skos:Opleidingsniveau .
+
+<http://example.com/S-gr3> a skos:Opleidingsniveau .
+
+<http://example.com/S-gr3-AF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-gr3-DoF> a <http://example.com/Opleidingsniveau>, skos:Opleidingsniveau .
+
+<http://example.com/S-gr3-DuF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-lj7> a skos:Opleidingsniveau .
+
+<http://example.com/S-lj7-AF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-lj7-DoF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/S-lj7-DuF> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/SC_1> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Lichamelijke en geestelijke gezondheid"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Competenties op het vlak van lichamelijk, geestelijk en emotioneel bewustzijn en op vlak van lichamelijke, geestelijke en emotionele gezondheid"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_10> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Duurzaamheid"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Competenties inzake duurzaamheid"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_11> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Economische en financiële competenties"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr3>;
+  dc:title "Economische en financiële competenties"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_12> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Juridische competenties"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Juridische competenties"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_13> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Leercompetenties"@nl;
+  dc:educationLevel <http://example.com/BS-OV3>, <http://example.com/S>;
+  dc:title "Leercompetenties met inbegrip van onderzoekscompetenties, innovatiedenken, creativiteit, probleemoplossend en kritisch denken, systeemdenken, informatieverwerking en samenwerken"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_14> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Zelfbewustzijn"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Zelfbewustzijn en zelfexpressie, zelfsturing en wendbaarheid"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_15> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Ondernemingszin"@nl;
+  dc:educationLevel <http://example.com/S>;
+  dc:title "Ontwikkeling van initiatief, ambitie, ondernemingszin en loopbaancompetenties"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_16> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Cultureel bewustzijn"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Cultureel bewustzijn en culturele expressie"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_2> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Nederlands"@nl;
+  dc:educationLevel <http://example.com/S>;
+  dc:title "Competenties in het Nederlands"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_3> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Andere talen"@nl;
+  dc:educationLevel <http://example.com/S>;
+  dc:title "Competenties in andere talen"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_4> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Digitale competenties"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Digitale competentie en mediawijsheid"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_5> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Sociaal-relationele competenties"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Sociaal-relationele competenties"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_6> a <http://example.com/Onderwerp>, skos:Concept;
+  <http://example.com/shortLabel> "Wiskunde - natuurwetenschappen - technologie - STEM"@nl;
+  dc:educationLevel <http://example.com/S>;
+  dc:title "Competenties inzake wiskunde, exacte wetenschappen en technologie"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_7> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Burgerschap"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Burgerschapscompetenties met inbegrip van competenties inzake samenleven"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_8> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Historisch bewustzijn"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Competenties met betrekking tot historisch bewustzijn"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SC_9> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Ruimtelijk bewustzijn"@nl;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Competenties met betrekking tot ruimtelijk bewustzijn"@nl;
+  dc:type <http://example.com/Sleutelcompetentie> .
+
+<http://example.com/SD_DO> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2-DoF>, <http://example.com/S-gr3-DoF>;
+  dc:title "Domeinoverschrijdend"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SD_EO> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Economie en organisatie"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SD_KC> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Kunst en creatie"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SD_LT> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Land- en tuinbouw"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SD_MW> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Maatschappij en welzijn"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SD_S> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2-AF>, <http://example.com/S-gr2-DuF>, <http://example.com/S-gr3>;
+  dc:title "Sport"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SD_STEM> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Stem"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SD_TC> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2-AF>, <http://example.com/S-gr2-DuF>, <http://example.com/S-gr3>;
+  dc:title "Taal en cultuur"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SD_VH> a <http://example.com/Onderwerp>;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Voeding en horeca"@nl;
+  dc:type <http://example.com/Studiedomein> .
+
+<http://example.com/SR_EW> a <http://example.com/Onderwerp>;
+  dc:title "Economische wetenschappen"@nl;
+  dc:type <http://example.com/Studierichting> .
+
+<http://example.com/SR_GL> a <http://example.com/Onderwerp>;
+  dc:title "Grieks-Latijn"@nl;
+  dc:type <http://example.com/Studierichting> .
+
+<http://example.com/SR_L> a <http://example.com/Onderwerp>;
+  dc:title "Latijn"@nl;
+  dc:type <http://example.com/Studierichting> .
+
+<http://example.com/SR_NW> a <http://example.com/Onderwerp>;
+  dc:title "Natuurwetenschappen"@nl;
+  dc:type <http://example.com/Studierichting> .
+
+<http://example.com/SR_TW> a <http://example.com/Onderwerp>;
+  dc:title "Technologische wetenschappen"@nl;
+  dc:type <http://example.com/Studierichting> .
+
+<http://example.com/SV-AAV> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/SV-AV> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/SV-BO> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/SV-MG> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/SV-gr2-AV> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/SV-gr3-AV> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/Sleutelcompetentie> a skos:Concept .
+
+<http://example.com/Studiedomein> a skos:Concept .
+
+<http://example.com/Studierichting> a skos:Concept .
+
+<http://example.com/V-B> a <http://example.com/Opleidingsniveau> .
+
+<http://example.com/VD_A> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Aardrijkskunde"@nl;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Aardrijkskunde"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_At> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Attitudes"@nl;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Attitudes, waaronder persoonvormende en socialiserende vaardigheden, leren leren en leerondersteunende vaardigheden"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_Fr> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Frans"@nl;
+  dc:educationLevel <http://example.com/L-lj5>, <http://example.com/L-lj6>;
+  dc:title "Frans"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_G> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Geschiedenis"@nl;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Geschiedenis"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_ICT> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "ICT"@nl;
+  dc:educationLevel <http://example.com/L>;
+  dc:title "ICT"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_LO> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Lichamelijke opvoeding"@nl;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Lichamelijke opvoeding"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_MV> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Muzische vorming"@nl;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Muzische vorming"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_Nl> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Nederlands"@nl;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Nederlands"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_W> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Wiskunde"@nl;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Wiskunde"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/VD_WT> a <http://example.com/Onderwerp>;
+  <http://example.com/shortLabel> "Wetenschap en techniek"@nl;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Wetenschap en techniek"@nl;
+  dc:type <http://example.com/Vakdiscipline> .
+
+<http://example.com/Vakdiscipline> a skos:Concept .

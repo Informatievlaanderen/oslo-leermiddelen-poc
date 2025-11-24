@@ -1,0 +1,296 @@
+@prefix : <http://base.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://example.com/BK> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Buitengewoon kleuteronderwijs"@nl;
+  dc:title "Buitengewoon kleuteronderwijs"@nl .
+
+<http://example.com/BL> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Buitengewoon lager onderwijs"@nl;
+  dc:title "Buitengewoon lager onderwijs"@nl .
+
+<http://example.com/BS> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Buitengewoon secundair onderwijs"@nl;
+  dc:title "Buitengewoon secundair onderwijs"@nl .
+
+<http://example.com/BS-OV1> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Buitengewoon secundair onderwijs"@nl;
+  <http://example.com/level-2> "Opleidingsvorm 1"@nl;
+  dc:title "Buitengewoon secundair onderwijs - Opleidingsvorm 1"@nl;
+  skos:narrower <http://example.com/BS> .
+
+<http://example.com/BS-OV2> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Buitengewoon secundair onderwijs"@nl;
+  <http://example.com/level-2> "Opleidingsvorm 2"@nl;
+  dc:title "Buitengewoon secundair onderwijs - Opleidingsvorm 2"@nl;
+  skos:narrower <http://example.com/BS> .
+
+<http://example.com/BS-OV3> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Buitengewoon secundair onderwijs"@nl;
+  <http://example.com/level-2> "Opleidingsvorm 3"@nl;
+  dc:title "Buitengewoon secundair onderwijs - Opleidingsvorm 3"@nl;
+  skos:narrower <http://example.com/BS> .
+
+<http://example.com/BS-OV4> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Buitengewoon secundair onderwijs"@nl;
+  <http://example.com/level-2> "Opleidingsvorm 4"@nl;
+  dc:title "Buitengewoon secundair onderwijs - Opleidingsvorm 4"@nl;
+  skos:narrower <http://example.com/BS> .
+
+<http://example.com/DKO> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Deeltijds kunstonderwijs"@nl;
+  dc:title "Deeltijds kunstonderwijs"@nl .
+
+<http://example.com/DKO-gr1> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Deeltijds kunstonderwijs"@nl;
+  <http://example.com/level-2> "1ste graad"@nl;
+  dc:title "Deeltijds kunstonderwijs - 1ste graad"@nl;
+  skos:narrower <http://example.com/DKO> .
+
+<http://example.com/DKO-gr2> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Deeltijds kunstonderwijs"@nl;
+  <http://example.com/level-2> "2de graad"@nl;
+  dc:title "Deeltijds kunstonderwijs - 2de graad"@nl;
+  skos:narrower <http://example.com/DKO> .
+
+<http://example.com/DKO-gr3> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Deeltijds kunstonderwijs"@nl;
+  <http://example.com/level-2> "3de graad"@nl;
+  dc:title "Deeltijds kunstonderwijs - 3de graad"@nl;
+  skos:narrower <http://example.com/DKO> .
+
+<http://example.com/DKO-gr4> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Deeltijds kunstonderwijs"@nl;
+  <http://example.com/level-2> "4de graad"@nl;
+  dc:title "Deeltijds kunstonderwijs - 4de graad"@nl;
+  skos:narrower <http://example.com/DKO> .
+
+<http://example.com/H> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Hoger onderwijs"@nl;
+  dc:title "Hoger onderwijs"@nl .
+
+<http://example.com/K> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Kleuteronderwijs"@nl;
+  dc:title "Kleuteronderwijs"@nl .
+
+<http://example.com/L> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Lager onderwijs"@nl;
+  dc:title "Lager onderwijs"@nl .
+
+<http://example.com/L-5lj> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Lager onderwijs"@nl;
+  <http://example.com/level-2> "5de leerjaar"@nl;
+  dc:title "Lager onderwijs - 5de leerjaar"@nl;
+  skos:narrower <http://example.com/L> .
+
+<http://example.com/L-6lj> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Lager onderwijs"@nl;
+  <http://example.com/level-2> "6de leerjaar"@nl;
+  dc:title "Lager onderwijs - 6de leerjaar"@nl;
+  skos:narrower <http://example.com/L> .
+
+<http://example.com/OKAN> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Onthaalklas voor anderstalige nieuwkomers"@nl;
+  dc:title "Onthaalklas voor anderstalige nieuwkomers"@nl .
+
+<http://example.com/S> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  dc:title "Secundair onderwijs"@nl .
+
+<http://example.com/S-gr1> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "1ste graad"@nl;
+  dc:title "Secundair onderwijs - 1ste graad"@nl;
+  skos:narrower <http://example.com/S> .
+
+<http://example.com/S-gr1-A> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "1ste graad"@nl;
+  <http://example.com/level-3> "A-stroom"@nl;
+  dc:title "Secundair onderwijs - 1ste graad - A-stroom"@nl;
+  skos:narrower <http://example.com/S-gr1> .
+
+<http://example.com/S-gr1-A-lj1> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "1ste graad"@nl;
+  <http://example.com/level-3> "A-stroom"@nl;
+  <http://example.com/level-4> "1ste leerjaar"@nl;
+  dc:title "Secundair onderwijs - 1ste graad - A-stroom - 1ste leerjaar"@nl;
+  skos:narrower <http://example.com/S-gr1-A> .
+
+<http://example.com/S-gr1-A-lj2> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "1ste graad"@nl;
+  <http://example.com/level-3> "A-stroom"@nl;
+  <http://example.com/level-4> "2de leerjaar"@nl;
+  dc:title "Secundair onderwijs - 1ste graad - A-stroom - 2de leerjaar"@nl;
+  skos:narrower <http://example.com/S-gr1-A> .
+
+<http://example.com/S-gr1-B> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "1ste graad"@nl;
+  <http://example.com/level-3> "B-stroom"@nl;
+  dc:title "Secundair onderwijs - 1ste graad - B-stroom"@nl;
+  skos:narrower <http://example.com/S-gr1> .
+
+<http://example.com/S-gr1-B-lj1> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "1ste graad"@nl;
+  <http://example.com/level-3> "B-stroom"@nl;
+  <http://example.com/level-4> "1ste leerjaar"@nl;
+  dc:title "Secundair onderwijs - 1ste graad - B-stroom - 1ste leerjaar"@nl;
+  skos:narrower <http://example.com/S-gr1-B> .
+
+<http://example.com/S-gr1-B-lj2> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "1ste graad"@nl;
+  <http://example.com/level-3> "B-stroom"@nl;
+  <http://example.com/level-4> "2de leerjaar"@nl;
+  dc:title "Secundair onderwijs - 1ste graad - B-stroom - 2de leerjaar"@nl;
+  skos:narrower <http://example.com/S-gr1-B> .
+
+<http://example.com/S-gr2> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "2de graad"@nl;
+  dc:title "Secundair onderwijs - 2de graad"@nl .
+
+<http://example.com/S-gr2-AF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "2de graad"@nl;
+  <http://example.com/level-3> "arbeidsfinaliteit"@nl;
+  dc:title "Secundair onderwijs - 2de graad - arbeidsfinaliteit"@nl;
+  skos:narrower <http://example.com/S-gr2> .
+
+<http://example.com/S-gr2-DoF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "2de graad"@nl;
+  <http://example.com/level-3> "doorstroomfinaliteit"@nl;
+  dc:title "Secundair onderwijs - 2de graad - doorstroomfinaliteit"@nl;
+  skos:narrower <http://example.com/S-gr2> .
+
+<http://example.com/S-gr2-DuF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "2de graad"@nl;
+  <http://example.com/level-3> "dubbele finaliteit"@nl;
+  dc:title "Secundair onderwijs - 2de graad - dubbele finaliteit"@nl;
+  skos:narrower <http://example.com/S-gr2> .
+
+<http://example.com/S-gr3> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "3de graad"@nl;
+  dc:title "Secundair onderwijs - 3de graad"@nl .
+
+<http://example.com/S-gr3-AF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "3de graad"@nl;
+  <http://example.com/level-3> "arbeidsfinaliteit"@nl;
+  dc:title "Secundair onderwijs - 3de graad - arbeidsfinaliteit"@nl;
+  skos:narrower <http://example.com/S-gr3> .
+
+<http://example.com/S-gr3-DoF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "3de graad"@nl;
+  <http://example.com/level-3> "doorstroomfinaliteit"@nl;
+  dc:title "Secundair onderwijs - 3de graad - doorstroomfinaliteit"@nl;
+  skos:narrower <http://example.com/S-gr3> .
+
+<http://example.com/S-gr3-DuF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "3de graad"@nl;
+  <http://example.com/level-3> "dubbele finaliteit"@nl;
+  dc:title "Secundair onderwijs - 3de graad - dubbele finaliteit"@nl;
+  skos:narrower <http://example.com/S-gr3> .
+
+<http://example.com/S-lj7> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "7de leerjaar"@nl;
+  dc:title "Secundair onderwijs - 7de leerjaar"@nl .
+
+<http://example.com/S-lj7-AF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "7de leerjaar"@nl;
+  <http://example.com/level-3> "arbeidsfinaliteit"@nl;
+  dc:title "Secundair onderwijs - 7de leerjaar - arbeidsfinaliteit"@nl;
+  skos:narrower <http://example.com/S-lj7> .
+
+<http://example.com/S-lj7-DoF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "7de leerjaar"@nl;
+  <http://example.com/level-3> "doorstroomfinaliteit"@nl;
+  dc:title "Secundair onderwijs - 7de leerjaar - doorstroomfinaliteit"@nl;
+  skos:narrower <http://example.com/S-lj7> .
+
+<http://example.com/S-lj7-DuF> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair onderwijs"@nl;
+  <http://example.com/level-2> "7de leerjaar"@nl;
+  <http://example.com/level-3> "dubbele finaliteit"@nl;
+  dc:title "Secundair onderwijs - 7de leerjaar - dubbele finaliteit"@nl;
+  skos:narrower <http://example.com/S-lj7> .
+
+<http://example.com/SV> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair volwassenenonderwijs"@nl;
+  dc:title "Secundair volwassenenonderwijs"@nl .
+
+<http://example.com/SV-AAV> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair volwassenenonderwijs"@nl;
+  <http://example.com/level-2> "Aanvullende algemene vorming"@nl;
+  dc:title "Secundair volwassenenonderwijs - Aanvullende algemene vorming"@nl;
+  skos:narrower <http://example.com/SV> .
+
+<http://example.com/SV-BO> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair volwassenenonderwijs"@nl;
+  <http://example.com/level-2> "Beroepsgerichte opleidingen"@nl;
+  dc:title "Secundair volwassenenonderwijs - Beroepsgerichte opleidingen"@nl;
+  skos:narrower <http://example.com/SV> .
+
+<http://example.com/SV-MG> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair volwassenenonderwijs"@nl;
+  <http://example.com/level-2> "modules geletterdheid"@nl;
+  dc:title "Secundair volwassenenonderwijs - modules geletterdheid"@nl;
+  skos:narrower <http://example.com/SV> .
+
+<http://example.com/SV-gr2> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair volwassenenonderwijs"@nl;
+  <http://example.com/level-2> "2de graad"@nl;
+  dc:title "Secundair volwassenenonderwijs - 2de graad"@nl;
+  skos:narrower <http://example.com/SV> .
+
+<http://example.com/SV-gr2-AV> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair volwassenenonderwijs"@nl;
+  <http://example.com/level-2> "2de graad"@nl;
+  <http://example.com/level-3> "Algemene vorming"@nl;
+  dc:title "Secundair volwassenenonderwijs - 2de graad - Algemene vorming"@nl;
+  skos:narrower <http://example.com/SV-gr2> .
+
+<http://example.com/SV-gr3> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair volwassenenonderwijs"@nl;
+  <http://example.com/level-2> "3de graad"@nl;
+  dc:title "Secundair volwassenenonderwijs - 3de graad"@nl .
+
+<http://example.com/SV-gr3-AV> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Secundair volwassenenonderwijs"@nl;
+  <http://example.com/level-2> "3de graad"@nl;
+  <http://example.com/level-3> "Algemene vorming"@nl;
+  dc:title "Secundair volwassenenonderwijs - 3de graad - Algemene vorming"@nl;
+  skos:narrower <http://example.com/SV-gr3> .
+
+<http://example.com/V> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Volwassenenonderwijs"@nl;
+  dc:title "Volwassenenonderwijs"@nl;
+  skos:narrower <http://example.com/V> .
+
+<http://example.com/V-B> a <http://example.com/Opleidingsniveau>;
+  <http://example.com/level-1> "Volwassenenonderwijs"@nl;
+  <http://example.com/level-2> "Basiseducatie"@nl;
+  dc:title "Volwassenenonderwijs - Basiseducatie"@nl .
