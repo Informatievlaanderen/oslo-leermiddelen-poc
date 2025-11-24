@@ -13,7 +13,7 @@ WHERE {
               ex:niveau ?_niveau .
   ?_niveau dcterms:title ?niveau .
   OPTIONAL {
-    ?_anderDoel ?doelLink ?doelOV ;
+    ?_anderDoel ?doelLink ?_minimumdoel ;
                  dc11:creator ?anderDoelOrg;
                  dc11:description ?anderDoel.
     ?anderDoelOrg dcterms:title ?organisatie.
