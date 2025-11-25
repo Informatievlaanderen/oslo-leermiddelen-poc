@@ -10,7 +10,15 @@
     {
       "id": "gr-use-case",
       "name": "Overzichten specifiek voor de werkgroepen OSLO Leermiddelen"
-   }
+    },
+    {
+      "id": "gr-tooling-other",
+      "name": "Overzicht per klasse"
+    },
+    {
+      "id": "gr-tooling-join",
+      "name": "Overzicht van relaties tussen klasses\n"
+    }
   ],
   "queries": [
     {
@@ -27,7 +35,9 @@
       "name": "Doelen - relaties",
       "description": "Controleer welke doelen door andere onderwijskoepels zijn gedefinieerd en wat hun relatie is met het opgegeven doel",
       "indirectVariables": {
-        "queryLocations": ["variableQueries/doel-notaties.rq"]
+        "queryLocations": [
+          "variableQueries/doel-notaties.rq"
+        ]
       }
     },
     {

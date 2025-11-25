@@ -47,7 +47,7 @@ jobs:
         with:
           repository: RMLio/ap-data-to-dashboard
           path: ap-data-to-dashboard
-          ref: ba57a54cd058ba863730e55eab8589b0416e0d5f
+          ref: 2bb5bd334f8d708d1e337eb7c4a9251856c636d1
       - uses: actions/setup-node@v6
         if: steps.check_template.outputs.files_exists == 'false' && steps.check_env_temp.outputs.files_exists == 'true'
         with:
@@ -89,7 +89,7 @@ jobs:
         with:
           repository: RMLio/ap-data-to-dashboard
           path: ap-data-to-dashboard
-          ref: ba57a54cd058ba863730e55eab8589b0416e0d5f
+          ref: 2bb5bd334f8d708d1e337eb7c4a9251856c636d1
       - uses: actions/setup-node@v6
         if: steps.check_data.outputs.files_exists == 'true'
         with:
