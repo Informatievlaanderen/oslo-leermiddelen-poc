@@ -1048,6 +1048,43 @@ mappings:
 
   m_178:
     sources:
+      - [ "out/ov.json~jsonpath", "$.OnderwerpType[*]" ]
+    s: $(CODE[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+      - p: "http://www.w3.org/2004/02/skos/core#altLabel"
+        o: 
+          value:  "$(korteNaam[*])"
+          datatype: http://www.w3.org/2001/XMLSchema#string
+      - p: "http://purl.org/dc/terms/educationLevel"
+        o: 
+          value:  "$(niveau[*])"
+          type: iri
+      - p: "http://purl.org/dc/terms/title"
+        o: 
+          value:  "$(naam[*])"
+          datatype: http://www.w3.org/2001/XMLSchema#string
+      - p: "http://purl.org/dc/terms/type"
+        o: 
+          value:  "$(type[*])"
+          type: iri
+
+  m_182:
+    sources:
+      - [ out/ov.json~jsonpath, "$.OnderwerpType[*]" ]
+    s: $(niveau[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+
+  m_183:
+    sources:
+      - [ out/ov.json~jsonpath, "$.OnderwerpType[*]" ]
+    s: $(type[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+
+  m_184:
+    sources:
       - [ "out/ov.json~jsonpath", "$.Agent[*]" ]
     s: $(CODE[*])
     po:
@@ -1055,23 +1092,4 @@ mappings:
       - p: "http://missing.example.com/naam"
         o: 
           value:  "$(naam[*])"
-
-  m_179:
-    sources:
-      - [ "out/ov.json~jsonpath", "$.Onderwerp[*]" ]
-    s: $(CODE[*])
-    po:
-      - [rdf:type, http://missing.example.com/Onderwerp~iri]
-      - p: "http://missing.example.com/naam"
-        o: 
-          value:  "$(naam[*])"
-      - p: "http://missing.example.com/korteNaam"
-        o: 
-          value:  "$(korteNaam[*])"
-      - p: "http://missing.example.com/type"
-        o: 
-          value:  "$(type[*])"
-      - p: "http://missing.example.com/niveau"
-        o: 
-          value:  "$(niveau[*])"
 

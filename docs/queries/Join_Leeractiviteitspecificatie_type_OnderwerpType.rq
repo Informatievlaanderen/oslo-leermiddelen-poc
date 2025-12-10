@@ -1,0 +1,6 @@
+# Join Leeractiviteitspecificatie → type → OnderwerpType
+SELECT DISTINCT ?Leeractiviteitspecificatie_url ?OnderwerpType_url WHERE {
+  ?Leeractiviteitspecificatie_url a <http://data.europa.eu/snb/model/elm/LearningActivitySpecification> .
+  ?OnderwerpType_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Leeractiviteitspecificatie_url <http://purl.org/dc/terms/type> ?OnderwerpType_url .
+}

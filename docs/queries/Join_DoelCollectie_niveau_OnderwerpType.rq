@@ -1,0 +1,6 @@
+# Join DoelCollectie → niveau → OnderwerpType
+SELECT DISTINCT ?DoelCollectie_url ?OnderwerpType_url WHERE {
+  ?DoelCollectie_url a <http://purl.org/dc/dcmitype/Collection> .
+  ?OnderwerpType_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?DoelCollectie_url <http://purl.org/dc/terms/educationLevel> ?OnderwerpType_url .
+}

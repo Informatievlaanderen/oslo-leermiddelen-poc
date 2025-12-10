@@ -1,8 +1,0 @@
-# Onderwerp 
-SELECT DISTINCT ?Onderwerp_url ?naam ?korteNaam ?type ?niveau WHERE {
-  ?Onderwerp_url a <http://missing.example.com/Onderwerp> .
-  OPTIONAL { ?Onderwerp_url <http://missing.example.com/naam> ?naam . }
-  OPTIONAL { ?Onderwerp_url <http://missing.example.com/korteNaam> ?korteNaam . }
-  OPTIONAL { ?Onderwerp_url <http://missing.example.com/type> ?type . }
-  OPTIONAL { ?Onderwerp_url <http://missing.example.com/niveau> ?niveau . }
-}

@@ -1,0 +1,6 @@
+# Join OnderwerpType → niveau → OnderwerpType2
+SELECT DISTINCT ?OnderwerpType_url ?OnderwerpType2_url WHERE {
+  ?OnderwerpType_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?OnderwerpType2_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?OnderwerpType_url <http://purl.org/dc/terms/educationLevel> ?OnderwerpType2_url .
+}

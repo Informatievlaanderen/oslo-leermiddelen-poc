@@ -1,0 +1,6 @@
+# Join CreatiefWerk → taal → OnderwerpType
+SELECT DISTINCT ?CreatiefWerk_url ?OnderwerpType_url WHERE {
+  ?CreatiefWerk_url a <https://schema.org/CreativeWork> .
+  ?OnderwerpType_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?CreatiefWerk_url <https://schema.org/inLanguage> ?OnderwerpType_url .
+}

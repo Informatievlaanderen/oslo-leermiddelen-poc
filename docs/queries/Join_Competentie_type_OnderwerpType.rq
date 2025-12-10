@@ -1,0 +1,6 @@
+# Join Competentie → type → OnderwerpType
+SELECT DISTINCT ?Competentie_url ?OnderwerpType_url WHERE {
+  ?Competentie_url a <https://ec.europa.eu/esco/lod/static/model.html#Skill> .
+  ?OnderwerpType_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Competentie_url <http://purl.org/dc/terms/type> ?OnderwerpType_url .
+}

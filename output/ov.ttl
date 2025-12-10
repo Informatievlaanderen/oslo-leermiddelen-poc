@@ -448,85 +448,69 @@
 
 <http://example.com/Beroepskwalificatie> a skos:Concept .
 
-<http://example.com/CD_ADC> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Algemene doorstroomcompetenties";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_ADC> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Algemene doorstroomcompetenties" .
 
-<http://example.com/CD_AW> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Aardwetenschappen";
-  <http://missing.example.com/niveau> "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_AW> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Aardwetenschappen" .
 
-<http://example.com/CD_B> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Biologie";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_B> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Biologie" .
 
-<http://example.com/CD_BW> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Bewegingswetenschappen";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_BW> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Bewegingswetenschappen" .
 
-<http://example.com/CD_C> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Chemie";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_C> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Chemie" .
 
-<http://example.com/CD_E> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Economie", "Economie en organisatie";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_E> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Economie", "Economie en organisatie" .
 
-<http://example.com/CD_F> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Filosofie";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_F> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Filosofie" .
 
-<http://example.com/CD_Fy> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Fysica";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_Fy> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Fysica" .
 
-<http://example.com/CD_GW> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Gedragswetenscahppen";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_GW> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Gedragswetenscahppen" .
 
-<http://example.com/CD_ICT> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Informaticawetenschappen";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_ICT> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Informaticawetenschappen" .
 
-<http://example.com/CD_KC> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Kunst en cultuur";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_KC> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Kunst en cultuur" .
 
-<http://example.com/CD_KT> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Klassieke talen";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_KT> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Klassieke talen" .
 
-<http://example.com/CD_MT> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Moderne talen";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_MT> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Moderne talen" .
 
-<http://example.com/CD_STEM> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "STEM";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_STEM> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "STEM" .
 
-<http://example.com/CD_SW> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Sociale wetenschappen";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_SW> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Sociale wetenschappen" .
 
-<http://example.com/CD_W> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Wiskunde";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3", "S-lj7";
-  <http://missing.example.com/type> "Cesuurdoelen/Specifieke eindtermen" .
+<http://example.com/CD_W> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>, <http://example.com/S-lj7>;
+  dc:title "Wiskunde" .
 
 <http://example.com/Cesuurdoel> a skos:Concept .
 
@@ -764,57 +748,61 @@
 
 <http://example.com/L> a skos:Concept .
 
+<http://example.com/L-lj5> a skos:Concept .
+
+<http://example.com/L-lj6> a skos:Concept .
+
 <http://example.com/Minimumdoel> a skos:Concept .
 
-<http://example.com/OD_B> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Burgerzin";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_B> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Burgerzin";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_G> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Gezondheidseducatie";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_G> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Gezondheidseducatie";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_ICT> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "ICT";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_ICT> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "ICT";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_LL> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Leren leren";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_LL> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Leren leren";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_LO> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Lichamelijke opvoeding";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_LO> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Lichamelijke opvoeding";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_ME> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Milieueducatie";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_ME> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Milieueducatie";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_RV> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Rekenvaardigheden";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_RV> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Rekenvaardigheden";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_SEE> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Sociaal-emotionele educatie";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_SEE> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Sociaal-emotionele educatie";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_TV> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Taalvaardigheid";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_TV> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Taalvaardigheid";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
-<http://example.com/OD_VTV> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Vrijetijdsvaardigheden";
-  <http://missing.example.com/niveau> "BS-OV3";
-  <http://missing.example.com/type> "Ontwikkelingsdoelen" .
+<http://example.com/OD_VTV> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>;
+  dc:title "Vrijetijdsvaardigheden";
+  dc:type <http://example.com/Ontwikkelingsdoelen> .
 
 <http://example.com/OKAN> a skos:Concept .
 
@@ -823,11 +811,17 @@
 
 <http://example.com/Ontwikkelingsdoel> a skos:Concept .
 
+<http://example.com/Ontwikkelingsdoelen> a skos:Concept .
+
+<http://example.com/S> a skos:Concept .
+
 <http://example.com/S-gr1> a skos:Concept .
 
 <http://example.com/S-gr1-A> a skos:Concept .
 
 <http://example.com/S-gr1-B> a skos:Concept .
+
+<http://example.com/S-gr2> a skos:Concept .
 
 <http://example.com/S-gr2-AF> a skos:Concept .
 
@@ -835,11 +829,15 @@
 
 <http://example.com/S-gr2-DuF> a skos:Concept .
 
+<http://example.com/S-gr3> a skos:Concept .
+
 <http://example.com/S-gr3-AF> a skos:Concept .
 
 <http://example.com/S-gr3-DoF> a skos:Concept .
 
 <http://example.com/S-gr3-DuF> a skos:Concept .
+
+<http://example.com/S-lj7> a skos:Concept .
 
 <http://example.com/S-lj7-AF> a skos:Concept .
 
@@ -847,166 +845,166 @@
 
 <http://example.com/S-lj7-DuF> a skos:Concept .
 
-<http://example.com/SC_1> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Lichamelijke en geestelijke gezondheid";
-  <http://missing.example.com/naam> "Competenties op het vlak van lichamelijk, geestelijk en emotioneel bewustzijn en op vlak van lichamelijke, geestelijke en emotionele gezondheid";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_1> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Competenties op het vlak van lichamelijk, geestelijk en emotioneel bewustzijn en op vlak van lichamelijke, geestelijke en emotionele gezondheid";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Lichamelijke en geestelijke gezondheid" .
 
-<http://example.com/SC_10> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Duurzaamheid";
-  <http://missing.example.com/naam> "Competenties inzake duurzaamheid";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_10> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Competenties inzake duurzaamheid";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Duurzaamheid" .
 
-<http://example.com/SC_11> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Economische en financiële competenties";
-  <http://missing.example.com/naam> "Economische en financiële competenties";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_11> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr3>;
+  dc:title "Economische en financiële competenties";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Economische en financiële competenties" .
 
-<http://example.com/SC_12> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Juridische competenties";
-  <http://missing.example.com/naam> "Juridische competenties";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_12> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Juridische competenties";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Juridische competenties" .
 
-<http://example.com/SC_13> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Leercompetenties";
-  <http://missing.example.com/naam> "Leercompetenties met inbegrip van onderzoekscompetenties, innovatiedenken, creativiteit, probleemoplossend en kritisch denken, systeemdenken, informatieverwerking en samenwerken";
-  <http://missing.example.com/niveau> "BS-OV3", "S";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_13> a skos:Concept;
+  dc:educationLevel <http://example.com/BS-OV3>, <http://example.com/S>;
+  dc:title "Leercompetenties met inbegrip van onderzoekscompetenties, innovatiedenken, creativiteit, probleemoplossend en kritisch denken, systeemdenken, informatieverwerking en samenwerken";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Leercompetenties" .
 
-<http://example.com/SC_14> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Zelfbewustzijn";
-  <http://missing.example.com/naam> "Zelfbewustzijn en zelfexpressie, zelfsturing en wendbaarheid";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_14> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Zelfbewustzijn en zelfexpressie, zelfsturing en wendbaarheid";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Zelfbewustzijn" .
 
-<http://example.com/SC_15> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Ondernemingszin";
-  <http://missing.example.com/naam> "Ontwikkeling van initiatief, ambitie, ondernemingszin en loopbaancompetenties";
-  <http://missing.example.com/niveau> "S";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_15> a skos:Concept;
+  dc:educationLevel <http://example.com/S>;
+  dc:title "Ontwikkeling van initiatief, ambitie, ondernemingszin en loopbaancompetenties";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Ondernemingszin" .
 
-<http://example.com/SC_16> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Cultureel bewustzijn";
-  <http://missing.example.com/naam> "Cultureel bewustzijn en culturele expressie";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_16> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Cultureel bewustzijn en culturele expressie";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Cultureel bewustzijn" .
 
-<http://example.com/SC_2> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Nederlands";
-  <http://missing.example.com/naam> "Competenties in het Nederlands";
-  <http://missing.example.com/niveau> "S";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_2> a skos:Concept;
+  dc:educationLevel <http://example.com/S>;
+  dc:title "Competenties in het Nederlands";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Nederlands" .
 
-<http://example.com/SC_3> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Andere talen";
-  <http://missing.example.com/naam> "Competenties in andere talen";
-  <http://missing.example.com/niveau> "S";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_3> a skos:Concept;
+  dc:educationLevel <http://example.com/S>;
+  dc:title "Competenties in andere talen";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Andere talen" .
 
-<http://example.com/SC_4> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Digitale competenties";
-  <http://missing.example.com/naam> "Digitale competentie en mediawijsheid";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_4> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Digitale competentie en mediawijsheid";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Digitale competenties" .
 
-<http://example.com/SC_5> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Sociaal-relationele competenties";
-  <http://missing.example.com/naam> "Sociaal-relationele competenties";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_5> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Sociaal-relationele competenties";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Sociaal-relationele competenties" .
 
-<http://example.com/SC_6> a <http://missing.example.com/Onderwerp>, skos:Concept;
-  <http://missing.example.com/korteNaam> "Wiskunde - natuurwetenschappen - technologie - STEM";
-  <http://missing.example.com/naam> "Competenties inzake wiskunde, exacte wetenschappen en technologie";
-  <http://missing.example.com/niveau> "S";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_6> a skos:Concept;
+  dc:educationLevel <http://example.com/S>;
+  dc:title "Competenties inzake wiskunde, exacte wetenschappen en technologie";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Wiskunde - natuurwetenschappen - technologie - STEM" .
 
-<http://example.com/SC_7> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Burgerschap";
-  <http://missing.example.com/naam> "Burgerschapscompetenties met inbegrip van competenties inzake samenleven";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_7> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Burgerschapscompetenties met inbegrip van competenties inzake samenleven";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Burgerschap" .
 
-<http://example.com/SC_8> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Historisch bewustzijn";
-  <http://missing.example.com/naam> "Competenties met betrekking tot historisch bewustzijn";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_8> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Competenties met betrekking tot historisch bewustzijn";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Historisch bewustzijn" .
 
-<http://example.com/SC_9> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Ruimtelijk bewustzijn";
-  <http://missing.example.com/naam> "Competenties met betrekking tot ruimtelijk bewustzijn";
-  <http://missing.example.com/niveau> "S-gr1", "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Sleutelcompetentie" .
+<http://example.com/SC_9> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr1>, <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Competenties met betrekking tot ruimtelijk bewustzijn";
+  dc:type <http://example.com/Sleutelcompetentie>;
+  skos:altLabel "Ruimtelijk bewustzijn" .
 
-<http://example.com/SD_DO> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Domeinoverschrijdend";
-  <http://missing.example.com/niveau> "S-gr2-DoF", "S-gr3-DoF";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_DO> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2-DoF>, <http://example.com/S-gr3-DoF>;
+  dc:title "Domeinoverschrijdend";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SD_EO> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Economie en organisatie";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_EO> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Economie en organisatie";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SD_KC> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Kunst en creatie";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_KC> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Kunst en creatie";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SD_LT> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Land- en tuinbouw";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_LT> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Land- en tuinbouw";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SD_MW> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Maatschappij en welzijn";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_MW> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Maatschappij en welzijn";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SD_S> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Sport";
-  <http://missing.example.com/niveau> "S-gr2-AF", "S-gr2-DuF", "S-gr3";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_S> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2-AF>, <http://example.com/S-gr2-DuF>, <http://example.com/S-gr3>;
+  dc:title "Sport";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SD_STEM> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Stem";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_STEM> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Stem";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SD_TC> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Taal en cultuur";
-  <http://missing.example.com/niveau> "S-gr2-AF", "S-gr2-DuF", "S-gr3";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_TC> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2-AF>, <http://example.com/S-gr2-DuF>, <http://example.com/S-gr3>;
+  dc:title "Taal en cultuur";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SD_VH> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Voeding en horeca";
-  <http://missing.example.com/niveau> "S-gr2", "S-gr3";
-  <http://missing.example.com/type> "Studiedomein" .
+<http://example.com/SD_VH> a skos:Concept;
+  dc:educationLevel <http://example.com/S-gr2>, <http://example.com/S-gr3>;
+  dc:title "Voeding en horeca";
+  dc:type <http://example.com/Studiedomein> .
 
-<http://example.com/SR_EW> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Economische wetenschappen";
-  <http://missing.example.com/type> "Studierichting" .
+<http://example.com/SR_EW> a skos:Concept;
+  dc:title "Economische wetenschappen";
+  dc:type <http://example.com/Studierichting> .
 
-<http://example.com/SR_GL> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Grieks-Latijn";
-  <http://missing.example.com/type> "Studierichting" .
+<http://example.com/SR_GL> a skos:Concept;
+  dc:title "Grieks-Latijn";
+  dc:type <http://example.com/Studierichting> .
 
-<http://example.com/SR_L> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Latijn";
-  <http://missing.example.com/type> "Studierichting" .
+<http://example.com/SR_L> a skos:Concept;
+  dc:title "Latijn";
+  dc:type <http://example.com/Studierichting> .
 
-<http://example.com/SR_NW> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Natuurwetenschappen";
-  <http://missing.example.com/type> "Studierichting" .
+<http://example.com/SR_NW> a skos:Concept;
+  dc:title "Natuurwetenschappen";
+  dc:type <http://example.com/Studierichting> .
 
-<http://example.com/SR_TW> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/naam> "Technologische wetenschappen";
-  <http://missing.example.com/type> "Studierichting" .
+<http://example.com/SR_TW> a skos:Concept;
+  dc:title "Technologische wetenschappen";
+  dc:type <http://example.com/Studierichting> .
 
 <http://example.com/SV-AAV> a skos:Concept .
 
@@ -1020,66 +1018,74 @@
 
 <http://example.com/SV-gr3-AV> a skos:Concept .
 
+<http://example.com/Sleutelcompetentie> a skos:Concept .
+
+<http://example.com/Studiedomein> a skos:Concept .
+
+<http://example.com/Studierichting> a skos:Concept .
+
 <http://example.com/Uitbreidingsdoel> a skos:Concept .
 
 <http://example.com/V-B> a skos:Concept .
 
-<http://example.com/VD_A> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Aardrijkskunde";
-  <http://missing.example.com/naam> "Aardrijkskunde";
-  <http://missing.example.com/niveau> "K", "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_A> a skos:Concept;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Aardrijkskunde";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Aardrijkskunde" .
 
-<http://example.com/VD_At> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Attitudes";
-  <http://missing.example.com/naam> "Attitudes, waaronder persoonvormende en socialiserende vaardigheden, leren leren en leerondersteunende vaardigheden";
-  <http://missing.example.com/niveau> "K", "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_At> a skos:Concept;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Attitudes, waaronder persoonvormende en socialiserende vaardigheden, leren leren en leerondersteunende vaardigheden";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Attitudes" .
 
-<http://example.com/VD_Fr> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Frans";
-  <http://missing.example.com/naam> "Frans";
-  <http://missing.example.com/niveau> "L-lj5", "L-lj6";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_Fr> a skos:Concept;
+  dc:educationLevel <http://example.com/L-lj5>, <http://example.com/L-lj6>;
+  dc:title "Frans";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Frans" .
 
-<http://example.com/VD_G> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Geschiedenis";
-  <http://missing.example.com/naam> "Geschiedenis";
-  <http://missing.example.com/niveau> "K", "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_G> a skos:Concept;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Geschiedenis";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Geschiedenis" .
 
-<http://example.com/VD_ICT> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "ICT";
-  <http://missing.example.com/naam> "ICT";
-  <http://missing.example.com/niveau> "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_ICT> a skos:Concept;
+  dc:educationLevel <http://example.com/L>;
+  dc:title "ICT";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "ICT" .
 
-<http://example.com/VD_LO> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Lichamelijke opvoeding";
-  <http://missing.example.com/naam> "Lichamelijke opvoeding";
-  <http://missing.example.com/niveau> "K", "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_LO> a skos:Concept;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Lichamelijke opvoeding";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Lichamelijke opvoeding" .
 
-<http://example.com/VD_MV> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Muzische vorming";
-  <http://missing.example.com/naam> "Muzische vorming";
-  <http://missing.example.com/niveau> "K", "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_MV> a skos:Concept;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Muzische vorming";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Muzische vorming" .
 
-<http://example.com/VD_Nl> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Nederlands";
-  <http://missing.example.com/naam> "Nederlands";
-  <http://missing.example.com/niveau> "K", "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_Nl> a skos:Concept;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Nederlands";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Nederlands" .
 
-<http://example.com/VD_W> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Wiskunde";
-  <http://missing.example.com/naam> "Wiskunde";
-  <http://missing.example.com/niveau> "K", "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_W> a skos:Concept;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Wiskunde";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Wiskunde" .
 
-<http://example.com/VD_WT> a <http://missing.example.com/Onderwerp>;
-  <http://missing.example.com/korteNaam> "Wetenschap en techniek";
-  <http://missing.example.com/naam> "Wetenschap en techniek";
-  <http://missing.example.com/niveau> "K", "L";
-  <http://missing.example.com/type> "Vakdiscipline" .
+<http://example.com/VD_WT> a skos:Concept;
+  dc:educationLevel <http://example.com/K>, <http://example.com/L>;
+  dc:title "Wetenschap en techniek";
+  dc:type <http://example.com/Vakdiscipline>;
+  skos:altLabel "Wetenschap en techniek" .
+
+<http://example.com/Vakdiscipline> a skos:Concept .

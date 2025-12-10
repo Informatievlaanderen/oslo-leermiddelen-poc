@@ -1,0 +1,6 @@
+# Join Leermiddel → toegankelijkheid → OnderwerpType
+SELECT DISTINCT ?Leermiddel_url ?OnderwerpType_url WHERE {
+  ?Leermiddel_url a <https://schema.org/LearningResource> .
+  ?OnderwerpType_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?Leermiddel_url <https://schema.org/accessibilityFeature> ?OnderwerpType_url .
+}
