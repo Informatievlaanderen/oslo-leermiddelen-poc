@@ -78,6 +78,9 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          ref: main
       - name: Check if there is any data available
         id: check_data
         uses: andstor/file-existence-action@v3
