@@ -3589,7 +3589,7 @@
 	rr:constant rdf:type .
 
 :om_200 rdf:type rr:ObjectMap ;
-	rr:constant <http://missing.example.com/Agent> ;
+	rr:constant dcterms:Agent ;
 	rr:termType rr:IRI .
 
 :pom_201 rdf:type rr:PredicateObjectMap ;
@@ -3597,9 +3597,10 @@
 	rr:objectMap :om_201 .
 
 :pm_201 rdf:type rr:PredicateMap ;
-	rr:constant <http://missing.example.com/naam> .
+	rr:constant dcterms:title .
 
 :om_201 rdf:type rr:ObjectMap ;
 	rml:reference "naam[*]" ;
-	rr:termType rr:Literal .
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
 

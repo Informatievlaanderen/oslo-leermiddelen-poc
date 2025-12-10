@@ -18,8 +18,8 @@
 
 <http://example.com/L> a skos:Concept .
 
-<http://example.com/OVSG> a <http://missing.example.com/Agent>, dc:Agent;
-  <http://missing.example.com/naam> "OVSG" .
+<http://example.com/OVSG> a dc:Agent;
+  dc:title "OVSG" .
 
 <http://example.com/OVSG_DKO> a <http://purl.org/dc/dcmitype/Collection>;
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/OVSG>;

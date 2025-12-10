@@ -1085,8 +1085,9 @@ mappings:
       - [ "out/ov.json~jsonpath", "$.Agent[*]" ]
     s: $(CODE[*])
     po:
-      - [rdf:type, http://missing.example.com/Agent~iri]
-      - p: "http://missing.example.com/naam"
+      - [rdf:type, http://purl.org/dc/terms/Agent~iri]
+      - p: "http://purl.org/dc/terms/title"
         o: 
           value:  "$(naam[*])"
+          datatype: http://www.w3.org/2001/XMLSchema#string
 

@@ -501,8 +501,8 @@
 
 <http://example.com/DKO-gr4> a skos:Concept .
 
-<http://example.com/GO> a <http://missing.example.com/Agent>, dc:Agent;
-  <http://missing.example.com/naam> "GO!" .
+<http://example.com/GO> a dc:Agent;
+  dc:title "GO!" .
 
 <http://example.com/GO_BK&BL> a <http://purl.org/dc/dcmitype/Collection>;
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;

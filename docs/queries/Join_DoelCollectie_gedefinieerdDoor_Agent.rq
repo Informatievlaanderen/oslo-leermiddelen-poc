@@ -1,0 +1,6 @@
+# Join DoelCollectie → gedefinieerdDoor → Agent
+SELECT DISTINCT ?DoelCollectie_url ?Agent_url WHERE {
+  ?DoelCollectie_url a <http://purl.org/dc/dcmitype/Collection> .
+  ?Agent_url a <http://purl.org/dc/terms/Agent> .
+  ?DoelCollectie_url <http://purl.org/dc/elements/1.1/creator> ?Agent_url .
+}

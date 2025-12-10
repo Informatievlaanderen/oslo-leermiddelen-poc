@@ -14,8 +14,8 @@
 
 <http://example.com/Leerplan> a skos:Concept .
 
-<http://example.com/PO> a <http://missing.example.com/Agent>, dc:Agent;
-  <http://missing.example.com/naam> "PO" .
+<http://example.com/PO> a dc:Agent;
+  dc:title "PO" .
 
 <http://example.com/SV> a skos:Concept .
 

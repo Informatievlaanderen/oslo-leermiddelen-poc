@@ -1,0 +1,6 @@
+# Join CreatiefWerk → auteur → Agent
+SELECT DISTINCT ?CreatiefWerk_url ?Agent_url WHERE {
+  ?CreatiefWerk_url a <https://schema.org/CreativeWork> .
+  ?Agent_url a <http://purl.org/dc/terms/Agent> .
+  ?CreatiefWerk_url <https://schema.org/author> ?Agent_url .
+}

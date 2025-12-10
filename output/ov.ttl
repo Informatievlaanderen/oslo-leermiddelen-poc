@@ -806,8 +806,8 @@
 
 <http://example.com/OKAN> a skos:Concept .
 
-<http://example.com/OV> a <http://missing.example.com/Agent>, dc:Agent;
-  <http://missing.example.com/naam> "AHOVOKS" .
+<http://example.com/OV> a dc:Agent;
+  dc:title "AHOVOKS" .
 
 <http://example.com/Ontwikkelingsdoel> a skos:Concept .
 

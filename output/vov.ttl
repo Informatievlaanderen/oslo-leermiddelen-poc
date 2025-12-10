@@ -16,8 +16,8 @@
 
 <http://example.com/V-B> a skos:Concept .
 
-<http://example.com/VOV> a <http://missing.example.com/Agent>, dc:Agent;
-  <http://missing.example.com/naam> "VOV" .
+<http://example.com/VOV> a dc:Agent;
+  dc:title "VOV" .
 
 <http://example.com/VOV_V-B> a <http://purl.org/dc/dcmitype/Collection>;
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/VOV>;

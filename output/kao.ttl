@@ -369,8 +369,8 @@
 
 <http://example.com/K> a skos:Concept .
 
-<http://example.com/KaO> a <http://missing.example.com/Agent>, dc:Agent;
-  <http://missing.example.com/naam> "Katholiek Onderwijs Vlaanderen" .
+<http://example.com/KaO> a dc:Agent;
+  dc:title "Katholiek Onderwijs Vlaanderen" .
 
 <http://example.com/KaO_K&L> a <http://purl.org/dc/dcmitype/Collection>;
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
