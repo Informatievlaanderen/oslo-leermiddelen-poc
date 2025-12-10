@@ -4,16 +4,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX ex: <http://example.com/>
 PREFIX schema: <https://schema.org/>
-PREFIX missing: <http://missing.example.com/>
 
 SELECT ?minimumdoel ?onderwerp ?anderDoel ?organisatie ?collectie ?relatie
 WHERE {
   ?_minimumdoel dc11:creator ex:OV;
           dc11:subject ex:SC_6 ;
+          schema:isPartOf ?_collectie;
           dc11:description ?minimumdoel.
   ex:SC_6 skos:altLabel ?onderwerp .
   ?_collectie dcterms:title ?collectie;
-              schema:hasPart ?_minimumdoel;
               dcterms:educationLevel ex:S-gr2-DoF.
   ?_anderDoel ?doelLink ?_minimumdoel ;
              dc11:creator ?anderDoelOrg;
