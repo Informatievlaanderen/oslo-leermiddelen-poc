@@ -1,5 +1,5 @@
 # Doel 
-SELECT DISTINCT ?Doel_url ?beschrijving ?geldigheid_url ?identificator_url ?niveau_url ?gedefinieerdDoor_url ?onderwerp_url ?type_url ?bron_url ?doelgroep_url ?competentie_url ?isLidVan_url ?gerelateerdAan_url ?heeftSpecialisatie_url ?isBrederDan_url ?bestaatUit_url ?gelijkaardig_url ?hetzelfde ?isSpecialisatieVan WHERE {
+SELECT DISTINCT ?Doel_url ?beschrijving ?geldigheid_url ?identificator_url ?niveau_url ?gedefinieerdDoor_url ?onderwerp_url ?type_url ?bron_url ?doelgroep_url ?competentie_url ?isLidVan_url ?gerelateerdAan_url ?heeftSpecialisatie_url ?isBrederDan_url ?bestaatUit_url ?gelijkaardig_url ?isSpecialisatieVan WHERE {
   ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
   OPTIONAL { ?Doel_url <http://purl.org/dc/elements/1.1/description> ?beschrijving . }
   ?Doel_url <http://purl.org/dc/terms/valid> ?geldigheid_url . 
@@ -17,6 +17,5 @@ SELECT DISTINCT ?Doel_url ?beschrijving ?geldigheid_url ?identificator_url ?nive
   OPTIONAL { ?Doel_url <http://www.w3.org/2004/02/skos/core#narrower> ?isBrederDan_url . }
   OPTIONAL { ?Doel_url <http://purl.org/dc/terms/hasPart> ?bestaatUit_url . }
   OPTIONAL { ?Doel_url <http://www.w3.org/2004/02/skos/core#closeMatch> ?gelijkaardig_url . }
-  OPTIONAL { ?Doel_url <http://missing.example.com/hetzelfde> ?hetzelfde . }
   OPTIONAL { ?Doel_url <http://missing.example.com/isSpecialisatieVan> ?isSpecialisatieVan . }
 }

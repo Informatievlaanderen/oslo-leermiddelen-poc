@@ -20,6 +20,18 @@
 
 <http://example.com/06.27> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
+<http://example.com/06.28> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.29> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.30> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.31> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.32> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.33> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
 <http://example.com/06.34> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.35> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
@@ -28,20 +40,50 @@
 
 <http://example.com/06.37> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
+<http://example.com/06.38> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.39> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.40> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.41> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.42> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.43> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.44> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.45> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.46> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
 <http://example.com/06.47> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.48> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.49> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.50> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.51> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.52> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.53> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/10B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.29";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband tussen eigenschappen van virussen, bacteriën en schimmels en hun positieve en negatieve rol in de natuur."@nl;
+  skos:closeMatch <http://example.com/06.29>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/10B> .
 
 <http://example.com/10F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.49";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken de grootheid vermogen en het Joule-effect om fenomenen in elektrische systemen te verklaren."@nl;
+  skos:closeMatch <http://example.com/06.49>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/10F> .
 
 <http://example.com/10 > a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -53,9 +95,9 @@
 
 <http://example.com/11B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.30";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen illustreren interacties tussen organismen van dezelfde soort en van verschillende soorten."@nl;
+  skos:closeMatch <http://example.com/06.30>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/11B> .
 
 <http://example.com/11C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -67,9 +109,9 @@
 
 <http://example.com/12B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.31";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen het verband tussen materie- en energiestromen in een ecosysteem."@nl;
+  skos:closeMatch <http://example.com/06.31>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/12B> .
 
 <http://example.com/12C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -81,16 +123,16 @@
 
 <http://example.com/13C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.38";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen brengen pH in verband met het zuur, basisch of neutraal karakter van een waterige oplossing en lichten de functie van een zuur-base indicator toe."@nl;
+  skos:closeMatch <http://example.com/06.38>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/13C> .
 
 <http://example.com/14C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.39";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren massaconcentratie en molaire concentratie."@nl;
+  skos:closeMatch <http://example.com/06.39>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/14C> .
 
 <http://example.com/1B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -102,23 +144,23 @@
 
 <http://example.com/1C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.32";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen onderzoeken zuivere stoffen en soorten mengsels in het dagelijkse leven aan de hand van eigenschappen en scheidingstechnieken."@nl;
+  skos:closeMatch <http://example.com/06.32>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/1C> .
 
 <http://example.com/1F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.41";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen interpreteren rechtlijnige bewegingen grafisch en eenparig rechtlijnige bewegingen kwantitatief."@nl;
+  skos:closeMatch <http://example.com/06.41>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/1F> .
 
 <http://example.com/1S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.51";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen voeren onderzoek aan de hand van een wetenschappelijke methode om kennis te ontwikkelen en om vragen te beantwoorden."@nl;
+  skos:closeMatch <http://example.com/06.51>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/1S> .
 
 <http://example.com/2B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -137,16 +179,16 @@
 
 <http://example.com/2F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.42";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen krachten vectorieel voor en leggen het verband tussen de verandering van bewegingstoestand van een lichaam en de resulterende kracht."@nl;
+  skos:closeMatch <http://example.com/06.42>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/2F> .
 
 <http://example.com/2S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.50";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen werken op een veilige en duurzame manier met materialen, stoffen, organismen en technische systemen."@nl;
+  skos:closeMatch <http://example.com/06.50>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/2S> .
 
 <http://example.com/3B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -165,16 +207,16 @@
 
 <http://example.com/3F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.43";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen verklaren fenomenen of toepassingen uit het dagelijks leven aan de hand van het concept druk bij vaste stoffen, vloeistoffen en gassen."@nl;
+  skos:closeMatch <http://example.com/06.43>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/3F> .
 
 <http://example.com/3S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.52";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen ontwerpen een oplossing voor een probleem door wetenschappen, technologie of wiskunde geïntegreerd aan te wenden."@nl;
+  skos:closeMatch <http://example.com/06.52>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/3S> .
 
 <http://example.com/4B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -193,16 +235,16 @@
 
 <http://example.com/4F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.44";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen de energiebalans van energieomzettingen op aan de hand van de wet van behoud van energie."@nl;
+  skos:closeMatch <http://example.com/06.44>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/4F> .
 
 <http://example.com/4S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.53";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren de wisselwerking tussen wetenschappen, technologie, wiskunde en de maatschappij aan de hand van maatschappelijke uitdagingen."@nl;
+  skos:closeMatch <http://example.com/06.53>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/4S> .
 
 <http://example.com/5B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -221,16 +263,16 @@
 
 <http://example.com/5F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.45";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen stellen kwantitatief de energiebalans op van energieomzettingen tussen kinetische, gravitationele of elastische energie in eenvoudige situaties."@nl;
+  skos:closeMatch <http://example.com/06.45>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/5F> .
 
 <http://example.com/5S> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.40";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen fysische problemen met en zonder formularium op."@nl;
+  skos:closeMatch <http://example.com/06.40>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/5S> .
 
 <http://example.com/6B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -242,16 +284,16 @@
 
 <http://example.com/6C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.33";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken een atoommodel om de structuur van atomen en ionen te beschrijven."@nl;
+  skos:closeMatch <http://example.com/06.33>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/6C> .
 
 <http://example.com/6F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.46";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen voeren berekeningen uit in verband met vermogen en rendement bij energieomzettingen in systemen."@nl;
+  skos:closeMatch <http://example.com/06.46>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/6F> .
 
 <http://example.com/7B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -298,9 +340,9 @@
 
 <http://example.com/9B> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.28";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen de hormonale regeling van het voortplantingssysteem bij de mens uit."@nl;
+  skos:closeMatch <http://example.com/06.28>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/9B> .
 
 <http://example.com/9C> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -312,9 +354,9 @@
 
 <http://example.com/9F> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.48";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/KaO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren verbanden tussen stroomsterkte, spanning en weerstand in een gelijkstroomkring."@nl;
+  skos:closeMatch <http://example.com/06.48>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/9F> .
 
 <http://example.com/DT-BK_S-gr2> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .

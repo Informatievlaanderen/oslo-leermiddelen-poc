@@ -17,7 +17,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 <http://mapping.example.com/rules_000> rdf:type void:Dataset ;
-	void:exampleResource :map_m_1_000, :map_m_11_000, :map_m_12_000, :map_m_13_000, :map_m_14_000, :map_m_15_000, :map_m_16_000, :map_m_17_000, :map_m_18_000, :map_m_19_000, :map_m_20_000, :map_m_21_000, :map_m_30_000, :map_m_31_000, :map_m_32_000, :map_m_33_000, :map_m_34_000, :map_m_35_000, :map_m_36_000, :map_m_37_000, :map_m_38_000, :map_m_39_000, :map_m_59_000, :map_m_60_000, :map_m_61_000, :map_m_62_000, :map_m_63_000, :map_m_64_000, :map_m_65_000, :map_m_66_000, :map_m_67_000, :map_m_68_000, :map_m_69_000, :map_m_70_000, :map_m_71_000, :map_m_72_000, :map_m_73_000, :map_m_83_000, :map_m_84_000, :map_m_85_000, :map_m_86_000, :map_m_87_000, :map_m_88_000, :map_m_89_000, :map_m_90_000, :map_m_108_000, :map_m_109_000, :map_m_110_000, :map_m_111_000, :map_m_112_000, :map_m_113_000, :map_m_114_000, :map_m_115_000, :map_m_116_000, :map_m_117_000, :map_m_118_000, :map_m_119_000, :map_m_120_000, :map_m_121_000, :map_m_122_000, :map_m_123_000, :map_m_124_000, :map_m_125_000, :map_m_126_000, :map_m_127_000, :map_m_128_000, :map_m_129_000, :map_m_134_000, :map_m_135_000, :map_m_136_000, :map_m_137_000, :map_m_138_000, :map_m_141_000, :map_m_142_000, :map_m_144_000, :map_m_145_000, :map_m_150_000, :map_m_164_000, :map_m_165_000, :map_m_166_000, :map_m_169_000, :map_m_170_000, :map_m_171_000, :map_m_172_000, :map_m_173_000, :map_m_174_000, :map_m_176_000, :map_m_177_000, :map_m_178_000 .
+	void:exampleResource :map_m_1_000, :map_m_11_000, :map_m_12_000, :map_m_13_000, :map_m_14_000, :map_m_15_000, :map_m_16_000, :map_m_17_000, :map_m_18_000, :map_m_19_000, :map_m_20_000, :map_m_21_000, :map_m_30_000, :map_m_31_000, :map_m_32_000, :map_m_33_000, :map_m_34_000, :map_m_35_000, :map_m_36_000, :map_m_37_000, :map_m_38_000, :map_m_39_000, :map_m_59_000, :map_m_60_000, :map_m_61_000, :map_m_62_000, :map_m_63_000, :map_m_64_000, :map_m_65_000, :map_m_66_000, :map_m_67_000, :map_m_68_000, :map_m_69_000, :map_m_70_000, :map_m_71_000, :map_m_72_000, :map_m_73_000, :map_m_83_000, :map_m_84_000, :map_m_85_000, :map_m_86_000, :map_m_87_000, :map_m_88_000, :map_m_89_000, :map_m_90_000, :map_m_107_000, :map_m_108_000, :map_m_109_000, :map_m_110_000, :map_m_111_000, :map_m_112_000, :map_m_113_000, :map_m_114_000, :map_m_115_000, :map_m_116_000, :map_m_117_000, :map_m_118_000, :map_m_119_000, :map_m_120_000, :map_m_121_000, :map_m_122_000, :map_m_123_000, :map_m_124_000, :map_m_125_000, :map_m_126_000, :map_m_127_000, :map_m_128_000, :map_m_133_000, :map_m_134_000, :map_m_135_000, :map_m_136_000, :map_m_137_000, :map_m_140_000, :map_m_141_000, :map_m_143_000, :map_m_144_000, :map_m_149_000, :map_m_163_000, :map_m_164_000, :map_m_165_000, :map_m_168_000, :map_m_169_000, :map_m_170_000, :map_m_171_000, :map_m_172_000, :map_m_173_000, :map_m_175_000, :map_m_176_000, :map_m_177_000 .
 
 :map_m_1_000 rml:logicalSource :source_000 ;
 	rdf:type rr:TriplesMap ;
@@ -1685,7 +1685,7 @@
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_90" ;
 	rr:subjectMap :s_044 ;
-	rr:predicateObjectMap :pom_093, :pom_094, :pom_095, :pom_096, :pom_097, :pom_098, :pom_099, :pom_100, :pom_101, :pom_102, :pom_103, :pom_104, :pom_105, :pom_106, :pom_107, :pom_108, :pom_109, :pom_110, :pom_111 .
+	rr:predicateObjectMap :pom_093, :pom_094, :pom_095, :pom_096, :pom_097, :pom_098, :pom_099, :pom_100, :pom_101, :pom_102, :pom_103, :pom_104, :pom_105, :pom_106, :pom_107, :pom_108, :pom_109, :pom_110 .
 
 :source_044 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -1896,22 +1896,11 @@
 	rml:reference "isSpecialisatieVan[*]" ;
 	rr:termType rr:Literal .
 
-:pom_111 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_111 ;
-	rr:objectMap :om_111 .
-
-:pm_111 rdf:type rr:PredicateMap ;
-	rr:constant <http://missing.example.com/hetzelfde> .
-
-:om_111 rdf:type rr:ObjectMap ;
-	rml:reference "hetzelfde[*]" ;
-	rr:termType rr:Literal .
-
-:map_m_108_000 rml:logicalSource :source_045 ;
+:map_m_107_000 rml:logicalSource :source_045 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_108" ;
+	rdfs:label "m_107" ;
 	rr:subjectMap :s_045 ;
-	rr:predicateObjectMap :pom_112 .
+	rr:predicateObjectMap :pom_111 .
 
 :source_045 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -1921,22 +1910,22 @@
 :s_045 rdf:type rr:SubjectMap ;
 	rml:reference "geldigheid[*]" .
 
-:pom_112 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_112 ;
-	rr:objectMap :om_112 .
+:pom_111 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_111 ;
+	rr:objectMap :om_111 .
 
-:pm_112 rdf:type rr:PredicateMap ;
+:pm_111 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_112 rdf:type rr:ObjectMap ;
+:om_111 rdf:type rr:ObjectMap ;
 	rr:constant <http://data.europa.eu/m8g/PeriodOfTime> ;
 	rr:termType rr:IRI .
 
-:map_m_109_000 rml:logicalSource :source_046 ;
+:map_m_108_000 rml:logicalSource :source_046 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_109" ;
+	rdfs:label "m_108" ;
 	rr:subjectMap :s_046 ;
-	rr:predicateObjectMap :pom_113 .
+	rr:predicateObjectMap :pom_112 .
 
 :source_046 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -1946,22 +1935,22 @@
 :s_046 rdf:type rr:SubjectMap ;
 	rml:reference "identificator[*]" .
 
-:pom_113 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_113 ;
-	rr:objectMap :om_113 .
+:pom_112 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_112 ;
+	rr:objectMap :om_112 .
 
-:pm_113 rdf:type rr:PredicateMap ;
+:pm_112 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_113 rdf:type rr:ObjectMap ;
+:om_112 rdf:type rr:ObjectMap ;
 	rr:constant <http://www.w3.org/ns/adms#Identifier> ;
 	rr:termType rr:IRI .
 
-:map_m_110_000 rml:logicalSource :source_047 ;
+:map_m_109_000 rml:logicalSource :source_047 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_110" ;
+	rdfs:label "m_109" ;
 	rr:subjectMap :s_047 ;
-	rr:predicateObjectMap :pom_114 .
+	rr:predicateObjectMap :pom_113 .
 
 :source_047 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -1971,22 +1960,22 @@
 :s_047 rdf:type rr:SubjectMap ;
 	rml:reference "niveau[*]" .
 
-:pom_114 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_114 ;
-	rr:objectMap :om_114 .
+:pom_113 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_113 ;
+	rr:objectMap :om_113 .
 
-:pm_114 rdf:type rr:PredicateMap ;
+:pm_113 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_114 rdf:type rr:ObjectMap ;
+:om_113 rdf:type rr:ObjectMap ;
 	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
-:map_m_111_000 rml:logicalSource :source_048 ;
+:map_m_110_000 rml:logicalSource :source_048 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_111" ;
+	rdfs:label "m_110" ;
 	rr:subjectMap :s_048 ;
-	rr:predicateObjectMap :pom_115 .
+	rr:predicateObjectMap :pom_114 .
 
 :source_048 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -1996,22 +1985,22 @@
 :s_048 rdf:type rr:SubjectMap ;
 	rml:reference "gedefinieerdDoor[*]" .
 
-:pom_115 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_115 ;
-	rr:objectMap :om_115 .
+:pom_114 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_114 ;
+	rr:objectMap :om_114 .
 
-:pm_115 rdf:type rr:PredicateMap ;
+:pm_114 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_115 rdf:type rr:ObjectMap ;
+:om_114 rdf:type rr:ObjectMap ;
 	rr:constant dcterms:Agent ;
 	rr:termType rr:IRI .
 
-:map_m_112_000 rml:logicalSource :source_049 ;
+:map_m_111_000 rml:logicalSource :source_049 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_112" ;
+	rdfs:label "m_111" ;
 	rr:subjectMap :s_049 ;
-	rr:predicateObjectMap :pom_116 .
+	rr:predicateObjectMap :pom_115 .
 
 :source_049 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2020,6 +2009,31 @@
 
 :s_049 rdf:type rr:SubjectMap ;
 	rml:reference "onderwerp[*]" .
+
+:pom_115 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_115 ;
+	rr:objectMap :om_115 .
+
+:pm_115 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_115 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_112_000 rml:logicalSource :source_050 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_112" ;
+	rr:subjectMap :s_050 ;
+	rr:predicateObjectMap :pom_116 .
+
+:source_050 rdf:type rml:LogicalSource ;
+	rml:source "out/kao.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_050 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
 
 :pom_116 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_116 ;
@@ -2032,19 +2046,19 @@
 	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
-:map_m_113_000 rml:logicalSource :source_050 ;
+:map_m_113_000 rml:logicalSource :source_051 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_113" ;
-	rr:subjectMap :s_050 ;
+	rr:subjectMap :s_051 ;
 	rr:predicateObjectMap :pom_117 .
 
-:source_050 rdf:type rml:LogicalSource ;
+:source_051 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
 	rml:iterator "$.Doel[*]" ;
 	rml:referenceFormulation ql:JSONPath .
 
-:s_050 rdf:type rr:SubjectMap ;
-	rml:reference "type[*]" .
+:s_051 rdf:type rr:SubjectMap ;
+	rml:reference "bron[*]" .
 
 :pom_117 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_117 ;
@@ -2057,36 +2071,11 @@
 	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
-:map_m_114_000 rml:logicalSource :source_051 ;
+:map_m_114_000 rml:logicalSource :source_052 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_114" ;
-	rr:subjectMap :s_051 ;
-	rr:predicateObjectMap :pom_118 .
-
-:source_051 rdf:type rml:LogicalSource ;
-	rml:source "out/kao.json" ;
-	rml:iterator "$.Doel[*]" ;
-	rml:referenceFormulation ql:JSONPath .
-
-:s_051 rdf:type rr:SubjectMap ;
-	rml:reference "bron[*]" .
-
-:pom_118 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_118 ;
-	rr:objectMap :om_118 .
-
-:pm_118 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_118 rdf:type rr:ObjectMap ;
-	rr:constant skos:Concept ;
-	rr:termType rr:IRI .
-
-:map_m_115_000 rml:logicalSource :source_052 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "m_115" ;
 	rr:subjectMap :s_052 ;
-	rr:predicateObjectMap :pom_119 .
+	rr:predicateObjectMap :pom_118 .
 
 :source_052 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2096,22 +2085,22 @@
 :s_052 rdf:type rr:SubjectMap ;
 	rml:reference "doelgroep[*]" .
 
-:pom_119 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_119 ;
-	rr:objectMap :om_119 .
+:pom_118 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_118 ;
+	rr:objectMap :om_118 .
 
-:pm_119 rdf:type rr:PredicateMap ;
+:pm_118 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_119 rdf:type rr:ObjectMap ;
+:om_118 rdf:type rr:ObjectMap ;
 	rr:constant <https://schema.org/Audience> ;
 	rr:termType rr:IRI .
 
-:map_m_116_000 rml:logicalSource :source_053 ;
+:map_m_115_000 rml:logicalSource :source_053 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_116" ;
+	rdfs:label "m_115" ;
 	rr:subjectMap :s_053 ;
-	rr:predicateObjectMap :pom_120 .
+	rr:predicateObjectMap :pom_119 .
 
 :source_053 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2121,22 +2110,22 @@
 :s_053 rdf:type rr:SubjectMap ;
 	rml:reference "competentie[*]" .
 
-:pom_120 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_120 ;
-	rr:objectMap :om_120 .
+:pom_119 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_119 ;
+	rr:objectMap :om_119 .
 
-:pm_120 rdf:type rr:PredicateMap ;
+:pm_119 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_120 rdf:type rr:ObjectMap ;
+:om_119 rdf:type rr:ObjectMap ;
 	rr:constant <https://ec.europa.eu/esco/lod/static/model.html#Skill> ;
 	rr:termType rr:IRI .
 
-:map_m_117_000 rml:logicalSource :source_054 ;
+:map_m_116_000 rml:logicalSource :source_054 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_117" ;
+	rdfs:label "m_116" ;
 	rr:subjectMap :s_054 ;
-	rr:predicateObjectMap :pom_121 .
+	rr:predicateObjectMap :pom_120 .
 
 :source_054 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2146,22 +2135,22 @@
 :s_054 rdf:type rr:SubjectMap ;
 	rml:reference "isLidVan[*]" .
 
-:pom_121 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_121 ;
-	rr:objectMap :om_121 .
+:pom_120 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_120 ;
+	rr:objectMap :om_120 .
 
-:pm_121 rdf:type rr:PredicateMap ;
+:pm_120 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_121 rdf:type rr:ObjectMap ;
+:om_120 rdf:type rr:ObjectMap ;
 	rr:constant <http://purl.org/dc/dcmitype/Collection> ;
 	rr:termType rr:IRI .
 
-:map_m_118_000 rml:logicalSource :source_055 ;
+:map_m_117_000 rml:logicalSource :source_055 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_118" ;
+	rdfs:label "m_117" ;
 	rr:subjectMap :s_055 ;
-	rr:predicateObjectMap :pom_122 .
+	rr:predicateObjectMap :pom_121 .
 
 :source_055 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2170,6 +2159,31 @@
 
 :s_055 rdf:type rr:SubjectMap ;
 	rml:reference "gerelateerdAan[*]" .
+
+:pom_121 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_121 ;
+	rr:objectMap :om_121 .
+
+:pm_121 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_121 rdf:type rr:ObjectMap ;
+	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+	rr:termType rr:IRI .
+
+:map_m_118_000 rml:logicalSource :source_056 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_118" ;
+	rr:subjectMap :s_056 ;
+	rr:predicateObjectMap :pom_122 .
+
+:source_056 rdf:type rml:LogicalSource ;
+	rml:source "out/kao.json" ;
+	rml:iterator "$.Doel[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_056 rdf:type rr:SubjectMap ;
+	rml:reference "heeftSpecialisatie[*]" .
 
 :pom_122 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_122 ;
@@ -2182,19 +2196,19 @@
 	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
 	rr:termType rr:IRI .
 
-:map_m_119_000 rml:logicalSource :source_056 ;
+:map_m_119_000 rml:logicalSource :source_057 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_119" ;
-	rr:subjectMap :s_056 ;
+	rr:subjectMap :s_057 ;
 	rr:predicateObjectMap :pom_123 .
 
-:source_056 rdf:type rml:LogicalSource ;
+:source_057 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
 	rml:iterator "$.Doel[*]" ;
 	rml:referenceFormulation ql:JSONPath .
 
-:s_056 rdf:type rr:SubjectMap ;
-	rml:reference "heeftSpecialisatie[*]" .
+:s_057 rdf:type rr:SubjectMap ;
+	rml:reference "isBrederDan[*]" .
 
 :pom_123 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_123 ;
@@ -2207,19 +2221,19 @@
 	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
 	rr:termType rr:IRI .
 
-:map_m_120_000 rml:logicalSource :source_057 ;
+:map_m_120_000 rml:logicalSource :source_058 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_120" ;
-	rr:subjectMap :s_057 ;
+	rr:subjectMap :s_058 ;
 	rr:predicateObjectMap :pom_124 .
 
-:source_057 rdf:type rml:LogicalSource ;
+:source_058 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
 	rml:iterator "$.Doel[*]" ;
 	rml:referenceFormulation ql:JSONPath .
 
-:s_057 rdf:type rr:SubjectMap ;
-	rml:reference "isBrederDan[*]" .
+:s_058 rdf:type rr:SubjectMap ;
+	rml:reference "bestaatUit[*]" .
 
 :pom_124 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_124 ;
@@ -2232,19 +2246,19 @@
 	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
 	rr:termType rr:IRI .
 
-:map_m_121_000 rml:logicalSource :source_058 ;
+:map_m_121_000 rml:logicalSource :source_059 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_121" ;
-	rr:subjectMap :s_058 ;
+	rr:subjectMap :s_059 ;
 	rr:predicateObjectMap :pom_125 .
 
-:source_058 rdf:type rml:LogicalSource ;
+:source_059 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
 	rml:iterator "$.Doel[*]" ;
 	rml:referenceFormulation ql:JSONPath .
 
-:s_058 rdf:type rr:SubjectMap ;
-	rml:reference "bestaatUit[*]" .
+:s_059 rdf:type rr:SubjectMap ;
+	rml:reference "gelijkaardig[*]" .
 
 :pom_125 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_125 ;
@@ -2257,36 +2271,11 @@
 	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
 	rr:termType rr:IRI .
 
-:map_m_122_000 rml:logicalSource :source_059 ;
+:map_m_122_000 rml:logicalSource :source_060 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_122" ;
-	rr:subjectMap :s_059 ;
-	rr:predicateObjectMap :pom_126 .
-
-:source_059 rdf:type rml:LogicalSource ;
-	rml:source "out/kao.json" ;
-	rml:iterator "$.Doel[*]" ;
-	rml:referenceFormulation ql:JSONPath .
-
-:s_059 rdf:type rr:SubjectMap ;
-	rml:reference "gelijkaardig[*]" .
-
-:pom_126 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_126 ;
-	rr:objectMap :om_126 .
-
-:pm_126 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_126 rdf:type rr:ObjectMap ;
-	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
-	rr:termType rr:IRI .
-
-:map_m_123_000 rml:logicalSource :source_060 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "m_123" ;
 	rr:subjectMap :s_060 ;
-	rr:predicateObjectMap :pom_127, :pom_128 .
+	rr:predicateObjectMap :pom_126, :pom_127 .
 
 :source_060 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2296,33 +2285,33 @@
 :s_060 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_126 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_126 ;
+	rr:objectMap :om_126 .
+
+:pm_126 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_126 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/CreativeWorkSeries> ;
+	rr:termType rr:IRI .
+
 :pom_127 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_127 ;
 	rr:objectMap :om_127 .
 
 :pm_127 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_127 rdf:type rr:ObjectMap ;
-	rr:constant <https://schema.org/CreativeWorkSeries> ;
-	rr:termType rr:IRI .
-
-:pom_128 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_128 ;
-	rr:objectMap :om_128 .
-
-:pm_128 rdf:type rr:PredicateMap ;
 	rr:constant <https://schema.org/hasPart> .
 
-:om_128 rdf:type rr:ObjectMap ;
+:om_127 rdf:type rr:ObjectMap ;
 	rml:reference "heeftLid[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_124_000 rml:logicalSource :source_061 ;
+:map_m_123_000 rml:logicalSource :source_061 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_124" ;
+	rdfs:label "m_123" ;
 	rr:subjectMap :s_061 ;
-	rr:predicateObjectMap :pom_129 .
+	rr:predicateObjectMap :pom_128 .
 
 :source_061 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2332,22 +2321,22 @@
 :s_061 rdf:type rr:SubjectMap ;
 	rml:reference "heeftLid[*]" .
 
-:pom_129 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_129 ;
-	rr:objectMap :om_129 .
+:pom_128 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_128 ;
+	rr:objectMap :om_128 .
 
-:pm_129 rdf:type rr:PredicateMap ;
+:pm_128 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_129 rdf:type rr:ObjectMap ;
+:om_128 rdf:type rr:ObjectMap ;
 	rr:constant <https://schema.org/LearningResource> ;
 	rr:termType rr:IRI .
 
-:map_m_125_000 rml:logicalSource :source_062 ;
+:map_m_124_000 rml:logicalSource :source_062 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_125" ;
+	rdfs:label "m_124" ;
 	rr:subjectMap :s_062 ;
-	rr:predicateObjectMap :pom_130, :pom_131 .
+	rr:predicateObjectMap :pom_129, :pom_130 .
 
 :source_062 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2357,33 +2346,33 @@
 :s_062 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_129 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_129 ;
+	rr:objectMap :om_129 .
+
+:pm_129 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_129 rdf:type rr:ObjectMap ;
+	rr:constant dcterms:LicenseDocument ;
+	rr:termType rr:IRI .
+
 :pom_130 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_130 ;
 	rr:objectMap :om_130 .
 
 :pm_130 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_130 rdf:type rr:ObjectMap ;
-	rr:constant dcterms:LicenseDocument ;
-	rr:termType rr:IRI .
-
-:pom_131 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_131 ;
-	rr:objectMap :om_131 .
-
-:pm_131 rdf:type rr:PredicateMap ;
 	rr:constant dcterms:type .
 
-:om_131 rdf:type rr:ObjectMap ;
+:om_130 rdf:type rr:ObjectMap ;
 	rml:reference "type[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_126_000 rml:logicalSource :source_063 ;
+:map_m_125_000 rml:logicalSource :source_063 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_126" ;
+	rdfs:label "m_125" ;
 	rr:subjectMap :s_063 ;
-	rr:predicateObjectMap :pom_132 .
+	rr:predicateObjectMap :pom_131 .
 
 :source_063 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2393,22 +2382,22 @@
 :s_063 rdf:type rr:SubjectMap ;
 	rml:reference "type[*]" .
 
-:pom_132 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_132 ;
-	rr:objectMap :om_132 .
+:pom_131 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_131 ;
+	rr:objectMap :om_131 .
 
-:pm_132 rdf:type rr:PredicateMap ;
+:pm_131 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_132 rdf:type rr:ObjectMap ;
+:om_131 rdf:type rr:ObjectMap ;
 	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
-:map_m_127_000 rml:logicalSource :source_064 ;
+:map_m_126_000 rml:logicalSource :source_064 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_127" ;
+	rdfs:label "m_126" ;
 	rr:subjectMap :s_064 ;
-	rr:predicateObjectMap :pom_133, :pom_134 .
+	rr:predicateObjectMap :pom_132, :pom_133 .
 
 :source_064 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2418,33 +2407,33 @@
 :s_064 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_132 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_132 ;
+	rr:objectMap :om_132 .
+
+:pm_132 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_132 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/CreativeWork> ;
+	rr:termType rr:IRI .
+
 :pom_133 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_133 ;
 	rr:objectMap :om_133 .
 
 :pm_133 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_133 rdf:type rr:ObjectMap ;
-	rr:constant <https://schema.org/CreativeWork> ;
-	rr:termType rr:IRI .
-
-:pom_134 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_134 ;
-	rr:objectMap :om_134 .
-
-:pm_134 rdf:type rr:PredicateMap ;
 	rr:constant <https://schema.org/isPartOf> .
 
-:om_134 rdf:type rr:ObjectMap ;
+:om_133 rdf:type rr:ObjectMap ;
 	rml:reference "onderdeelVan[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_128_000 rml:logicalSource :source_065 ;
+:map_m_127_000 rml:logicalSource :source_065 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_128" ;
+	rdfs:label "m_127" ;
 	rr:subjectMap :s_065 ;
-	rr:predicateObjectMap :pom_135 .
+	rr:predicateObjectMap :pom_134 .
 
 :source_065 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2454,22 +2443,22 @@
 :s_065 rdf:type rr:SubjectMap ;
 	rml:reference "onderdeelVan[*]" .
 
-:pom_135 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_135 ;
-	rr:objectMap :om_135 .
+:pom_134 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_134 ;
+	rr:objectMap :om_134 .
 
-:pm_135 rdf:type rr:PredicateMap ;
+:pm_134 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_135 rdf:type rr:ObjectMap ;
+:om_134 rdf:type rr:ObjectMap ;
 	rr:constant <https://schema.org/LearningResource> ;
 	rr:termType rr:IRI .
 
-:map_m_129_000 rml:logicalSource :source_066 ;
+:map_m_128_000 rml:logicalSource :source_066 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_129" ;
+	rdfs:label "m_128" ;
 	rr:subjectMap :s_066 ;
-	rr:predicateObjectMap :pom_136, :pom_137, :pom_138, :pom_139, :pom_140, :pom_141 .
+	rr:predicateObjectMap :pom_135, :pom_136, :pom_137, :pom_138, :pom_139, :pom_140 .
 
 :source_066 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2479,40 +2468,51 @@
 :s_066 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_135 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_135 ;
+	rr:objectMap :om_135 .
+
+:pm_135 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_135 rdf:type rr:ObjectMap ;
+	rr:constant <http://purl.org/dc/dcmitype/Collection> ;
+	rr:termType rr:IRI .
+
 :pom_136 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_136 ;
 	rr:objectMap :om_136 .
 
 :pm_136 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_136 rdf:type rr:ObjectMap ;
-	rr:constant <http://purl.org/dc/dcmitype/Collection> ;
-	rr:termType rr:IRI .
-
-:pom_137 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_137 ;
-	rr:objectMap :om_137 .
-
-:pm_137 rdf:type rr:PredicateMap ;
 	rr:constant dcterms:title .
 
-:om_137 rdf:type rr:ObjectMap ;
+:om_136 rdf:type rr:ObjectMap ;
 	rml:reference "naam[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_008 .
 
 :language_008 rr:constant "nl" .
 
+:pom_137 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_137 ;
+	rr:objectMap :om_137 .
+
+:pm_137 rdf:type rr:PredicateMap ;
+	rr:constant <http://purl.org/dc/elements/1.1/creator> .
+
+:om_137 rdf:type rr:ObjectMap ;
+	rml:reference "gedefinieerdDoor[*]" ;
+	rr:termType rr:IRI .
+
 :pom_138 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_138 ;
 	rr:objectMap :om_138 .
 
 :pm_138 rdf:type rr:PredicateMap ;
-	rr:constant <http://purl.org/dc/elements/1.1/creator> .
+	rr:constant dcterms:educationLevel .
 
 :om_138 rdf:type rr:ObjectMap ;
-	rml:reference "gedefinieerdDoor[*]" ;
+	rml:reference "niveau[*]" ;
 	rr:termType rr:IRI .
 
 :pom_139 rdf:type rr:PredicateObjectMap ;
@@ -2520,10 +2520,10 @@
 	rr:objectMap :om_139 .
 
 :pm_139 rdf:type rr:PredicateMap ;
-	rr:constant dcterms:educationLevel .
+	rr:constant dcterms:type .
 
 :om_139 rdf:type rr:ObjectMap ;
-	rml:reference "niveau[*]" ;
+	rml:reference "type[*]" ;
 	rr:termType rr:IRI .
 
 :pom_140 rdf:type rr:PredicateObjectMap ;
@@ -2531,28 +2531,17 @@
 	rr:objectMap :om_140 .
 
 :pm_140 rdf:type rr:PredicateMap ;
-	rr:constant dcterms:type .
-
-:om_140 rdf:type rr:ObjectMap ;
-	rml:reference "type[*]" ;
-	rr:termType rr:IRI .
-
-:pom_141 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_141 ;
-	rr:objectMap :om_141 .
-
-:pm_141 rdf:type rr:PredicateMap ;
 	rr:constant <https://schema.org/hasPart> .
 
-:om_141 rdf:type rr:ObjectMap ;
+:om_140 rdf:type rr:ObjectMap ;
 	rml:reference "heeftLid[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_134_000 rml:logicalSource :source_067 ;
+:map_m_133_000 rml:logicalSource :source_067 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_134" ;
+	rdfs:label "m_133" ;
 	rr:subjectMap :s_067 ;
-	rr:predicateObjectMap :pom_142 .
+	rr:predicateObjectMap :pom_141 .
 
 :source_067 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2562,22 +2551,22 @@
 :s_067 rdf:type rr:SubjectMap ;
 	rml:reference "gedefinieerdDoor[*]" .
 
-:pom_142 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_142 ;
-	rr:objectMap :om_142 .
+:pom_141 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_141 ;
+	rr:objectMap :om_141 .
 
-:pm_142 rdf:type rr:PredicateMap ;
+:pm_141 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_142 rdf:type rr:ObjectMap ;
+:om_141 rdf:type rr:ObjectMap ;
 	rr:constant dcterms:Agent ;
 	rr:termType rr:IRI .
 
-:map_m_135_000 rml:logicalSource :source_068 ;
+:map_m_134_000 rml:logicalSource :source_068 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_135" ;
+	rdfs:label "m_134" ;
 	rr:subjectMap :s_068 ;
-	rr:predicateObjectMap :pom_143 .
+	rr:predicateObjectMap :pom_142 .
 
 :source_068 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2586,6 +2575,31 @@
 
 :s_068 rdf:type rr:SubjectMap ;
 	rml:reference "niveau[*]" .
+
+:pom_142 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_142 ;
+	rr:objectMap :om_142 .
+
+:pm_142 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_142 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_135_000 rml:logicalSource :source_069 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_135" ;
+	rr:subjectMap :s_069 ;
+	rr:predicateObjectMap :pom_143 .
+
+:source_069 rdf:type rml:LogicalSource ;
+	rml:source "out/kao.json" ;
+	rml:iterator "$.DoelCollectie[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_069 rdf:type rr:SubjectMap ;
+	rml:reference "type[*]" .
 
 :pom_143 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_143 ;
@@ -2598,36 +2612,11 @@
 	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
-:map_m_136_000 rml:logicalSource :source_069 ;
+:map_m_136_000 rml:logicalSource :source_070 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_136" ;
-	rr:subjectMap :s_069 ;
-	rr:predicateObjectMap :pom_144 .
-
-:source_069 rdf:type rml:LogicalSource ;
-	rml:source "out/kao.json" ;
-	rml:iterator "$.DoelCollectie[*]" ;
-	rml:referenceFormulation ql:JSONPath .
-
-:s_069 rdf:type rr:SubjectMap ;
-	rml:reference "type[*]" .
-
-:pom_144 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_144 ;
-	rr:objectMap :om_144 .
-
-:pm_144 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_144 rdf:type rr:ObjectMap ;
-	rr:constant skos:Concept ;
-	rr:termType rr:IRI .
-
-:map_m_137_000 rml:logicalSource :source_070 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "m_137" ;
 	rr:subjectMap :s_070 ;
-	rr:predicateObjectMap :pom_145 .
+	rr:predicateObjectMap :pom_144 .
 
 :source_070 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2637,22 +2626,22 @@
 :s_070 rdf:type rr:SubjectMap ;
 	rml:reference "heeftLid[*]" .
 
-:pom_145 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_145 ;
-	rr:objectMap :om_145 .
+:pom_144 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_144 ;
+	rr:objectMap :om_144 .
 
-:pm_145 rdf:type rr:PredicateMap ;
+:pm_144 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_145 rdf:type rr:ObjectMap ;
+:om_144 rdf:type rr:ObjectMap ;
 	rr:constant <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
 	rr:termType rr:IRI .
 
-:map_m_138_000 rml:logicalSource :source_071 ;
+:map_m_137_000 rml:logicalSource :source_071 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_138" ;
+	rdfs:label "m_137" ;
 	rr:subjectMap :s_071 ;
-	rr:predicateObjectMap :pom_146, :pom_147, :pom_148, :pom_149 .
+	rr:predicateObjectMap :pom_145, :pom_146, :pom_147, :pom_148 .
 
 :source_071 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2662,61 +2651,61 @@
 :s_071 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_145 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_145 ;
+	rr:objectMap :om_145 .
+
+:pm_145 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_145 rdf:type rr:ObjectMap ;
+	rr:constant <https://ec.europa.eu/esco/lod/static/model.html#Skill> ;
+	rr:termType rr:IRI .
+
 :pom_146 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_146 ;
 	rr:objectMap :om_146 .
 
 :pm_146 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_146 rdf:type rr:ObjectMap ;
-	rr:constant <https://ec.europa.eu/esco/lod/static/model.html#Skill> ;
-	rr:termType rr:IRI .
-
-:pom_147 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_147 ;
-	rr:objectMap :om_147 .
-
-:pm_147 rdf:type rr:PredicateMap ;
 	rr:constant dcterms:description .
 
-:om_147 rdf:type rr:ObjectMap ;
+:om_146 rdf:type rr:ObjectMap ;
 	rml:reference "beschrijving[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_009 .
 
 :language_009 rr:constant "nl" .
 
-:pom_148 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_148 ;
-	rr:objectMap :om_148 .
+:pom_147 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_147 ;
+	rr:objectMap :om_147 .
 
-:pm_148 rdf:type rr:PredicateMap ;
+:pm_147 rdf:type rr:PredicateMap ;
 	rr:constant dcterms:title .
 
-:om_148 rdf:type rr:ObjectMap ;
+:om_147 rdf:type rr:ObjectMap ;
 	rml:reference "naam[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_010 .
 
 :language_010 rr:constant "nl" .
 
-:pom_149 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_149 ;
-	rr:objectMap :om_149 .
+:pom_148 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_148 ;
+	rr:objectMap :om_148 .
 
-:pm_149 rdf:type rr:PredicateMap ;
+:pm_148 rdf:type rr:PredicateMap ;
 	rr:constant dcterms:type .
 
-:om_149 rdf:type rr:ObjectMap ;
+:om_148 rdf:type rr:ObjectMap ;
 	rml:reference "type[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_141_000 rml:logicalSource :source_072 ;
+:map_m_140_000 rml:logicalSource :source_072 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_141" ;
+	rdfs:label "m_140" ;
 	rr:subjectMap :s_072 ;
-	rr:predicateObjectMap :pom_150 .
+	rr:predicateObjectMap :pom_149 .
 
 :source_072 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2726,22 +2715,22 @@
 :s_072 rdf:type rr:SubjectMap ;
 	rml:reference "type[*]" .
 
-:pom_150 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_150 ;
-	rr:objectMap :om_150 .
+:pom_149 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_149 ;
+	rr:objectMap :om_149 .
 
-:pm_150 rdf:type rr:PredicateMap ;
+:pm_149 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_150 rdf:type rr:ObjectMap ;
+:om_149 rdf:type rr:ObjectMap ;
 	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
-:map_m_142_000 rml:logicalSource :source_073 ;
+:map_m_141_000 rml:logicalSource :source_073 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_142" ;
+	rdfs:label "m_141" ;
 	rr:subjectMap :s_073 ;
-	rr:predicateObjectMap :pom_151, :pom_152, :pom_153 .
+	rr:predicateObjectMap :pom_150, :pom_151, :pom_152 .
 
 :source_073 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2751,44 +2740,44 @@
 :s_073 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_150 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_150 ;
+	rr:objectMap :om_150 .
+
+:pm_150 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_150 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/QuantitativeValue> ;
+	rr:termType rr:IRI .
+
 :pom_151 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_151 ;
 	rr:objectMap :om_151 .
 
 :pm_151 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant <https://schema.org/value> .
 
 :om_151 rdf:type rr:ObjectMap ;
-	rr:constant <https://schema.org/QuantitativeValue> ;
-	rr:termType rr:IRI .
+	rml:reference "waarde[*]" ;
+	rr:termType rr:Literal .
 
 :pom_152 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_152 ;
 	rr:objectMap :om_152 .
 
 :pm_152 rdf:type rr:PredicateMap ;
-	rr:constant <https://schema.org/value> .
-
-:om_152 rdf:type rr:ObjectMap ;
-	rml:reference "waarde[*]" ;
-	rr:termType rr:Literal .
-
-:pom_153 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_153 ;
-	rr:objectMap :om_153 .
-
-:pm_153 rdf:type rr:PredicateMap ;
 	rr:constant <https://schema.org/unitCode> .
 
-:om_153 rdf:type rr:ObjectMap ;
+:om_152 rdf:type rr:ObjectMap ;
 	rml:reference "eenheid[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_144_000 rml:logicalSource :source_074 ;
+:map_m_143_000 rml:logicalSource :source_074 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_144" ;
+	rdfs:label "m_143" ;
 	rr:subjectMap :s_074 ;
-	rr:predicateObjectMap :pom_154 .
+	rr:predicateObjectMap :pom_153 .
 
 :source_074 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2798,22 +2787,22 @@
 :s_074 rdf:type rr:SubjectMap ;
 	rml:reference "eenheid[*]" .
 
-:pom_154 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_154 ;
-	rr:objectMap :om_154 .
+:pom_153 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_153 ;
+	rr:objectMap :om_153 .
 
-:pm_154 rdf:type rr:PredicateMap ;
+:pm_153 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_154 rdf:type rr:ObjectMap ;
+:om_153 rdf:type rr:ObjectMap ;
 	rr:constant <https://qudt.org/schema/qudt/Unit> ;
 	rr:termType rr:IRI .
 
-:map_m_145_000 rml:logicalSource :source_075 ;
+:map_m_144_000 rml:logicalSource :source_075 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_145" ;
+	rdfs:label "m_144" ;
 	rr:subjectMap :s_075 ;
-	rr:predicateObjectMap :pom_155, :pom_156, :pom_157, :pom_158, :pom_159, :pom_160 .
+	rr:predicateObjectMap :pom_154, :pom_155, :pom_156, :pom_157, :pom_158, :pom_159 .
 
 :source_075 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2823,26 +2812,38 @@
 :s_075 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_154 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_154 ;
+	rr:objectMap :om_154 .
+
+:pm_154 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_154 rdf:type rr:ObjectMap ;
+	rr:constant <http://schema.org/OpeningHoursSpecification> ;
+	rr:termType rr:IRI .
+
 :pom_155 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_155 ;
 	rr:objectMap :om_155 .
 
 :pm_155 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant <http://schema.org/opens> .
 
 :om_155 rdf:type rr:ObjectMap ;
-	rr:constant <http://schema.org/OpeningHoursSpecification> ;
-	rr:termType rr:IRI .
+	rml:reference "open[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#time> .
 
 :pom_156 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_156 ;
 	rr:objectMap :om_156 .
 
 :pm_156 rdf:type rr:PredicateMap ;
-	rr:constant <http://schema.org/opens> .
+	rr:constant <http://schema.org/closes> .
 
 :om_156 rdf:type rr:ObjectMap ;
-	rml:reference "open[*]" ;
+	rml:reference "gesloten[*]" ;
 	rr:termType rr:Literal ;
 	rr:datatype <http://www.w3.org/2001/XMLSchema#time> .
 
@@ -2851,54 +2852,42 @@
 	rr:objectMap :om_157 .
 
 :pm_157 rdf:type rr:PredicateMap ;
-	rr:constant <http://schema.org/closes> .
+	rr:constant <http://schema.org/dayOfWeek> .
 
 :om_157 rdf:type rr:ObjectMap ;
-	rml:reference "gesloten[*]" ;
+	rml:reference "dagVanDeWeek[*]" ;
 	rr:termType rr:Literal ;
-	rr:datatype <http://www.w3.org/2001/XMLSchema#time> .
+	rr:datatype <http://www.w3.org/2001/XMLSchema#anyURI> .
 
 :pom_158 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_158 ;
 	rr:objectMap :om_158 .
 
 :pm_158 rdf:type rr:PredicateMap ;
-	rr:constant <http://schema.org/dayOfWeek> .
+	rr:constant <http://schema.org/validFrom> .
 
 :om_158 rdf:type rr:ObjectMap ;
-	rml:reference "dagVanDeWeek[*]" ;
+	rml:reference "geldigVan[*]" ;
 	rr:termType rr:Literal ;
-	rr:datatype <http://www.w3.org/2001/XMLSchema#anyURI> .
+	rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime> .
 
 :pom_159 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_159 ;
 	rr:objectMap :om_159 .
 
 :pm_159 rdf:type rr:PredicateMap ;
-	rr:constant <http://schema.org/validFrom> .
-
-:om_159 rdf:type rr:ObjectMap ;
-	rml:reference "geldigVan[*]" ;
-	rr:termType rr:Literal ;
-	rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime> .
-
-:pom_160 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_160 ;
-	rr:objectMap :om_160 .
-
-:pm_160 rdf:type rr:PredicateMap ;
 	rr:constant <http://schema.org/validThrough> .
 
-:om_160 rdf:type rr:ObjectMap ;
+:om_159 rdf:type rr:ObjectMap ;
 	rml:reference "geldigTot[*]" ;
 	rr:termType rr:Literal ;
 	rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime> .
 
-:map_m_150_000 rml:logicalSource :source_076 ;
+:map_m_149_000 rml:logicalSource :source_076 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_150" ;
+	rdfs:label "m_149" ;
 	rr:subjectMap :s_076 ;
-	rr:predicateObjectMap :pom_161, :pom_162, :pom_163, :pom_164, :pom_165, :pom_166, :pom_167, :pom_168, :pom_169, :pom_170, :pom_171, :pom_172, :pom_173, :pom_174, :pom_175 .
+	rr:predicateObjectMap :pom_160, :pom_161, :pom_162, :pom_163, :pom_164, :pom_165, :pom_166, :pom_167, :pom_168, :pom_169, :pom_170, :pom_171, :pom_172, :pom_173, :pom_174 .
 
 :source_076 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -2908,208 +2897,208 @@
 :s_076 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_160 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_160 ;
+	rr:objectMap :om_160 .
+
+:pm_160 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_160 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/ns/locn#Address> ;
+	rr:termType rr:IRI .
+
 :pom_161 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_161 ;
 	rr:objectMap :om_161 .
 
 :pm_161 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant <https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber> .
 
 :om_161 rdf:type rr:ObjectMap ;
-	rr:constant <http://www.w3.org/ns/locn#Address> ;
-	rr:termType rr:IRI .
+	rml:reference "busnummer[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
 
 :pom_162 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_162 ;
 	rr:objectMap :om_162 .
 
 :pm_162 rdf:type rr:PredicateMap ;
-	rr:constant <https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber> .
-
-:om_162 rdf:type rr:ObjectMap ;
-	rml:reference "busnummer[*]" ;
-	rr:termType rr:Literal ;
-	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
-
-:pom_163 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_163 ;
-	rr:objectMap :om_163 .
-
-:pm_163 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.w3.org/ns/locn#locatorName> .
 
-:om_163 rdf:type rr:ObjectMap ;
+:om_162 rdf:type rr:ObjectMap ;
 	rml:reference "locatienaam[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_011 .
 
 :language_011 rr:constant "nl" .
 
-:pom_164 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_164 ;
-	rr:objectMap :om_164 .
+:pom_163 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_163 ;
+	rr:objectMap :om_163 .
 
-:pm_164 rdf:type rr:PredicateMap ;
+:pm_163 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.w3.org/ns/locn#addressArea> .
 
-:om_164 rdf:type rr:ObjectMap ;
+:om_163 rdf:type rr:ObjectMap ;
 	rml:reference "adresgebied[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_012 .
 
 :language_012 rr:constant "nl" .
 
-:pom_165 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_165 ;
-	rr:objectMap :om_165 .
+:pom_164 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_164 ;
+	rr:objectMap :om_164 .
 
-:pm_165 rdf:type rr:PredicateMap ;
+:pm_164 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.w3.org/ns/locn#postName> .
 
-:om_165 rdf:type rr:ObjectMap ;
+:om_164 rdf:type rr:ObjectMap ;
 	rml:reference "postnaam[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_013 .
 
 :language_013 rr:constant "nl" .
 
-:pom_166 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_166 ;
-	rr:objectMap :om_166 .
+:pom_165 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_165 ;
+	rr:objectMap :om_165 .
 
-:pm_166 rdf:type rr:PredicateMap ;
+:pm_165 rdf:type rr:PredicateMap ;
 	rr:constant <https://vocab.belgif.be/ns/address#municipalityName> .
 
-:om_166 rdf:type rr:ObjectMap ;
+:om_165 rdf:type rr:ObjectMap ;
 	rml:reference "gemeentenaam[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_014 .
 
 :language_014 rr:constant "nl" .
 
-:pom_167 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_167 ;
-	rr:objectMap :om_167 .
+:pom_166 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_166 ;
+	rr:objectMap :om_166 .
 
-:pm_167 rdf:type rr:PredicateMap ;
+:pm_166 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.w3.org/ns/locn#adminUnitL2> .
 
-:om_167 rdf:type rr:ObjectMap ;
+:om_166 rdf:type rr:ObjectMap ;
 	rml:reference "administratieveEenheidNiveau2[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_015 .
 
 :language_015 rr:constant "nl" .
 
-:pom_168 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_168 ;
-	rr:objectMap :om_168 .
+:pom_167 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_167 ;
+	rr:objectMap :om_167 .
 
-:pm_168 rdf:type rr:PredicateMap ;
+:pm_167 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.w3.org/ns/locn#adminUnitL1> .
 
-:om_168 rdf:type rr:ObjectMap ;
+:om_167 rdf:type rr:ObjectMap ;
 	rml:reference "administratieveEenheidNiveau1[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_016 .
 
 :language_016 rr:constant "nl" .
 
-:pom_169 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_169 ;
-	rr:objectMap :om_169 .
+:pom_168 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_168 ;
+	rr:objectMap :om_168 .
 
-:pm_169 rdf:type rr:PredicateMap ;
+:pm_168 rdf:type rr:PredicateMap ;
 	rr:constant <https://vocab.belgif.be/ns/address#country> .
 
-:om_169 rdf:type rr:ObjectMap ;
+:om_168 rdf:type rr:ObjectMap ;
 	rml:reference "land[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_017 .
 
 :language_017 rr:constant "nl" .
 
+:pom_169 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_169 ;
+	rr:objectMap :om_169 .
+
+:pm_169 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#postCode> .
+
+:om_169 rdf:type rr:ObjectMap ;
+	rml:reference "postcode[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
+
 :pom_170 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_170 ;
 	rr:objectMap :om_170 .
 
 :pm_170 rdf:type rr:PredicateMap ;
-	rr:constant <http://www.w3.org/ns/locn#postCode> .
-
-:om_170 rdf:type rr:ObjectMap ;
-	rml:reference "postcode[*]" ;
-	rr:termType rr:Literal ;
-	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
-
-:pom_171 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_171 ;
-	rr:objectMap :om_171 .
-
-:pm_171 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.w3.org/ns/locn#fullAddress> .
 
-:om_171 rdf:type rr:ObjectMap ;
+:om_170 rdf:type rr:ObjectMap ;
 	rml:reference "volledigAdres[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_018 .
 
 :language_018 rr:constant "nl" .
 
+:pom_171 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_171 ;
+	rr:objectMap :om_171 .
+
+:pm_171 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#poBox> .
+
+:om_171 rdf:type rr:ObjectMap ;
+	rml:reference "postbus[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
+
 :pom_172 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_172 ;
 	rr:objectMap :om_172 .
 
 :pm_172 rdf:type rr:PredicateMap ;
-	rr:constant <http://www.w3.org/ns/locn#poBox> .
-
-:om_172 rdf:type rr:ObjectMap ;
-	rml:reference "postbus[*]" ;
-	rr:termType rr:Literal ;
-	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
-
-:pom_173 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_173 ;
-	rr:objectMap :om_173 .
-
-:pm_173 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.w3.org/ns/locn#thoroughfare> .
 
-:om_173 rdf:type rr:ObjectMap ;
+:om_172 rdf:type rr:ObjectMap ;
 	rml:reference "straatnaam[*]" ;
 	rr:termType rr:Literal ;
 	rml:languageMap :language_019 .
 
 :language_019 rr:constant "nl" .
 
+:pom_173 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_173 ;
+	rr:objectMap :om_173 .
+
+:pm_173 rdf:type rr:PredicateMap ;
+	rr:constant <http://www.w3.org/ns/locn#locatorDesignator> .
+
+:om_173 rdf:type rr:ObjectMap ;
+	rml:reference "locatieaanduiding[*]" ;
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
+
 :pom_174 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_174 ;
 	rr:objectMap :om_174 .
 
 :pm_174 rdf:type rr:PredicateMap ;
-	rr:constant <http://www.w3.org/ns/locn#locatorDesignator> .
-
-:om_174 rdf:type rr:ObjectMap ;
-	rml:reference "locatieaanduiding[*]" ;
-	rr:termType rr:Literal ;
-	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
-
-:pom_175 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_175 ;
-	rr:objectMap :om_175 .
-
-:pm_175 rdf:type rr:PredicateMap ;
 	rr:constant <https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber> .
 
-:om_175 rdf:type rr:ObjectMap ;
+:om_174 rdf:type rr:ObjectMap ;
 	rml:reference "huisnummer[*]" ;
 	rr:termType rr:Literal ;
 	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
 
-:map_m_164_000 rml:logicalSource :source_077 ;
+:map_m_163_000 rml:logicalSource :source_077 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_164" ;
+	rdfs:label "m_163" ;
 	rr:subjectMap :s_077 ;
-	rr:predicateObjectMap :pom_176, :pom_177 .
+	rr:predicateObjectMap :pom_175, :pom_176 .
 
 :source_077 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3119,33 +3108,33 @@
 :s_077 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_175 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_175 ;
+	rr:objectMap :om_175 .
+
+:pm_175 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_175 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/ns/adms#Identifier> ;
+	rr:termType rr:IRI .
+
 :pom_176 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_176 ;
 	rr:objectMap :om_176 .
 
 :pm_176 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_176 rdf:type rr:ObjectMap ;
-	rr:constant <http://www.w3.org/ns/adms#Identifier> ;
-	rr:termType rr:IRI .
-
-:pom_177 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_177 ;
-	rr:objectMap :om_177 .
-
-:pm_177 rdf:type rr:PredicateMap ;
 	rr:constant dcterms:creator .
 
-:om_177 rdf:type rr:ObjectMap ;
+:om_176 rdf:type rr:ObjectMap ;
 	rml:reference "toegekendDoor[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_165_000 rml:logicalSource :source_078 ;
+:map_m_164_000 rml:logicalSource :source_078 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_165" ;
+	rdfs:label "m_164" ;
 	rr:subjectMap :s_078 ;
-	rr:predicateObjectMap :pom_178 .
+	rr:predicateObjectMap :pom_177 .
 
 :source_078 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3155,22 +3144,22 @@
 :s_078 rdf:type rr:SubjectMap ;
 	rml:reference "toegekendDoor[*]" .
 
-:pom_178 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_178 ;
-	rr:objectMap :om_178 .
+:pom_177 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_177 ;
+	rr:objectMap :om_177 .
 
-:pm_178 rdf:type rr:PredicateMap ;
+:pm_177 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_178 rdf:type rr:ObjectMap ;
+:om_177 rdf:type rr:ObjectMap ;
 	rr:constant dcterms:Agent ;
 	rr:termType rr:IRI .
 
-:map_m_166_000 rml:logicalSource :source_079 ;
+:map_m_165_000 rml:logicalSource :source_079 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_166" ;
+	rdfs:label "m_165" ;
 	rr:subjectMap :s_079 ;
-	rr:predicateObjectMap :pom_179, :pom_180, :pom_181, :pom_182 .
+	rr:predicateObjectMap :pom_178, :pom_179, :pom_180, :pom_181 .
 
 :source_079 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3180,15 +3169,26 @@
 :s_079 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_178 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_178 ;
+	rr:objectMap :om_178 .
+
+:pm_178 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_178 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/Audience> ;
+	rr:termType rr:IRI .
+
 :pom_179 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_179 ;
 	rr:objectMap :om_179 .
 
 :pm_179 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant dcterms:type .
 
 :om_179 rdf:type rr:ObjectMap ;
-	rr:constant <https://schema.org/Audience> ;
+	rml:reference "leeftijdstype[*]" ;
 	rr:termType rr:IRI .
 
 :pom_180 rdf:type rr:PredicateObjectMap ;
@@ -3196,10 +3196,10 @@
 	rr:objectMap :om_180 .
 
 :pm_180 rdf:type rr:PredicateMap ;
-	rr:constant dcterms:type .
+	rr:constant <http://purl.org/dc/elements/1.1/type> .
 
 :om_180 rdf:type rr:ObjectMap ;
-	rml:reference "leeftijdstype[*]" ;
+	rml:reference "doelgroep[*]" ;
 	rr:termType rr:IRI .
 
 :pom_181 rdf:type rr:PredicateObjectMap ;
@@ -3207,28 +3207,17 @@
 	rr:objectMap :om_181 .
 
 :pm_181 rdf:type rr:PredicateMap ;
-	rr:constant <http://purl.org/dc/elements/1.1/type> .
-
-:om_181 rdf:type rr:ObjectMap ;
-	rml:reference "doelgroep[*]" ;
-	rr:termType rr:IRI .
-
-:pom_182 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_182 ;
-	rr:objectMap :om_182 .
-
-:pm_182 rdf:type rr:PredicateMap ;
 	rr:constant dcterms:educationLevel .
 
-:om_182 rdf:type rr:ObjectMap ;
+:om_181 rdf:type rr:ObjectMap ;
 	rml:reference "onderwijsniveau[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_169_000 rml:logicalSource :source_080 ;
+:map_m_168_000 rml:logicalSource :source_080 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_169" ;
+	rdfs:label "m_168" ;
 	rr:subjectMap :s_080 ;
-	rr:predicateObjectMap :pom_183 .
+	rr:predicateObjectMap :pom_182 .
 
 :source_080 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3237,6 +3226,31 @@
 
 :s_080 rdf:type rr:SubjectMap ;
 	rml:reference "leeftijdstype[*]" .
+
+:pom_182 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_182 ;
+	rr:objectMap :om_182 .
+
+:pm_182 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_182 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
+
+:map_m_169_000 rml:logicalSource :source_081 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_169" ;
+	rr:subjectMap :s_081 ;
+	rr:predicateObjectMap :pom_183 .
+
+:source_081 rdf:type rml:LogicalSource ;
+	rml:source "out/kao.json" ;
+	rml:iterator "$.Doelgroep[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_081 rdf:type rr:SubjectMap ;
+	rml:reference "doelgroep[*]" .
 
 :pom_183 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_183 ;
@@ -3249,19 +3263,19 @@
 	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
-:map_m_170_000 rml:logicalSource :source_081 ;
+:map_m_170_000 rml:logicalSource :source_082 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_170" ;
-	rr:subjectMap :s_081 ;
+	rr:subjectMap :s_082 ;
 	rr:predicateObjectMap :pom_184 .
 
-:source_081 rdf:type rml:LogicalSource ;
+:source_082 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
 	rml:iterator "$.Doelgroep[*]" ;
 	rml:referenceFormulation ql:JSONPath .
 
-:s_081 rdf:type rr:SubjectMap ;
-	rml:reference "doelgroep[*]" .
+:s_082 rdf:type rr:SubjectMap ;
+	rml:reference "onderwijsniveau[*]" .
 
 :pom_184 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_184 ;
@@ -3274,36 +3288,11 @@
 	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
-:map_m_171_000 rml:logicalSource :source_082 ;
+:map_m_171_000 rml:logicalSource :source_083 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_171" ;
-	rr:subjectMap :s_082 ;
-	rr:predicateObjectMap :pom_185 .
-
-:source_082 rdf:type rml:LogicalSource ;
-	rml:source "out/kao.json" ;
-	rml:iterator "$.Doelgroep[*]" ;
-	rml:referenceFormulation ql:JSONPath .
-
-:s_082 rdf:type rr:SubjectMap ;
-	rml:reference "onderwijsniveau[*]" .
-
-:pom_185 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_185 ;
-	rr:objectMap :om_185 .
-
-:pm_185 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_185 rdf:type rr:ObjectMap ;
-	rr:constant skos:Concept ;
-	rr:termType rr:IRI .
-
-:map_m_172_000 rml:logicalSource :source_083 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "m_172" ;
 	rr:subjectMap :s_083 ;
-	rr:predicateObjectMap :pom_186, :pom_187 .
+	rr:predicateObjectMap :pom_185, :pom_186 .
 
 :source_083 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3313,33 +3302,33 @@
 :s_083 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_185 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_185 ;
+	rr:objectMap :om_185 .
+
+:pm_185 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_185 rdf:type rr:ObjectMap ;
+	rr:constant <https://schema.org/MonetaryAmount> ;
+	rr:termType rr:IRI .
+
 :pom_186 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_186 ;
 	rr:objectMap :om_186 .
 
 :pm_186 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_186 rdf:type rr:ObjectMap ;
-	rr:constant <https://schema.org/MonetaryAmount> ;
-	rr:termType rr:IRI .
-
-:pom_187 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_187 ;
-	rr:objectMap :om_187 .
-
-:pm_187 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.cidoc-crm.org/cidoc-crm/P180_has_currency> .
 
-:om_187 rdf:type rr:ObjectMap ;
+:om_186 rdf:type rr:ObjectMap ;
 	rml:reference "valuta[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_173_000 rml:logicalSource :source_084 ;
+:map_m_172_000 rml:logicalSource :source_084 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_173" ;
+	rdfs:label "m_172" ;
 	rr:subjectMap :s_084 ;
-	rr:predicateObjectMap :pom_188 .
+	rr:predicateObjectMap :pom_187 .
 
 :source_084 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3349,22 +3338,22 @@
 :s_084 rdf:type rr:SubjectMap ;
 	rml:reference "valuta[*]" .
 
-:pom_188 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_188 ;
-	rr:objectMap :om_188 .
+:pom_187 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_187 ;
+	rr:objectMap :om_187 .
 
-:pm_188 rdf:type rr:PredicateMap ;
+:pm_187 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-:om_188 rdf:type rr:ObjectMap ;
+:om_187 rdf:type rr:ObjectMap ;
 	rr:constant <http://qudt.org/schema/qudt/CurrencyUnit> ;
 	rr:termType rr:IRI .
 
-:map_m_174_000 rml:logicalSource :source_085 ;
+:map_m_173_000 rml:logicalSource :source_085 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_174" ;
+	rdfs:label "m_173" ;
 	rr:subjectMap :s_085 ;
-	rr:predicateObjectMap :pom_189, :pom_190, :pom_191 .
+	rr:predicateObjectMap :pom_188, :pom_189, :pom_190 .
 
 :source_085 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3374,15 +3363,26 @@
 :s_085 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_188 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_188 ;
+	rr:objectMap :om_188 .
+
+:pm_188 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_188 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/2006/time#ProperInterval> ;
+	rr:termType rr:IRI .
+
 :pom_189 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_189 ;
 	rr:objectMap :om_189 .
 
 :pm_189 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant <http://www.w3.org/2006/time#hasEnd> .
 
 :om_189 rdf:type rr:ObjectMap ;
-	rr:constant <http://www.w3.org/2006/time#ProperInterval> ;
+	rml:reference "tot[*]" ;
 	rr:termType rr:IRI .
 
 :pom_190 rdf:type rr:PredicateObjectMap ;
@@ -3390,28 +3390,17 @@
 	rr:objectMap :om_190 .
 
 :pm_190 rdf:type rr:PredicateMap ;
-	rr:constant <http://www.w3.org/2006/time#hasEnd> .
-
-:om_190 rdf:type rr:ObjectMap ;
-	rml:reference "tot[*]" ;
-	rr:termType rr:IRI .
-
-:pom_191 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_191 ;
-	rr:objectMap :om_191 .
-
-:pm_191 rdf:type rr:PredicateMap ;
 	rr:constant <http://www.w3.org/2006/time#hasBeginning> .
 
-:om_191 rdf:type rr:ObjectMap ;
+:om_190 rdf:type rr:ObjectMap ;
 	rml:reference "van[*]" ;
 	rr:termType rr:IRI .
 
-:map_m_176_000 rml:logicalSource :source_086 ;
+:map_m_175_000 rml:logicalSource :source_086 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "m_176" ;
+	rdfs:label "m_175" ;
 	rr:subjectMap :s_086 ;
-	rr:predicateObjectMap :pom_192 .
+	rr:predicateObjectMap :pom_191 .
 
 :source_086 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3420,6 +3409,31 @@
 
 :s_086 rdf:type rr:SubjectMap ;
 	rml:reference "tot[*]" .
+
+:pom_191 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_191 ;
+	rr:objectMap :om_191 .
+
+:pm_191 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_191 rdf:type rr:ObjectMap ;
+	rr:constant <http://www.w3.org/2006/time#Instant> ;
+	rr:termType rr:IRI .
+
+:map_m_176_000 rml:logicalSource :source_087 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_176" ;
+	rr:subjectMap :s_087 ;
+	rr:predicateObjectMap :pom_192 .
+
+:source_087 rdf:type rml:LogicalSource ;
+	rml:source "out/kao.json" ;
+	rml:iterator "$.Periode[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_087 rdf:type rr:SubjectMap ;
+	rml:reference "van[*]" .
 
 :pom_192 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_192 ;
@@ -3432,36 +3446,11 @@
 	rr:constant <http://www.w3.org/2006/time#Instant> ;
 	rr:termType rr:IRI .
 
-:map_m_177_000 rml:logicalSource :source_087 ;
+:map_m_177_000 rml:logicalSource :source_088 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "m_177" ;
-	rr:subjectMap :s_087 ;
-	rr:predicateObjectMap :pom_193 .
-
-:source_087 rdf:type rml:LogicalSource ;
-	rml:source "out/kao.json" ;
-	rml:iterator "$.Periode[*]" ;
-	rml:referenceFormulation ql:JSONPath .
-
-:s_087 rdf:type rr:SubjectMap ;
-	rml:reference "van[*]" .
-
-:pom_193 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_193 ;
-	rr:objectMap :om_193 .
-
-:pm_193 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_193 rdf:type rr:ObjectMap ;
-	rr:constant <http://www.w3.org/2006/time#Instant> ;
-	rr:termType rr:IRI .
-
-:map_m_178_000 rml:logicalSource :source_088 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "m_178" ;
 	rr:subjectMap :s_088 ;
-	rr:predicateObjectMap :pom_194, :pom_195 .
+	rr:predicateObjectMap :pom_193, :pom_194 .
 
 :source_088 rdf:type rml:LogicalSource ;
 	rml:source "out/kao.json" ;
@@ -3471,25 +3460,25 @@
 :s_088 rdf:type rr:SubjectMap ;
 	rml:reference "CODE[*]" .
 
+:pom_193 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_193 ;
+	rr:objectMap :om_193 .
+
+:pm_193 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_193 rdf:type rr:ObjectMap ;
+	rr:constant <http://missing.example.com/Agent> ;
+	rr:termType rr:IRI .
+
 :pom_194 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_194 ;
 	rr:objectMap :om_194 .
 
 :pm_194 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-:om_194 rdf:type rr:ObjectMap ;
-	rr:constant <http://missing.example.com/Agent> ;
-	rr:termType rr:IRI .
-
-:pom_195 rdf:type rr:PredicateObjectMap ;
-	rr:predicateMap :pm_195 ;
-	rr:objectMap :om_195 .
-
-:pm_195 rdf:type rr:PredicateMap ;
 	rr:constant <http://missing.example.com/naam> .
 
-:om_195 rdf:type rr:ObjectMap ;
+:om_194 rdf:type rr:ObjectMap ;
 	rml:reference "naam[*]" ;
 	rr:termType rr:Literal .
 

@@ -14,19 +14,49 @@
 
 <http://example.com/06.01> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
+<http://example.com/06.02> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
 <http://example.com/06.03> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.04> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.05> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
+<http://example.com/06.06> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
 <http://example.com/06.07> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
+<http://example.com/06.08> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.09> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.10> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.11> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.12> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
 <http://example.com/06.13> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.14> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.15> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.16> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.17> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.18> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.19> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.20> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.21> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.22> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.23> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.24> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
@@ -60,6 +90,8 @@
 
 <http://example.com/06.39> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
+<http://example.com/06.40> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
 <http://example.com/06.41> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.42> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
@@ -77,6 +109,8 @@
 <http://example.com/06.48> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.49> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+
+<http://example.com/06.50> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
 <http://example.com/06.51> a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
 
@@ -97,9 +131,9 @@
 
 <http://example.com/BV2_06.02> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.02";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen ordenen reële getallen."@nl;
+  skos:closeMatch <http://example.com/06.02>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.02> .
 
 <http://example.com/BV2_06.03> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -111,9 +145,9 @@
 
 <http://example.com/BV2_06.04> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.04";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen bepalen de onderlinge ligging van twee rechten, twee vlakken en een rechte en een vlak in ruimtelijke situaties."@nl;
+  skos:closeMatch <http://example.com/06.04>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.04> .
 
 <http://example.com/BV2_06.05> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -125,9 +159,9 @@
 
 <http://example.com/BV2_06.06> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.06";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen passen de stelling van Pythagoras toe om meetkundige problemen op te lossen in het vlak en in de ruimte."@nl;
+  skos:closeMatch <http://example.com/06.06>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.06> .
 
 <http://example.com/BV2_06.07> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -139,37 +173,37 @@
 
 <http://example.com/BV2_06.08> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.08";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen passen gelijkvormigheidskenmerken van driehoeken toe om meetkundige problemen op te lossen."@nl;
+  skos:closeMatch <http://example.com/06.08>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.08> .
 
 <http://example.com/BV2_06.09> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.09";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen tekenen in het vlak de som van vectoren en de vermenigvuldiging van een vector met een getal."@nl;
+  skos:closeMatch <http://example.com/06.09>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.09> .
 
 <http://example.com/BV2_06.10> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.10";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen eerstegraadsvergelijkingen en -ongelijkheden in één onbekende algebraïsch en grafisch op."@nl;
+  skos:closeMatch <http://example.com/06.10>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.10> .
 
 <http://example.com/BV2_06.11> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.11";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen drukken bij een formule één variabele uit in functie van een andere."@nl;
+  skos:closeMatch <http://example.com/06.11>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.11> .
 
 <http://example.com/BV2_06.12> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.12";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen leggen uit wat een functie is en leggen het verband tussen verschillende representaties van een functie: verwoording, tabel, grafiek en voorschrift."@nl;
+  skos:closeMatch <http://example.com/06.12>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.12> .
 
 <http://example.com/BV2_06.13> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -181,23 +215,23 @@
 
 <http://example.com/BV2_06.14> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.14";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren kenmerken van eerstegraadsfuncties: domein, bereik, nulwaarden, tekenverloop en stijgen/dalen."@nl;
+  skos:closeMatch <http://example.com/06.14>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.14> .
 
 <http://example.com/BV2_06.15> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.15";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen analyseren kenmerken van tweedegraadsfuncties van de vorm f(x)=ax²: domein, bereik, nulwaarden, tekenverloop, stijgen/dalen, extremum, toenemende/afnemende stijging/daling en symmetrie ten opzichte van een verticale rechte."@nl;
+  skos:closeMatch <http://example.com/06.15>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.15> .
 
 <http://example.com/BV2_06.16> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.16";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen stelsels van twee eerstegraadsvergelijkingen in twee onbekenden algebraïsch en grafisch op."@nl;
+  skos:closeMatch <http://example.com/06.16>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.16> .
 
 <http://example.com/BV2_06.17> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -223,30 +257,30 @@
 
 <http://example.com/BV2_06.20> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.20";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen beargumenteren wiskundige redeneringen en maken daarbij ook gebruik van eigenschappen of van een tegenvoorbeeld."@nl;
+  skos:closeMatch <http://example.com/06.20>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.20> .
 
 <http://example.com/BV2_06.21> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.21";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen beschrijven fenomenen uit de realiteit aan de hand van wiskundige concepten uit de tweede graad."@nl;
+  skos:closeMatch <http://example.com/06.21>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.21> .
 
 <http://example.com/BV2_06.22> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.22";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen vraagstukken en problemen op door te mathematiseren en demathematiseren en door gebruik te maken van heuristieken."@nl;
+  skos:closeMatch <http://example.com/06.22>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.22> .
 
 <http://example.com/BV2_06.23> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.23";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen gebruiken ICT om berekeningen uit te voeren en grafische voorstellingen te maken."@nl;
+  skos:closeMatch <http://example.com/06.23>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.23> .
 
 <http://example.com/BV2_06.24> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -363,9 +397,9 @@
 
 <http://example.com/BV2_06.40> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.40";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen lossen fysische problemen met en zonder formularium op."@nl;
+  skos:closeMatch <http://example.com/06.40>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.40> .
 
 <http://example.com/BV2_06.41> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
@@ -433,9 +467,9 @@
 
 <http://example.com/BV2_06.50> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
     <http://www.w3.org/ns/adms#Identifier>;
-  <http://missing.example.com/hetzelfde> "06.50";
   <http://purl.org/dc/elements/1.1/creator> <http://example.com/GO>;
   <http://purl.org/dc/elements/1.1/description> "De leerlingen werken op een veilige en duurzame manier met materialen, stoffen, organismen en technische systemen."@nl;
+  skos:closeMatch <http://example.com/06.50>;
   <http://www.w3.org/ns/adms#identifier> <http://example.com/BV2_06.50> .
 
 <http://example.com/BV2_06.51> a <http://data.europa.eu/snb/model/elm/LearningAchievement>,
