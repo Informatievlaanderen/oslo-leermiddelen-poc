@@ -11,17 +11,6 @@ base: "http://base.example.com/"
 mappings:
   m_1:
     sources:
-      - [ "out/kao.json~jsonpath", "$.Agent[*]" ]
-    s: $(CODE[*])
-    po:
-      - [rdf:type, http://purl.org/dc/terms/Agent~iri]
-      - p: "http://purl.org/dc/terms/title"
-        o: 
-          value:  "$(naam[*])"
-          language: nl
-
-  m_2:
-    sources:
       - [ "out/kao.json~jsonpath", "$.Leeractiviteit[*]" ]
     s: $(CODE[*])
     po:
@@ -67,117 +56,77 @@ mappings:
           value:  "$(draagtBijAanHetBehalenVan[*])"
           type: iri
 
-  m_12:
+  m_11:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(heeftDeel[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningActivity~iri]
 
-  m_13:
+  m_12:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(ingerichtDoor[*])
     po:
       - [rdf:type, http://purl.org/dc/terms/Agent~iri]
 
-  m_14:
+  m_13:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(isDeelVan[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningActivity~iri]
 
-  m_15:
+  m_14:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(locatie[*])
     po:
       - [rdf:type, http://www.w3.org/ns/locn#Address~iri]
 
-  m_16:
+  m_15:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(periode[*])
     po:
       - [rdf:type, http://data.europa.eu/m8g/PeriodOfTime~iri]
 
-  m_17:
+  m_16:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(specificatie[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningActivitySpecification~iri]
 
-  m_18:
+  m_17:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(werklast[*])
     po:
       - [rdf:type, http://www.w3.org/2006/time#Duration~iri]
 
-  m_19:
+  m_18:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(type[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_20:
+  m_19:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(leermiddel[*])
     po:
       - [rdf:type, https://schema.org/LearningResource~iri]
 
-  m_21:
+  m_20:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteit[*]" ]
     s: $(draagtBijAanHetBehalenVan[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
 
-  m_22:
-    sources:
-      - [ "out/kao.json~jsonpath", "$.Doelgroep[*]" ]
-    s: $(CODE[*])
-    po:
-      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
-      - p: "http://purl.org/dc/terms/type"
-        o: 
-          value:  "$(leeftijdstype[*])"
-          type: iri
-      - p: "http://purl.org/dc/elements/1.1/type"
-        o: 
-          value:  "$(doelgroep[*])"
-          type: iri
-      - p: "http://purl.org/dc/terms/educationLevel"
-        o: 
-          value:  "$(onderwijsniveau[*])"
-          type: iri
-
-  m_25:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Doelgroep[*]" ]
-    s: $(leeftijdstype[*])
-    po:
-      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
-
-  m_26:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Doelgroep[*]" ]
-    s: $(doelgroep[*])
-    po:
-      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
-
-  m_27:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Doelgroep[*]" ]
-    s: $(onderwijsniveau[*])
-    po:
-      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
-
-  m_28:
+  m_21:
     sources:
       - [ "out/kao.json~jsonpath", "$.Leeractiviteitspecificatie[*]" ]
     s: $(CODE[*])
@@ -220,70 +169,70 @@ mappings:
           value:  "$(schrijftVoor[*])"
           type: iri
 
-  m_37:
+  m_30:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(contacturen[*])
     po:
       - [rdf:type, http://schema.org/OpeningHoursSpecification~iri]
 
-  m_38:
+  m_31:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(generalisatieVan[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningActivitySpecification~iri]
 
-  m_39:
+  m_32:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(heeftDeel[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningActivitySpecification~iri]
 
-  m_40:
+  m_33:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(instructietaal[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_41:
+  m_34:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(isDeelVan[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningActivitySpecification~iri]
 
-  m_42:
+  m_35:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(specialisatieVan[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningActivitySpecification~iri]
 
-  m_43:
+  m_36:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(type[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_44:
+  m_37:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(draagtBijAanHetBehalenVan[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
 
-  m_45:
+  m_38:
     sources:
       - [ out/kao.json~jsonpath, "$.Leeractiviteitspecificatie[*]" ]
     s: $(schrijftVoor[*])
     po:
       - [rdf:type, https://schema.org/LearningResource~iri]
 
-  m_46:
+  m_39:
     sources:
       - [ "out/kao.json~jsonpath", "$.Leermiddel[*]" ]
     s: $(CODE[*])
@@ -370,105 +319,105 @@ mappings:
           value:  "$(bestaatUit[*])"
           type: iri
 
-  m_66:
+  m_59:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(onderwerp[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_67:
+  m_60:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(toegankelijkheid[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_68:
+  m_61:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(type[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_69:
+  m_62:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(interactieType[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_70:
+  m_63:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(instructietaal[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_71:
+  m_64:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(resultaat[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_72:
+  m_65:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(niveau[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_73:
+  m_66:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(kost[*])
     po:
       - [rdf:type, https://schema.org/MonetaryAmount~iri]
 
-  m_74:
+  m_67:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(formaat[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_75:
+  m_68:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(competentie[*])
     po:
       - [rdf:type, https://ec.europa.eu/esco/lod/static/model.html#Skill~iri]
 
-  m_76:
+  m_69:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(bron[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_77:
+  m_70:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(dient[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
 
-  m_78:
+  m_71:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(isLidVan[*])
     po:
       - [rdf:type, https://schema.org/CreativeWorkSeries~iri]
 
-  m_79:
+  m_72:
     sources:
       - [ out/kao.json~jsonpath, "$.Leermiddel[*]" ]
     s: $(bestaatUit[*])
     po:
       - [rdf:type, https://schema.org/CreativeWork~iri]
 
-  m_80:
+  m_73:
     sources:
       - [ "out/kao.json~jsonpath", "$.CreatiefWerk[*]" ]
     s: $(CODE[*])
@@ -515,56 +464,56 @@ mappings:
           value:  "$(uitgever[*])"
           type: iri
 
-  m_90:
+  m_83:
     sources:
       - [ out/kao.json~jsonpath, "$.CreatiefWerk[*]" ]
     s: $(auteur[*])
     po:
       - [rdf:type, http://purl.org/dc/terms/Agent~iri]
 
-  m_91:
+  m_84:
     sources:
       - [ out/kao.json~jsonpath, "$.CreatiefWerk[*]" ]
     s: $(auteursrechtHouder[*])
     po:
       - [rdf:type, http://purl.org/dc/terms/Agent~iri]
 
-  m_92:
+  m_85:
     sources:
       - [ out/kao.json~jsonpath, "$.CreatiefWerk[*]" ]
     s: $(taal[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_93:
+  m_86:
     sources:
       - [ out/kao.json~jsonpath, "$.CreatiefWerk[*]" ]
     s: $(vereisteTijd[*])
     po:
       - [rdf:type, http://www.w3.org/2006/time#Duration~iri]
 
-  m_94:
+  m_87:
     sources:
       - [ out/kao.json~jsonpath, "$.CreatiefWerk[*]" ]
     s: $(licentie[*])
     po:
       - [rdf:type, http://purl.org/dc/terms/LicenseDocument~iri]
 
-  m_95:
+  m_88:
     sources:
       - [ out/kao.json~jsonpath, "$.CreatiefWerk[*]" ]
     s: $(producent[*])
     po:
       - [rdf:type, http://purl.org/dc/terms/Agent~iri]
 
-  m_96:
+  m_89:
     sources:
       - [ out/kao.json~jsonpath, "$.CreatiefWerk[*]" ]
     s: $(uitgever[*])
     po:
       - [rdf:type, http://purl.org/dc/terms/Agent~iri]
 
-  m_97:
+  m_90:
     sources:
       - [ "out/kao.json~jsonpath", "$.Doel[*]" ]
     s: $(CODE[*])
@@ -610,13 +559,17 @@ mappings:
         o: 
           value:  "$(competentie[*])"
           type: iri
+      - p: "https://schema.org/isPartOf"
+        o: 
+          value:  "$(isLidVan[*])"
+          type: iri
       - p: "http://www.w3.org/2004/02/skos/core#related"
         o: 
           value:  "$(gerelateerdAan[*])"
           type: iri
       - p: "http://www.w3.org/2004/02/skos/core#broader"
         o: 
-          value:  "$(isSpecialisatieVan[*])"
+          value:  "$(heeftSpecialisatie[*])"
           type: iri
       - p: "http://www.w3.org/2004/02/skos/core#narrower"
         o: 
@@ -628,119 +581,121 @@ mappings:
           type: iri
       - p: "http://www.w3.org/2004/02/skos/core#closeMatch"
         o: 
-          value:  "$(hetzelfde[*])"
+          value:  "$(gelijkaardig[*])"
           type: iri
-      - p: "http://example.com/eigenCombinatieLeerdoelOpleidingsniveau"
+      - p: "http://missing.example.com/isSpecialisatieVan"
         o: 
-          value:  "$(eigenCombinatieLeerdoelOpleidingsniveau[*])"
-          type: iri
+          value:  "$(isSpecialisatieVan[*])"
+      - p: "http://missing.example.com/hetzelfde"
+        o: 
+          value:  "$(hetzelfde[*])"
 
-  m_113:
+  m_108:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(geldigheid[*])
     po:
       - [rdf:type, http://data.europa.eu/m8g/PeriodOfTime~iri]
 
-  m_114:
+  m_109:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(identificator[*])
     po:
       - [rdf:type, http://www.w3.org/ns/adms#Identifier~iri]
 
-  m_115:
+  m_110:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(niveau[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_116:
+  m_111:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(gedefinieerdDoor[*])
     po:
       - [rdf:type, http://purl.org/dc/terms/Agent~iri]
 
-  m_117:
+  m_112:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(onderwerp[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_118:
+  m_113:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(type[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_119:
+  m_114:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(bron[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_120:
+  m_115:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(doelgroep[*])
     po:
       - [rdf:type, https://schema.org/Audience~iri]
 
-  m_121:
+  m_116:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(competentie[*])
     po:
       - [rdf:type, https://ec.europa.eu/esco/lod/static/model.html#Skill~iri]
 
-  m_122:
+  m_117:
+    sources:
+      - [ out/kao.json~jsonpath, "$.Doel[*]" ]
+    s: $(isLidVan[*])
+    po:
+      - [rdf:type, http://purl.org/dc/dcmitype/Collection~iri]
+
+  m_118:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(gerelateerdAan[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
 
-  m_123:
+  m_119:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
-    s: $(isSpecialisatieVan[*])
+    s: $(heeftSpecialisatie[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
 
-  m_124:
+  m_120:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(isBrederDan[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
 
-  m_125:
+  m_121:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
     s: $(bestaatUit[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
 
-  m_126:
+  m_122:
     sources:
       - [ out/kao.json~jsonpath, "$.Doel[*]" ]
-    s: $(hetzelfde[*])
+    s: $(gelijkaardig[*])
     po:
       - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
 
-  m_127:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Doel[*]" ]
-    s: $(eigenCombinatieLeerdoelOpleidingsniveau[*])
-    po:
-      - [rdf:type, http://example.com/EigenCombinatieLeerdoelOpleidingsniveau~iri]
-
-  m_128:
+  m_123:
     sources:
       - [ "out/kao.json~jsonpath", "$.LeermiddelVerzameling[*]" ]
     s: $(CODE[*])
@@ -751,52 +706,14 @@ mappings:
           value:  "$(heeftLid[*])"
           type: iri
 
-  m_129:
+  m_124:
     sources:
       - [ out/kao.json~jsonpath, "$.LeermiddelVerzameling[*]" ]
     s: $(heeftLid[*])
     po:
       - [rdf:type, https://schema.org/LearningResource~iri]
 
-  m_130:
-    sources:
-      - [ "out/kao.json~jsonpath", "$.Opleidingsniveau[*]" ]
-    s: $(CODE[*])
-    po:
-      - [rdf:type, http://example.com/Opleidingsniveau~iri]
-      - p: "http://purl.org/dc/terms/title"
-        o: 
-          value:  "$(naam[*])"
-          language: nl
-      - p: "http://example.com/level-1"
-        o: 
-          value:  "$(level1[*])"
-          language: nl
-      - p: "http://example.com/level-2"
-        o: 
-          value:  "$(level2[*])"
-          language: nl
-      - p: "http://example.com/level-3"
-        o: 
-          value:  "$(level3[*])"
-          language: nl
-      - p: "http://example.com/level-4"
-        o: 
-          value:  "$(level4[*])"
-          language: nl
-      - p: "http://www.w3.org/2004/02/skos/core#narrower"
-        o: 
-          value:  "$(isSpecialisatieVan[*])"
-          type: iri
-
-  m_136:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Opleidingsniveau[*]" ]
-    s: $(isSpecialisatieVan[*])
-    po:
-      - [rdf:type, http://example.com/Opleidingsniveau~iri]
-
-  m_137:
+  m_125:
     sources:
       - [ "out/kao.json~jsonpath", "$.Licentie[*]" ]
     s: $(CODE[*])
@@ -807,51 +724,14 @@ mappings:
           value:  "$(type[*])"
           type: iri
 
-  m_138:
+  m_126:
     sources:
       - [ out/kao.json~jsonpath, "$.Licentie[*]" ]
     s: $(type[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_139:
-    sources:
-      - [ "out/kao.json~jsonpath", "$.Onderwerp[*]" ]
-    s: $(CODE[*])
-    po:
-      - [rdf:type, http://example.com/Onderwerp~iri]
-      - p: "http://purl.org/dc/terms/title"
-        o: 
-          value:  "$(naam[*])"
-          language: nl
-      - p: "http://example.com/shortLabel"
-        o: 
-          value:  "$(korteNaam[*])"
-          language: nl
-      - p: "http://purl.org/dc/terms/type"
-        o: 
-          value:  "$(type[*])"
-          type: iri
-      - p: "http://purl.org/dc/terms/educationLevel"
-        o: 
-          value:  "$(niveau[*])"
-          type: iri
-
-  m_143:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Onderwerp[*]" ]
-    s: $(type[*])
-    po:
-      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
-
-  m_144:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Onderwerp[*]" ]
-    s: $(niveau[*])
-    po:
-      - [rdf:type, http://www.w3.org/2004/02/skos/core#Opleidingsniveau~iri]
-
-  m_145:
+  m_127:
     sources:
       - [ "out/kao.json~jsonpath", "$.LeermiddelElement[*]" ]
     s: $(CODE[*])
@@ -862,14 +742,69 @@ mappings:
           value:  "$(onderdeelVan[*])"
           type: iri
 
-  m_146:
+  m_128:
     sources:
       - [ out/kao.json~jsonpath, "$.LeermiddelElement[*]" ]
     s: $(onderdeelVan[*])
     po:
       - [rdf:type, https://schema.org/LearningResource~iri]
 
-  m_147:
+  m_129:
+    sources:
+      - [ "out/kao.json~jsonpath", "$.DoelCollectie[*]" ]
+    s: $(CODE[*])
+    po:
+      - [rdf:type, http://purl.org/dc/dcmitype/Collection~iri]
+      - p: "http://purl.org/dc/terms/title"
+        o: 
+          value:  "$(naam[*])"
+          language: nl
+      - p: "http://purl.org/dc/elements/1.1/creator"
+        o: 
+          value:  "$(gedefinieerdDoor[*])"
+          type: iri
+      - p: "http://purl.org/dc/terms/educationLevel"
+        o: 
+          value:  "$(niveau[*])"
+          type: iri
+      - p: "http://purl.org/dc/terms/type"
+        o: 
+          value:  "$(type[*])"
+          type: iri
+      - p: "https://schema.org/hasPart"
+        o: 
+          value:  "$(heeftLid[*])"
+          type: iri
+
+  m_134:
+    sources:
+      - [ out/kao.json~jsonpath, "$.DoelCollectie[*]" ]
+    s: $(gedefinieerdDoor[*])
+    po:
+      - [rdf:type, http://purl.org/dc/terms/Agent~iri]
+
+  m_135:
+    sources:
+      - [ out/kao.json~jsonpath, "$.DoelCollectie[*]" ]
+    s: $(niveau[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+
+  m_136:
+    sources:
+      - [ out/kao.json~jsonpath, "$.DoelCollectie[*]" ]
+    s: $(type[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+
+  m_137:
+    sources:
+      - [ out/kao.json~jsonpath, "$.DoelCollectie[*]" ]
+    s: $(heeftLid[*])
+    po:
+      - [rdf:type, http://data.europa.eu/snb/model/elm/LearningAchievement~iri]
+
+  m_138:
     sources:
       - [ "out/kao.json~jsonpath", "$.Competentie[*]" ]
     s: $(CODE[*])
@@ -888,14 +823,14 @@ mappings:
           value:  "$(type[*])"
           type: iri
 
-  m_150:
+  m_141:
     sources:
       - [ out/kao.json~jsonpath, "$.Competentie[*]" ]
     s: $(type[*])
     po:
       - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 
-  m_151:
+  m_142:
     sources:
       - [ "out/kao.json~jsonpath", "$.KwantitatieveWaarde[*]" ]
     s: $(CODE[*])
@@ -904,20 +839,19 @@ mappings:
       - p: "https://schema.org/value"
         o: 
           value:  "$(waarde[*])"
-          datatype: http://www.w3.org/2000/01/rdf-schema#Literal
       - p: "https://schema.org/unitCode"
         o: 
           value:  "$(eenheid[*])"
           type: iri
 
-  m_153:
+  m_144:
     sources:
       - [ out/kao.json~jsonpath, "$.KwantitatieveWaarde[*]" ]
     s: $(eenheid[*])
     po:
       - [rdf:type, https://qudt.org/schema/qudt/Unit~iri]
 
-  m_154:
+  m_145:
     sources:
       - [ "out/kao.json~jsonpath", "$.Openingsurenspecificatie[*]" ]
     s: $(CODE[*])
@@ -944,7 +878,7 @@ mappings:
           value:  "$(geldigTot[*])"
           datatype: http://www.w3.org/2001/XMLSchema#dateTime
 
-  m_159:
+  m_150:
     sources:
       - [ "out/kao.json~jsonpath", "$.Adresvoorstelling[*]" ]
     s: $(CODE[*])
@@ -1007,7 +941,7 @@ mappings:
           value:  "$(huisnummer[*])"
           datatype: http://www.w3.org/2001/XMLSchema#string
 
-  m_173:
+  m_164:
     sources:
       - [ "out/kao.json~jsonpath", "$.Identificator[*]" ]
     s: $(CODE[*])
@@ -1018,14 +952,54 @@ mappings:
           value:  "$(toegekendDoor[*])"
           type: iri
 
-  m_174:
+  m_165:
     sources:
       - [ out/kao.json~jsonpath, "$.Identificator[*]" ]
     s: $(toegekendDoor[*])
     po:
       - [rdf:type, http://purl.org/dc/terms/Agent~iri]
 
-  m_175:
+  m_166:
+    sources:
+      - [ "out/kao.json~jsonpath", "$.Doelgroep[*]" ]
+    s: $(CODE[*])
+    po:
+      - [rdf:type, https://schema.org/Audience~iri]
+      - p: "http://purl.org/dc/terms/type"
+        o: 
+          value:  "$(leeftijdstype[*])"
+          type: iri
+      - p: "http://purl.org/dc/elements/1.1/type"
+        o: 
+          value:  "$(doelgroep[*])"
+          type: iri
+      - p: "http://purl.org/dc/terms/educationLevel"
+        o: 
+          value:  "$(onderwijsniveau[*])"
+          type: iri
+
+  m_169:
+    sources:
+      - [ out/kao.json~jsonpath, "$.Doelgroep[*]" ]
+    s: $(leeftijdstype[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+
+  m_170:
+    sources:
+      - [ out/kao.json~jsonpath, "$.Doelgroep[*]" ]
+    s: $(doelgroep[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+
+  m_171:
+    sources:
+      - [ out/kao.json~jsonpath, "$.Doelgroep[*]" ]
+    s: $(onderwijsniveau[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+
+  m_172:
     sources:
       - [ "out/kao.json~jsonpath", "$.Geldbedrag[*]" ]
     s: $(CODE[*])
@@ -1036,14 +1010,14 @@ mappings:
           value:  "$(valuta[*])"
           type: iri
 
-  m_176:
+  m_173:
     sources:
       - [ out/kao.json~jsonpath, "$.Geldbedrag[*]" ]
     s: $(valuta[*])
     po:
       - [rdf:type, http://qudt.org/schema/qudt/CurrencyUnit~iri]
 
-  m_177:
+  m_174:
     sources:
       - [ "out/kao.json~jsonpath", "$.Periode[*]" ]
     s: $(CODE[*])
@@ -1058,117 +1032,27 @@ mappings:
           value:  "$(van[*])"
           type: iri
 
-  m_179:
+  m_176:
     sources:
       - [ out/kao.json~jsonpath, "$.Periode[*]" ]
     s: $(tot[*])
     po:
       - [rdf:type, http://www.w3.org/2006/time#Instant~iri]
 
-  m_180:
+  m_177:
     sources:
       - [ out/kao.json~jsonpath, "$.Periode[*]" ]
     s: $(van[*])
     po:
       - [rdf:type, http://www.w3.org/2006/time#Instant~iri]
 
-  m_181:
+  m_178:
     sources:
-      - [ "out/kao.json~jsonpath", "$.Leerplan[*]" ]
+      - [ "out/kao.json~jsonpath", "$.Agent[*]" ]
     s: $(CODE[*])
     po:
-      - [rdf:type, http://example.com/Leerplan~iri]
-      - p: "http://purl.org/dc/terms/title"
+      - [rdf:type, http://missing.example.com/Agent~iri]
+      - p: "http://missing.example.com/naam"
         o: 
           value:  "$(naam[*])"
-          language: nl
-      - p: "http://data.europa.eu/snb/model/elm/directedBy"
-        o: 
-          value:  "$(ingerichtDoor[*])"
-          type: iri
-      - p: "http://example.com/niveau"
-        o: 
-          value:  "$(niveau[*])"
-          type: iri
-      - p: "http://example.com/eigenCombinatieLeerdoelOpleidingsniveau"
-        o: 
-          value:  "$(eigenCombinatieLeerdoelOpleidingsniveau[*])"
-          type: iri
-
-  m_185:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Leerplan[*]" ]
-    s: $(ingerichtDoor[*])
-    po:
-      - [rdf:type, http://purl.org/dc/terms/Agent~iri]
-
-  m_186:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Leerplan[*]" ]
-    s: $(niveau[*])
-    po:
-      - [rdf:type, http://example.com/Opleidingsniveau~iri]
-
-  m_187:
-    sources:
-      - [ out/kao.json~jsonpath, "$.Leerplan[*]" ]
-    s: $(eigenCombinatieLeerdoelOpleidingsniveau[*])
-    po:
-      - [rdf:type, http://example.com/EigenCombinatieLeerdoelOpleidingsniveau~iri]
-
-  m_188:
-    sources:
-      - [ "out/kao.json~jsonpath", "$.CombLeerdoelOpleidingsniveau[*]" ]
-    s: $(CODE[*])
-    po:
-      - [rdf:type, http://example.com/EigenCombinatieLeerdoelOpleidingsniveau~iri]
-      - p: "http://purl.org/dc/terms/title"
-        o: 
-          value:  "$(naam[*])"
-          language: nl
-      - p: "http://data.europa.eu/snb/model/elm/directedBy"
-        o: 
-          value:  "$(ingerichtDoor[*])"
-          type: iri
-      - p: "http://example.com/niveau"
-        o: 
-          value:  "$(niveau[*])"
-          type: iri
-      - p: "http://example.com/leerplan"
-        o: 
-          value:  "$(leerplan[*])"
-          type: iri
-      - p: "http://example.com/versieDatum"
-        o: 
-          value:  "$(versieDatum[*])"
-          language: nl
-      - p: "http://example.com/collectiedoel"
-        o: 
-          value:  "$(collectiedoel[*])"
-          language: nl
-      - p: "http://example.com/collectiedoeltype"
-        o: 
-          value:  "$(collectiedoeltype[*])"
-          language: nl
-
-  m_195:
-    sources:
-      - [ out/kao.json~jsonpath, "$.CombLeerdoelOpleidingsniveau[*]" ]
-    s: $(ingerichtDoor[*])
-    po:
-      - [rdf:type, http://purl.org/dc/terms/Agent~iri]
-
-  m_196:
-    sources:
-      - [ out/kao.json~jsonpath, "$.CombLeerdoelOpleidingsniveau[*]" ]
-    s: $(niveau[*])
-    po:
-      - [rdf:type, http://example.com/Opleidingsniveau~iri]
-
-  m_197:
-    sources:
-      - [ out/kao.json~jsonpath, "$.CombLeerdoelOpleidingsniveau[*]" ]
-    s: $(leerplan[*])
-    po:
-      - [rdf:type, http://example.com/Leerplan~iri]
 

@@ -1,0 +1,7 @@
+# Doelgroep 
+SELECT DISTINCT ?Doelgroep_url ?leeftijdstype_url ?doelgroep_url ?onderwijsniveau_url WHERE {
+  ?Doelgroep_url a <https://schema.org/Audience> .
+  OPTIONAL { ?Doelgroep_url <http://purl.org/dc/terms/type> ?leeftijdstype_url . }
+  OPTIONAL { ?Doelgroep_url <http://purl.org/dc/elements/1.1/type> ?doelgroep_url . }
+  OPTIONAL { ?Doelgroep_url <http://purl.org/dc/terms/educationLevel> ?onderwijsniveau_url . }
+}

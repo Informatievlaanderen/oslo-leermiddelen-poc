@@ -1,0 +1,6 @@
+# Join Doel → doelgroep → Doelgroep
+SELECT DISTINCT ?Doel_url ?Doelgroep_url WHERE {
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?Doelgroep_url a <https://schema.org/Audience> .
+  ?Doel_url <http://purl.org/dc/terms/audience> ?Doelgroep_url .
+}

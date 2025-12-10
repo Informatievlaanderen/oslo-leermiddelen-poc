@@ -12,12 +12,15 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<http://example.com/V-B> a <http://example.com/Opleidingsniveau> .
+<http://example.com/Leerplan> a skos:Concept .
 
-<http://example.com/VOV> a dc:Agent;
-  dc:title "VOV"@nl .
+<http://example.com/V-B> a skos:Concept .
 
-<http://example.com/VOV_V-B> a <http://example.com/Leerplan>;
-  <http://data.europa.eu/snb/model/elm/directedBy> <http://example.com/VOV>;
-  <http://example.com/niveau> <http://example.com/V-B>;
-  dc:title "Leerplannen van de basiseducatie"@nl .
+<http://example.com/VOV> a <http://missing.example.com/Agent>, dc:Agent;
+  <http://missing.example.com/naam> "VOV" .
+
+<http://example.com/VOV_V-B> a <http://purl.org/dc/dcmitype/Collection>;
+  <http://purl.org/dc/elements/1.1/creator> <http://example.com/VOV>;
+  dc:educationLevel <http://example.com/V-B>;
+  dc:title "Leerplannen van de basiseducatie"@nl;
+  dc:type <http://example.com/Leerplan> .

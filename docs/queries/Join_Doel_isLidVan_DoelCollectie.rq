@@ -1,0 +1,6 @@
+# Join Doel → isLidVan → DoelCollectie
+SELECT DISTINCT ?Doel_url ?DoelCollectie_url WHERE {
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?DoelCollectie_url a <http://purl.org/dc/dcmitype/Collection> .
+  ?Doel_url <https://schema.org/isPartOf> ?DoelCollectie_url .
+}

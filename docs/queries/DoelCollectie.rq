@@ -1,0 +1,9 @@
+# DoelCollectie 
+SELECT DISTINCT ?DoelCollectie_url ?naam ?gedefinieerdDoor_url ?niveau_url ?type_url ?heeftLid_url WHERE {
+  ?DoelCollectie_url a <http://purl.org/dc/dcmitype/Collection> .
+  ?DoelCollectie_url <http://purl.org/dc/terms/title> ?naam . 
+  ?DoelCollectie_url <http://purl.org/dc/elements/1.1/creator> ?gedefinieerdDoor_url . 
+  ?DoelCollectie_url <http://purl.org/dc/terms/educationLevel> ?niveau_url . 
+  ?DoelCollectie_url <http://purl.org/dc/terms/type> ?type_url . 
+  OPTIONAL { ?DoelCollectie_url <https://schema.org/hasPart> ?heeftLid_url . }
+}

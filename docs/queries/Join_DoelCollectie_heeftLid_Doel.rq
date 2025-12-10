@@ -1,0 +1,6 @@
+# Join DoelCollectie → heeftLid → Doel
+SELECT DISTINCT ?DoelCollectie_url ?Doel_url WHERE {
+  ?DoelCollectie_url a <http://purl.org/dc/dcmitype/Collection> .
+  ?Doel_url a <http://data.europa.eu/snb/model/elm/LearningAchievement> .
+  ?DoelCollectie_url <https://schema.org/hasPart> ?Doel_url .
+}
