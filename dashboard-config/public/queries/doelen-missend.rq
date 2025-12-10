@@ -11,7 +11,7 @@ WHERE {
     dc11:creator ex:OV; ;
     dc11:subject ex:SC_6 ;
     dc11:description ?minimumdoel.
-  ex:SC_6 ex:shortLabel ?onderwerp .
+  ex:SC_6 skos:altLabel ?onderwerp .
   ?_collectie dcterms:title ?collectie;
               schema:hasPart ?_minimumdoel;
               dcterms:educationLevel ex:S-gr2-DoF.
