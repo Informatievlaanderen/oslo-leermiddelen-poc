@@ -3,14 +3,15 @@ PREFIX dc11: <http://purl.org/dc/elements/1.1/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX ex: <http://example.com/>
+PREFIX schema: <https://schema.org/>
 
 SELECT ?niveau ?anderDoel ?organisatie ?collectie ?relatie
 WHERE {
   ?_minimumdoel dc11:creator ex:OV;
-    ex:eigenCombinatieLeerdoelOpleidingsniveau ?_collectie ;
     dc11:description $minimumdoel.
   ?_collectie dcterms:title ?collectie ;
-              ex:niveau ?_niveau .
+              schema:hasPart ?_minimumdoel;
+              dcterms:educationLevel ?_niveau .
   ?_niveau dcterms:title ?niveau .
   OPTIONAL {
     ?_anderDoel ?doelLink ?_minimumdoel ;

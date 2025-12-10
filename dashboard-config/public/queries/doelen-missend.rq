@@ -3,17 +3,18 @@ PREFIX dc11: <http://purl.org/dc/elements/1.1/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX ex: <http://example.com/>
+PREFIX schema: <https://schema.org/>
 
 SELECT ?minimumdoel ?onderwerp ?niveau ?organisatie ?collectie
 WHERE {
   ?_minimumdoel a <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
     dc11:creator ex:OV; ;
-    ex:eigenCombinatieLeerdoelOpleidingsniveau ?_collectie ;
     dc11:subject ex:SC_6 ;
     dc11:description ?minimumdoel.
   ex:SC_6 ex:shortLabel ?onderwerp .
   ?_collectie dcterms:title ?collectie;
-               ex:niveau ex:S-gr2-DoF.
+              schema:hasPart ?_minimumdoel;
+              dcterms:educationLevel ex:S-gr2-DoF.
   ex:S-gr2-DoF dcterms:title ?niveau
   VALUES ?_org {ex:KaO ex:GO}
   ?_org dcterms:title ?organisatie .
