@@ -12,179 +12,179 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<http://example.com/BK> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Buitengewoon kleuteronderwijs" .
+<http://example.com/BK> a skos:Concept;
+  dc:title "Buitengewoon kleuteronderwijs" .
 
-<http://example.com/BL> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Buitengewoon lager onderwijs" .
+<http://example.com/BL> a skos:Concept;
+  dc:title "Buitengewoon lager onderwijs" .
 
-<http://example.com/BS> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Buitengewoon secundair onderwijs" .
+<http://example.com/BS> a skos:Concept;
+  dc:title "Buitengewoon secundair onderwijs" .
 
-<http://example.com/BS-OV1> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "BS";
-  <http://missing.example.com/naam> "Buitengewoon secundair onderwijs - Opleidingsvorm 1" .
+<http://example.com/BS-OV1> a skos:Concept;
+  dc:title "Buitengewoon secundair onderwijs - Opleidingsvorm 1";
+  skos:broader <http://example.com/BS> .
 
-<http://example.com/BS-OV2> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "BS";
-  <http://missing.example.com/naam> "Buitengewoon secundair onderwijs - Opleidingsvorm 2" .
+<http://example.com/BS-OV2> a skos:Concept;
+  dc:title "Buitengewoon secundair onderwijs - Opleidingsvorm 2";
+  skos:broader <http://example.com/BS> .
 
-<http://example.com/BS-OV3> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "BS";
-  <http://missing.example.com/naam> "Buitengewoon secundair onderwijs - Opleidingsvorm 3" .
+<http://example.com/BS-OV3> a skos:Concept;
+  dc:title "Buitengewoon secundair onderwijs - Opleidingsvorm 3";
+  skos:broader <http://example.com/BS> .
 
-<http://example.com/BS-OV4> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "BS";
-  <http://missing.example.com/naam> "Buitengewoon secundair onderwijs - Opleidingsvorm 4" .
+<http://example.com/BS-OV4> a skos:Concept;
+  dc:title "Buitengewoon secundair onderwijs - Opleidingsvorm 4";
+  skos:broader <http://example.com/BS> .
 
-<http://example.com/DKO> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Deeltijds kunstonderwijs" .
+<http://example.com/DKO> a skos:Concept;
+  dc:title "Deeltijds kunstonderwijs" .
 
-<http://example.com/DKO-gr1> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "DKO";
-  <http://missing.example.com/naam> "Deeltijds kunstonderwijs - 1ste graad" .
+<http://example.com/DKO-gr1> a skos:Concept;
+  dc:title "Deeltijds kunstonderwijs - 1ste graad";
+  skos:broader <http://example.com/DKO> .
 
-<http://example.com/DKO-gr2> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "DKO";
-  <http://missing.example.com/naam> "Deeltijds kunstonderwijs - 2de graad" .
+<http://example.com/DKO-gr2> a skos:Concept;
+  dc:title "Deeltijds kunstonderwijs - 2de graad";
+  skos:broader <http://example.com/DKO> .
 
-<http://example.com/DKO-gr3> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "DKO";
-  <http://missing.example.com/naam> "Deeltijds kunstonderwijs - 3de graad" .
+<http://example.com/DKO-gr3> a skos:Concept;
+  dc:title "Deeltijds kunstonderwijs - 3de graad";
+  skos:broader <http://example.com/DKO> .
 
-<http://example.com/DKO-gr4> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "DKO";
-  <http://missing.example.com/naam> "Deeltijds kunstonderwijs - 4de graad" .
+<http://example.com/DKO-gr4> a skos:Concept;
+  dc:title "Deeltijds kunstonderwijs - 4de graad";
+  skos:broader <http://example.com/DKO> .
 
-<http://example.com/H> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Hoger onderwijs" .
+<http://example.com/H> a skos:Concept;
+  dc:title "Hoger onderwijs" .
 
-<http://example.com/K> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Kleuteronderwijs" .
+<http://example.com/K> a skos:Concept;
+  dc:title "Kleuteronderwijs" .
 
-<http://example.com/L> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Lager onderwijs" .
+<http://example.com/L> a skos:Concept;
+  dc:title "Lager onderwijs" .
 
-<http://example.com/L-5lj> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "L";
-  <http://missing.example.com/naam> "Lager onderwijs - 5de leerjaar" .
+<http://example.com/L-5lj> a skos:Concept;
+  dc:title "Lager onderwijs - 5de leerjaar";
+  skos:broader <http://example.com/L> .
 
-<http://example.com/L-6lj> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "L";
-  <http://missing.example.com/naam> "Lager onderwijs - 6de leerjaar" .
+<http://example.com/L-6lj> a skos:Concept;
+  dc:title "Lager onderwijs - 6de leerjaar";
+  skos:broader <http://example.com/L> .
 
-<http://example.com/OKAN> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Onthaalklas voor anderstalige nieuwkomers" .
+<http://example.com/OKAN> a skos:Concept;
+  dc:title "Onthaalklas voor anderstalige nieuwkomers" .
 
-<http://example.com/S> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Secundair onderwijs" .
+<http://example.com/S> a skos:Concept;
+  dc:title "Secundair onderwijs" .
 
-<http://example.com/S-gr1> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S";
-  <http://missing.example.com/naam> "Secundair onderwijs - 1ste graad" .
+<http://example.com/S-gr1> a skos:Concept;
+  dc:title "Secundair onderwijs - 1ste graad";
+  skos:broader <http://example.com/S> .
 
-<http://example.com/S-gr1-A> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr1";
-  <http://missing.example.com/naam> "Secundair onderwijs - 1ste graad - A-stroom" .
+<http://example.com/S-gr1-A> a skos:Concept;
+  dc:title "Secundair onderwijs - 1ste graad - A-stroom";
+  skos:broader <http://example.com/S-gr1> .
 
-<http://example.com/S-gr1-A-lj1> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr1-A";
-  <http://missing.example.com/naam> "Secundair onderwijs - 1ste graad - A-stroom - 1ste leerjaar" .
+<http://example.com/S-gr1-A-lj1> a skos:Concept;
+  dc:title "Secundair onderwijs - 1ste graad - A-stroom - 1ste leerjaar";
+  skos:broader <http://example.com/S-gr1-A> .
 
-<http://example.com/S-gr1-A-lj2> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr1-A";
-  <http://missing.example.com/naam> "Secundair onderwijs - 1ste graad - A-stroom - 2de leerjaar" .
+<http://example.com/S-gr1-A-lj2> a skos:Concept;
+  dc:title "Secundair onderwijs - 1ste graad - A-stroom - 2de leerjaar";
+  skos:broader <http://example.com/S-gr1-A> .
 
-<http://example.com/S-gr1-B> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr1";
-  <http://missing.example.com/naam> "Secundair onderwijs - 1ste graad - B-stroom" .
+<http://example.com/S-gr1-B> a skos:Concept;
+  dc:title "Secundair onderwijs - 1ste graad - B-stroom";
+  skos:broader <http://example.com/S-gr1> .
 
-<http://example.com/S-gr1-B-lj1> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr1-B";
-  <http://missing.example.com/naam> "Secundair onderwijs - 1ste graad - B-stroom - 1ste leerjaar" .
+<http://example.com/S-gr1-B-lj1> a skos:Concept;
+  dc:title "Secundair onderwijs - 1ste graad - B-stroom - 1ste leerjaar";
+  skos:broader <http://example.com/S-gr1-B> .
 
-<http://example.com/S-gr1-B-lj2> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr1-B";
-  <http://missing.example.com/naam> "Secundair onderwijs - 1ste graad - B-stroom - 2de leerjaar" .
+<http://example.com/S-gr1-B-lj2> a skos:Concept;
+  dc:title "Secundair onderwijs - 1ste graad - B-stroom - 2de leerjaar";
+  skos:broader <http://example.com/S-gr1-B> .
 
-<http://example.com/S-gr2> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Secundair onderwijs - 2de graad" .
+<http://example.com/S-gr2> a skos:Concept;
+  dc:title "Secundair onderwijs - 2de graad" .
 
-<http://example.com/S-gr2-AF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr2";
-  <http://missing.example.com/naam> "Secundair onderwijs - 2de graad - arbeidsfinaliteit" .
+<http://example.com/S-gr2-AF> a skos:Concept;
+  dc:title "Secundair onderwijs - 2de graad - arbeidsfinaliteit";
+  skos:broader <http://example.com/S-gr2> .
 
-<http://example.com/S-gr2-DoF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr2";
-  <http://missing.example.com/naam> "Secundair onderwijs - 2de graad - doorstroomfinaliteit" .
+<http://example.com/S-gr2-DoF> a skos:Concept;
+  dc:title "Secundair onderwijs - 2de graad - doorstroomfinaliteit";
+  skos:broader <http://example.com/S-gr2> .
 
-<http://example.com/S-gr2-DuF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr2";
-  <http://missing.example.com/naam> "Secundair onderwijs - 2de graad - dubbele finaliteit" .
+<http://example.com/S-gr2-DuF> a skos:Concept;
+  dc:title "Secundair onderwijs - 2de graad - dubbele finaliteit";
+  skos:broader <http://example.com/S-gr2> .
 
-<http://example.com/S-gr3> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Secundair onderwijs - 3de graad" .
+<http://example.com/S-gr3> a skos:Concept;
+  dc:title "Secundair onderwijs - 3de graad" .
 
-<http://example.com/S-gr3-AF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr3";
-  <http://missing.example.com/naam> "Secundair onderwijs - 3de graad - arbeidsfinaliteit" .
+<http://example.com/S-gr3-AF> a skos:Concept;
+  dc:title "Secundair onderwijs - 3de graad - arbeidsfinaliteit";
+  skos:broader <http://example.com/S-gr3> .
 
-<http://example.com/S-gr3-DoF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr3";
-  <http://missing.example.com/naam> "Secundair onderwijs - 3de graad - doorstroomfinaliteit" .
+<http://example.com/S-gr3-DoF> a skos:Concept;
+  dc:title "Secundair onderwijs - 3de graad - doorstroomfinaliteit";
+  skos:broader <http://example.com/S-gr3> .
 
-<http://example.com/S-gr3-DuF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-gr3";
-  <http://missing.example.com/naam> "Secundair onderwijs - 3de graad - dubbele finaliteit" .
+<http://example.com/S-gr3-DuF> a skos:Concept;
+  dc:title "Secundair onderwijs - 3de graad - dubbele finaliteit";
+  skos:broader <http://example.com/S-gr3> .
 
-<http://example.com/S-lj7> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Secundair onderwijs - 7de leerjaar" .
+<http://example.com/S-lj7> a skos:Concept;
+  dc:title "Secundair onderwijs - 7de leerjaar" .
 
-<http://example.com/S-lj7-AF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-lj7";
-  <http://missing.example.com/naam> "Secundair onderwijs - 7de leerjaar - arbeidsfinaliteit" .
+<http://example.com/S-lj7-AF> a skos:Concept;
+  dc:title "Secundair onderwijs - 7de leerjaar - arbeidsfinaliteit";
+  skos:broader <http://example.com/S-lj7> .
 
-<http://example.com/S-lj7-DoF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-lj7";
-  <http://missing.example.com/naam> "Secundair onderwijs - 7de leerjaar - doorstroomfinaliteit" .
+<http://example.com/S-lj7-DoF> a skos:Concept;
+  dc:title "Secundair onderwijs - 7de leerjaar - doorstroomfinaliteit";
+  skos:broader <http://example.com/S-lj7> .
 
-<http://example.com/S-lj7-DuF> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "S-lj7";
-  <http://missing.example.com/naam> "Secundair onderwijs - 7de leerjaar - dubbele finaliteit" .
+<http://example.com/S-lj7-DuF> a skos:Concept;
+  dc:title "Secundair onderwijs - 7de leerjaar - dubbele finaliteit";
+  skos:broader <http://example.com/S-lj7> .
 
-<http://example.com/SV> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Secundair volwassenenonderwijs" .
+<http://example.com/SV> a skos:Concept;
+  dc:title "Secundair volwassenenonderwijs" .
 
-<http://example.com/SV-AAV> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "SV";
-  <http://missing.example.com/naam> "Secundair volwassenenonderwijs - Aanvullende algemene vorming" .
+<http://example.com/SV-AAV> a skos:Concept;
+  dc:title "Secundair volwassenenonderwijs - Aanvullende algemene vorming";
+  skos:broader <http://example.com/SV> .
 
-<http://example.com/SV-BO> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "SV";
-  <http://missing.example.com/naam> "Secundair volwassenenonderwijs - Beroepsgerichte opleidingen" .
+<http://example.com/SV-BO> a skos:Concept;
+  dc:title "Secundair volwassenenonderwijs - Beroepsgerichte opleidingen";
+  skos:broader <http://example.com/SV> .
 
-<http://example.com/SV-MG> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "SV";
-  <http://missing.example.com/naam> "Secundair volwassenenonderwijs - modules geletterdheid" .
+<http://example.com/SV-MG> a skos:Concept;
+  dc:title "Secundair volwassenenonderwijs - modules geletterdheid";
+  skos:broader <http://example.com/SV> .
 
-<http://example.com/SV-gr2> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "SV";
-  <http://missing.example.com/naam> "Secundair volwassenenonderwijs - 2de graad" .
+<http://example.com/SV-gr2> a skos:Concept;
+  dc:title "Secundair volwassenenonderwijs - 2de graad";
+  skos:broader <http://example.com/SV> .
 
-<http://example.com/SV-gr2-AV> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "SV-gr2";
-  <http://missing.example.com/naam> "Secundair volwassenenonderwijs - 2de graad - Algemene vorming" .
+<http://example.com/SV-gr2-AV> a skos:Concept;
+  dc:title "Secundair volwassenenonderwijs - 2de graad - Algemene vorming";
+  skos:broader <http://example.com/SV-gr2> .
 
-<http://example.com/SV-gr3> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Secundair volwassenenonderwijs - 3de graad" .
+<http://example.com/SV-gr3> a skos:Concept;
+  dc:title "Secundair volwassenenonderwijs - 3de graad" .
 
-<http://example.com/SV-gr3-AV> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "SV-gr3";
-  <http://missing.example.com/naam> "Secundair volwassenenonderwijs - 3de graad - Algemene vorming" .
+<http://example.com/SV-gr3-AV> a skos:Concept;
+  dc:title "Secundair volwassenenonderwijs - 3de graad - Algemene vorming";
+  skos:broader <http://example.com/SV-gr3> .
 
-<http://example.com/V> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/isSpecialisatieVan> "V";
-  <http://missing.example.com/naam> "Volwassenenonderwijs" .
+<http://example.com/V> a skos:Concept;
+  dc:title "Volwassenenonderwijs";
+  skos:broader <http://example.com/V> .
 
-<http://example.com/V-B> a <http://missing.example.com/OpleidingsniveauType>;
-  <http://missing.example.com/naam> "Volwassenenonderwijs - Basiseducatie" .
+<http://example.com/V-B> a skos:Concept;
+  dc:title "Volwassenenonderwijs - Basiseducatie" .

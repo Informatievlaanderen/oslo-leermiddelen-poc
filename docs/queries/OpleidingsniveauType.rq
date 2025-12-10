@@ -1,6 +1,0 @@
-# OpleidingsniveauType 
-SELECT DISTINCT ?OpleidingsniveauType_url ?naam ?isSpecialisatieVan WHERE {
-  ?OpleidingsniveauType_url a <http://missing.example.com/OpleidingsniveauType> .
-  OPTIONAL { ?OpleidingsniveauType_url <http://missing.example.com/naam> ?naam . }
-  OPTIONAL { ?OpleidingsniveauType_url <http://missing.example.com/isSpecialisatieVan> ?isSpecialisatieVan . }
-}

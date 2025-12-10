@@ -1,0 +1,6 @@
+# Join OpleidingsniveauType → isSpecialisatieVan → OnderwerpType
+SELECT DISTINCT ?OpleidingsniveauType_url ?OnderwerpType_url WHERE {
+  ?OpleidingsniveauType_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?OnderwerpType_url a <http://www.w3.org/2004/02/skos/core#Concept> .
+  ?OpleidingsniveauType_url <http://www.w3.org/2004/02/skos/core#broader> ?OnderwerpType_url .
+}

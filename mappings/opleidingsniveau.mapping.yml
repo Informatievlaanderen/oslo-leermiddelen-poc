@@ -1045,11 +1045,20 @@ mappings:
       - [ "out/opleidingsniveau.json~jsonpath", "$.OpleidingsniveauType[*]" ]
     s: $(CODE[*])
     po:
-      - [rdf:type, http://missing.example.com/OpleidingsniveauType~iri]
-      - p: "http://missing.example.com/naam"
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
+      - p: "http://purl.org/dc/terms/title"
         o: 
           value:  "$(naam[*])"
-      - p: "http://missing.example.com/isSpecialisatieVan"
+          datatype: http://www.w3.org/2001/XMLSchema#string
+      - p: "http://www.w3.org/2004/02/skos/core#broader"
         o: 
           value:  "$(isSpecialisatieVan[*])"
+          type: iri
+
+  m_178:
+    sources:
+      - [ out/opleidingsniveau.json~jsonpath, "$.OpleidingsniveauType[*]" ]
+    s: $(isSpecialisatieVan[*])
+    po:
+      - [rdf:type, http://www.w3.org/2004/02/skos/core#Concept~iri]
 

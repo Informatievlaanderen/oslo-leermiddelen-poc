@@ -17,7 +17,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 <http://mapping.example.com/rules_000> rdf:type void:Dataset ;
-	void:exampleResource :map_m_1_000, :map_m_11_000, :map_m_12_000, :map_m_13_000, :map_m_14_000, :map_m_15_000, :map_m_16_000, :map_m_17_000, :map_m_18_000, :map_m_19_000, :map_m_20_000, :map_m_21_000, :map_m_30_000, :map_m_31_000, :map_m_32_000, :map_m_33_000, :map_m_34_000, :map_m_35_000, :map_m_36_000, :map_m_37_000, :map_m_38_000, :map_m_39_000, :map_m_59_000, :map_m_60_000, :map_m_61_000, :map_m_62_000, :map_m_63_000, :map_m_64_000, :map_m_65_000, :map_m_66_000, :map_m_67_000, :map_m_68_000, :map_m_69_000, :map_m_70_000, :map_m_71_000, :map_m_72_000, :map_m_73_000, :map_m_83_000, :map_m_84_000, :map_m_85_000, :map_m_86_000, :map_m_87_000, :map_m_88_000, :map_m_89_000, :map_m_90_000, :map_m_106_000, :map_m_107_000, :map_m_108_000, :map_m_109_000, :map_m_110_000, :map_m_111_000, :map_m_112_000, :map_m_113_000, :map_m_114_000, :map_m_115_000, :map_m_116_000, :map_m_117_000, :map_m_118_000, :map_m_119_000, :map_m_120_000, :map_m_121_000, :map_m_122_000, :map_m_123_000, :map_m_124_000, :map_m_125_000, :map_m_126_000, :map_m_127_000, :map_m_132_000, :map_m_133_000, :map_m_134_000, :map_m_135_000, :map_m_136_000, :map_m_139_000, :map_m_140_000, :map_m_142_000, :map_m_143_000, :map_m_148_000, :map_m_162_000, :map_m_163_000, :map_m_164_000, :map_m_167_000, :map_m_168_000, :map_m_169_000, :map_m_170_000, :map_m_171_000, :map_m_172_000, :map_m_174_000, :map_m_175_000, :map_m_176_000 .
+	void:exampleResource :map_m_1_000, :map_m_11_000, :map_m_12_000, :map_m_13_000, :map_m_14_000, :map_m_15_000, :map_m_16_000, :map_m_17_000, :map_m_18_000, :map_m_19_000, :map_m_20_000, :map_m_21_000, :map_m_30_000, :map_m_31_000, :map_m_32_000, :map_m_33_000, :map_m_34_000, :map_m_35_000, :map_m_36_000, :map_m_37_000, :map_m_38_000, :map_m_39_000, :map_m_59_000, :map_m_60_000, :map_m_61_000, :map_m_62_000, :map_m_63_000, :map_m_64_000, :map_m_65_000, :map_m_66_000, :map_m_67_000, :map_m_68_000, :map_m_69_000, :map_m_70_000, :map_m_71_000, :map_m_72_000, :map_m_73_000, :map_m_83_000, :map_m_84_000, :map_m_85_000, :map_m_86_000, :map_m_87_000, :map_m_88_000, :map_m_89_000, :map_m_90_000, :map_m_106_000, :map_m_107_000, :map_m_108_000, :map_m_109_000, :map_m_110_000, :map_m_111_000, :map_m_112_000, :map_m_113_000, :map_m_114_000, :map_m_115_000, :map_m_116_000, :map_m_117_000, :map_m_118_000, :map_m_119_000, :map_m_120_000, :map_m_121_000, :map_m_122_000, :map_m_123_000, :map_m_124_000, :map_m_125_000, :map_m_126_000, :map_m_127_000, :map_m_132_000, :map_m_133_000, :map_m_134_000, :map_m_135_000, :map_m_136_000, :map_m_139_000, :map_m_140_000, :map_m_142_000, :map_m_143_000, :map_m_148_000, :map_m_162_000, :map_m_163_000, :map_m_164_000, :map_m_167_000, :map_m_168_000, :map_m_169_000, :map_m_170_000, :map_m_171_000, :map_m_172_000, :map_m_174_000, :map_m_175_000, :map_m_176_000, :map_m_178_000 .
 
 :map_m_1_000 rml:logicalSource :source_000 ;
 	rdf:type rr:TriplesMap ;
@@ -3457,7 +3457,7 @@
 	rr:constant rdf:type .
 
 :om_192 rdf:type rr:ObjectMap ;
-	rr:constant <http://missing.example.com/OpleidingsniveauType> ;
+	rr:constant skos:Concept ;
 	rr:termType rr:IRI .
 
 :pom_193 rdf:type rr:PredicateObjectMap ;
@@ -3465,20 +3465,46 @@
 	rr:objectMap :om_193 .
 
 :pm_193 rdf:type rr:PredicateMap ;
-	rr:constant <http://missing.example.com/naam> .
+	rr:constant dcterms:title .
 
 :om_193 rdf:type rr:ObjectMap ;
 	rml:reference "naam[*]" ;
-	rr:termType rr:Literal .
+	rr:termType rr:Literal ;
+	rr:datatype <http://www.w3.org/2001/XMLSchema#string> .
 
 :pom_194 rdf:type rr:PredicateObjectMap ;
 	rr:predicateMap :pm_194 ;
 	rr:objectMap :om_194 .
 
 :pm_194 rdf:type rr:PredicateMap ;
-	rr:constant <http://missing.example.com/isSpecialisatieVan> .
+	rr:constant skos:broader .
 
 :om_194 rdf:type rr:ObjectMap ;
 	rml:reference "isSpecialisatieVan[*]" ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
+
+:map_m_178_000 rml:logicalSource :source_089 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "m_178" ;
+	rr:subjectMap :s_089 ;
+	rr:predicateObjectMap :pom_195 .
+
+:source_089 rdf:type rml:LogicalSource ;
+	rml:source "out/opleidingsniveau.json" ;
+	rml:iterator "$.OpleidingsniveauType[*]" ;
+	rml:referenceFormulation ql:JSONPath .
+
+:s_089 rdf:type rr:SubjectMap ;
+	rml:reference "isSpecialisatieVan[*]" .
+
+:pom_195 rdf:type rr:PredicateObjectMap ;
+	rr:predicateMap :pm_195 ;
+	rr:objectMap :om_195 .
+
+:pm_195 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+:om_195 rdf:type rr:ObjectMap ;
+	rr:constant skos:Concept ;
+	rr:termType rr:IRI .
 
