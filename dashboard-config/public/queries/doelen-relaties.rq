@@ -8,9 +8,9 @@ PREFIX schema: <https://schema.org/>
 SELECT ?niveau ?anderDoel ?organisatie ?collectie ?relatie
 WHERE {
   ?_minimumdoel dc11:creator ex:OV;
+    schema:isPartOf ?_collectie;
     dc11:description $minimumdoel.
   ?_collectie dcterms:title ?collectie ;
-              schema:hasPart ?_minimumdoel;
               dcterms:educationLevel ?_niveau .
   ?_niveau dcterms:title ?niveau .
   OPTIONAL {
