@@ -12,7 +12,7 @@ This template repo helps with setting up a pipeline for an OSLO implementation p
 You only have to do these steps once.
 
 1. [Create a new repository based on this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-2. Navigate to Settings > Actions > General > Workflow permissions and 
+2. Navigate to Settings > Actions > General > Workflow permissions and
    make sure that "Read and write permissions" is checked.
 3. [Set up GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
    and let it point to the `docs` directory on the `main` branch.
@@ -130,4 +130,8 @@ and the data will have [this license](LICENSE).
      shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
    ```
 
-- You can run the CI locally via the script `./scripts/generate-rdf-build-miravi.sh`
+- You can run the CI locally via
+
+   ```bash
+   ./scripts/generate-rdf-build-miravi.sh
+  ```
