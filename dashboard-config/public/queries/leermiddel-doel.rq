@@ -1,0 +1,21 @@
+PREFIX dc11: <http://purl.org/dc/elements/1.1/>
+PREFIX schemas: <https://schema.org/>
+PREFIX elm: <http://data.europa.eu/snb/model/elm/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?leermiddel (group_concat(distinct ?doelLabel;separator="; ") as ?doelen) (SAMPLE(?description) AS ?beschrijving) WHERE {
+    ?_Leermiddel dcterms:title ?leermiddel .
+    
+        ?_Leermiddel dcterms:educationLevel ?niveau .
+        ?_Leermiddel a schemas:LearningResource .
+        ?_doel a elm:LearningAchievement .
+        ?_doel dc11:description $minimumdoel .
+        ?_Collectie dcterms:educationLevel ?niveau .
+        ?_doel schema:isPartOf ?_Collectie .
+        BIND(STRAFTER(STR(?_doel), "http://example.com/") AS ?doelLabel)
+        BIND("Leermiddel dient Doel vanwege zelfde Niveau" AS ?description)
+    
+}
+GROUP BY ?leermiddel
+# ORDER BY ASC(?doel)

@@ -1,22 +1,24 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dc11: <http://purl.org/dc/elements/1.1/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX ex: <http://example.com/>
 PREFIX schema: <https://schema.org/>
+PREFIX adms: <http://www.w3.org/ns/adms#>
 
-SELECT ?minimumdoel ?onderwerp ?anderDoel ?organisatie ?collectie ?relatie
+SELECT ?code ?minimumdoel ?onderwerp ?anderDoel ?organisatie ?collectie ?relatie
 WHERE {
   ?_minimumdoel dc11:creator ex:OV;
           dc11:subject ex:SC_6 ;
           schema:isPartOf ?_collectie;
-          dc11:description ?minimumdoel.
+          dc11:description ?minimumdoel;
+          adms:identifier ?_code.
   ex:SC_6 skos:altLabel ?onderwerp .
   ?_collectie dcterms:title ?collectie;
               dcterms:educationLevel ex:S-gr2-DoF.
   ?_anderDoel ?doelLink ?_minimumdoel ;
              dc11:creator ?anderDoelOrg;
              dc11:description ?anderDoel.
+  BIND(STRAFTER(STR(?_code), "http://example.com/") AS ?code)
   FILTER(STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#broader" || STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#closeMatch" || STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#narrower" )
 	BIND (
 	  IF ( STR(?doelLink) = "http://www.w3.org/2004/02/skos/core#broader", "Breder",

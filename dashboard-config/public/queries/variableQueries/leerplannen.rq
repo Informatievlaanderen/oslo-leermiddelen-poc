@@ -1,0 +1,4 @@
+SELECT DISTINCT ?Leerplan WHERE {
+  ?DoelCollectie_url a <http://purl.org/dc/dcmitype/Collection> .
+  ?DoelCollectie_url <http://purl.org/dc/terms/title> ?Leerplan .
+}

@@ -3,7 +3,6 @@ PREFIX ex: <http://example.com/>
 PREFIX dc11: <http://purl.org/dc/elements/1.1/>
 PREFIX schemas: <https://schema.org/>
 PREFIX elm: <http://data.europa.eu/snb/model/elm/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX schema: <https://schema.org/>
 
@@ -15,8 +14,8 @@ SELECT ?leermiddel ?doel (SAMPLE(?description) AS ?beschrijving) WHERE {
         ?_doel a elm:LearningAchievement .
         ?_doel dc11:subject ?competentie .
         ?_doel dc11:description ?doel.
-        ?_Collectie dcterms:educationLevel ?niveau ;
-                    schema:hasPart ?_doel.
+        ?_Collectie dcterms:educationLevel ?niveau .
+        ?_doel schema:isPartOf ?_Collectie .
         BIND("Leermiddel naar Doel vanwege zelfde Competentie en Niveau" AS ?description)
     }
     UNION {

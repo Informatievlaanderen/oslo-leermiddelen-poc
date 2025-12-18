@@ -1,5 +1,5 @@
 {
-  "title": "Implementatietraject tooling",
+  "title": "OSLO Leermiddelen - Implementatietraject",
   "logoLocation": "images/vlaanderen-logo.png",
   "logoRedirectURL": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/oslo",
   "queryFolder": "queries",
@@ -60,6 +60,42 @@
       "queryLocation": "leermiddel-doelen.rq",
       "name": "Leermiddel - doelen",
       "description": "Vind op welke manier dit leermiddel bepaalde doelen dient"
+    },
+    {
+      "id": "450",
+      "queryGroupId": "gr-use-case",
+      "queryLocation": "leermiddel-doel.rq",
+      "name": "Leermiddel - doel",
+      "description": "Vind welke leermiddelen dit doel dient",
+      "indirectVariables": {
+        "queryLocations": [
+          "variableQueries/doel-notaties.rq"
+        ]
+      }
+    },
+    {
+      "id": "500",
+      "queryGroupId": "gr-use-case",
+      "queryLocation": "leerplan-leermiddel.rq",
+      "name": "Leerplan - leermiddel",
+      "description": "Vind welke leermiddelen de doelen dient van dit leerplan",
+      "indirectVariables": {
+        "queryLocations": [
+          "variableQueries/leerplannen.rq"
+        ]
+      }
+    },
+    {
+      "id": "600",
+      "queryGroupId": "gr-use-case",
+      "queryLocation": "leerplan-leermiddel-eindterm.rq",
+      "name": "Leerplan - leermiddel - eindterm",
+      "description": "Vind welke leermiddelen de doelen dient van dit leerplan, via de eindtermen",
+      "indirectVariables": {
+        "queryLocations": [
+          "variableQueries/leerplannen.rq"
+        ]
+      }
     }
   ]
 }

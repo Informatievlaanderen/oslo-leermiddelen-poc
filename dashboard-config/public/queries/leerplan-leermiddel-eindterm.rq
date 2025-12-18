@@ -1,0 +1,21 @@
+PREFIX ex: <http://example.com/>
+PREFIX schemas: <https://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?leermiddel ?connectie (group_concat(distinct ?doelLabel;separator="; ") as ?doelen)  (SAMPLE(?description) AS ?beschrijving) WHERE {
+  ?_Leermiddel a schemas:LearningResource .
+  ?_Leermiddel dcterms:title ?leermiddel .
+  ?_Leermiddel dcterms:educationLevel ?niveau .
+  ?Leerplan dcterms:educationLevel ?niveau ;
+    dcterms:title $Leerplan .
+  ?eindterm dcterms:educationLevel ?niveau ;
+    dcterms:type ex:Eindterm .
+  ?_doel schema:isPartOf ?eindterm .
+  ?niveau dcterms:title ?niveau_label .
+  BIND(STRAFTER(STR(?_doel), "http://example.com/") AS ?doelLabel)
+  BIND(?niveau_label as ?connectie)
+  BIND("Leermiddel dient minimumdoel via zelfde niveau als eindterm" AS ?description)
+}
+GROUP BY ?leermiddel ?connectie ?type
+# ORDER BY ASC(?doel)
