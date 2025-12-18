@@ -129,3 +129,5 @@ and the data will have [this license](LICENSE).
      ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
      shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
    ```
+
+- You can run the CI locally via the script `./scripts/generate-rdf-build-miravi.sh`
