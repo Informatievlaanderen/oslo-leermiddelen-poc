@@ -38,7 +38,7 @@ if compgen -G "data/*.xlsx" > /dev/null; then
   mv ap-data-to-dashboard/out/*.yml mappings/
 
   echo "1. Host RDF files via \"npx http-server _local/output -p 5500 --cors true\""
-  echo "2. Host Miravi via \"npx http-server -p 8080 _local/docs\""
+  echo "2. Host Miravi via \"npx http-server _local/docs -p 8080\""
   echo "3. Browse to http://localhost:8080"
 else
   echo "No Excel files found in the data folder."

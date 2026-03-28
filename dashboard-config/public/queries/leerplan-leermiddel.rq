@@ -1,0 +1,26 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ex: <http://example.com/>
+PREFIX dc11: <http://purl.org/dc/elements/1.1/>
+PREFIX schemas: <https://schema.org/>
+PREFIX elm: <http://data.europa.eu/snb/model/elm/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?leermiddel ?connectie (group_concat(distinct ?doelLabel;separator="; ") as ?doelen)  (SAMPLE(?description) AS ?beschrijving) WHERE {
+  ?_Leermiddel a schemas:LearningResource .
+  ?_Leermiddel dcterms:title ?leermiddel .
+?_Leermiddel dcterms:educationLevel ?niveau .
+?_koepeldoel a elm:LearningAchievement .
+?_koepeldoel schema:isPartOf ?Leerplan .
+?Leerplan dcterms:educationLevel ?niveau ;
+    dcterms:title $Leerplan .
+?niveau dcterms:title ?niveau_label .
+?_koepeldoel skos:broader | skos:closeMatch ?_doel .
+?_doel dc11:creator ex:OV .
+BIND(STRAFTER(STR(?_doel), "http://example.com/") AS ?doelLabel)
+BIND(?niveau_label as ?connectie)
+BIND("Leermiddel dient minimumdoel via zelfde niveau als leerplan" AS ?description)
+}
+GROUP BY ?leermiddel ?connectie ?type
+# ORDER BY ASC(?doel)
